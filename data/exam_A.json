@@ -105,14 +105,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. Estimating the test effort is part of test planning b) Is correct. This is an example of defining test conditions which is a part of test analysis c) Is not correct. Using test techniques to derive coverage items is a part of test design d) Is not correct. Reporting defects found during dynamic testing is a part of test execution",
-      "media": [
-        {
-          "type": "image",
-          "src": "assets/questions/A/q4.png",
-          "alt": "Question 4 reference image"
-        }
-      ]
+      "explanation": "a) Is not correct. Estimating the test effort is part of test planning b) Is correct. This is an example of defining test conditions which is a part of test analysis c) Is not correct. Using test techniques to derive coverage items is a part of test design d) Is not correct. Reporting defects found during dynamic testing is a part of test execution"
     },
     {
       "id": 5,

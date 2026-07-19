@@ -552,14 +552,7 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "The equivalence partitions are: {…, 99, 100}, {101, 102, …, 198, 199}, {200, 201, …}. Thus, there are 4 boundary values, which are: 100, 101, 199 and 200. In 2-value BVA, for each boundary value there are two coverage items (the boundary value and its closest neighbor belonging to the adjacent partition). As the closest neighbors are also boundary values in the adjacent partition, then there are just four coverage items. Thus: a) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage b) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage c) Is not correct. Only 100 and 101 are valid coverage items for 2-value BVA, so we achieve 50% coverage d) Is correct. 101, 199 and 200 are valid coverage items for 2-value BVA, so we achieve 75% coverage",
-      "media": [
-        {
-          "type": "image",
-          "src": "assets/questions/C/q21.png",
-          "alt": "Question 21 reference image"
-        }
-      ]
+      "explanation": "The equivalence partitions are: {…, 99, 100}, {101, 102, …, 198, 199}, {200, 201, …}. Thus, there are 4 boundary values, which are: 100, 101, 199 and 200. In 2-value BVA, for each boundary value there are two coverage items (the boundary value and its closest neighbor belonging to the adjacent partition). As the closest neighbors are also boundary values in the adjacent partition, then there are just four coverage items. Thus: a) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage b) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage c) Is not correct. Only 100 and 101 are valid coverage items for 2-value BVA, so we achieve 50% coverage d) Is correct. 101, 199 and 200 are valid coverage items for 2-value BVA, so we achieve 75% coverage"
     },
     {
       "id": 22,
