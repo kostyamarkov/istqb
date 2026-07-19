@@ -10,7 +10,9 @@ const state = {
   revealedByQuestion: {},
   result: null,
   loading: false,
-  error: ''
+  error: '',
+  imageModalSrc: '',
+  imageModalAlt: ''
 };
 
 const examIds = ['A', 'B', 'C', 'D'];
@@ -217,6 +219,7 @@ function renderTest() {
   const explanationOpen = Boolean(state.explanationOpenByQuestion[qid]);
   const answered = answeredCount();
   const progress = exam.questions.length > 0 ? (answered / exam.questions.length) * 100 : 0;
+  const media = Array.isArray(question.media) ? question.media : [];
 
   const options = question.options
     .map((o) => {
@@ -239,6 +242,19 @@ function renderTest() {
     })
     .join('');
 
+  const mediaMarkup = media
+    .map((m, idx) => {
+      if (!m || m.type !== 'image' || !m.src) {
+        return '';
+      }
+      const alt = m.alt || `Question ${question.id} visual`;
+      return `<button class="question-media" data-action="open-image" data-src="${escapeHtml(m.src)}" data-alt="${escapeHtml(alt)}" data-media-index="${idx}">
+        <img src="${escapeHtml(m.src)}" alt="${escapeHtml(alt)}" loading="lazy" />
+        <span>Tap to enlarge</span>
+      </button>`;
+    })
+    .join('');
+
   return `
     <section class="screen">
       <div class="progress-block">
@@ -251,6 +267,7 @@ function renderTest() {
 
       <div class="question-meta">Question ${state.currentIndex + 1} of ${exam.questions.length}</div>
       <h3 class="question-text">${escapeHtml(question.text)}</h3>
+      ${mediaMarkup}
       ${isQuestionMulti(question) ? '<div class="hint">Select all correct options</div>' : ''}
       <div class="options">${options}</div>
 
@@ -294,6 +311,19 @@ function renderLoading() {
   return `<section class="screen center"><p class="subtitle">Loading...</p></section>`;
 }
 
+function renderImageModal() {
+  if (!state.imageModalSrc) {
+    return '';
+  }
+
+  return `<div class="image-modal" data-action="close-image">
+    <div class="image-modal-content" role="dialog" aria-modal="true" aria-label="Question image preview">
+      <button class="image-modal-close" data-action="close-image">Close</button>
+      <img src="${escapeHtml(state.imageModalSrc)}" alt="${escapeHtml(state.imageModalAlt || 'Question image')}" />
+    </div>
+  </div>`;
+}
+
 function renderError() {
   return `
     <section class="screen center">
@@ -304,25 +334,23 @@ function renderError() {
 }
 
 function render() {
+  let markup = '';
+
   if (state.loading) {
-    app.innerHTML = renderLoading();
-    return;
-  }
-
-  if (state.error) {
-    app.innerHTML = renderError();
-    return;
-  }
-
-  if (state.screen === 'start') {
-    app.innerHTML = renderStart();
+    markup = renderLoading();
+  } else if (state.error) {
+    markup = renderError();
+  } else if (state.screen === 'start') {
+    markup = renderStart();
   } else if (state.screen === 'selection') {
-    app.innerHTML = renderSelection();
+    markup = renderSelection();
   } else if (state.screen === 'test') {
-    app.innerHTML = renderTest();
+    markup = renderTest();
   } else if (state.screen === 'result') {
-    app.innerHTML = renderResult();
+    markup = renderResult();
   }
+
+  app.innerHTML = `${markup}${renderImageModal()}`;
 }
 
 app.addEventListener('click', async (event) => {
@@ -341,6 +369,20 @@ app.addEventListener('click', async (event) => {
   if (action === 'back-home' || action === 'restart') {
     state.screen = 'start';
     state.error = '';
+    render();
+    return;
+  }
+
+  if (action === 'open-image') {
+    state.imageModalSrc = target.dataset.src || '';
+    state.imageModalAlt = target.dataset.alt || '';
+    render();
+    return;
+  }
+
+  if (action === 'close-image') {
+    state.imageModalSrc = '';
+    state.imageModalAlt = '';
     render();
     return;
   }

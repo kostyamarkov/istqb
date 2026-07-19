@@ -578,7 +578,14 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "Test cases TC1, TC2, TC3 and TC4 cover, respectively, rules R2, R3, R7 and R6 in the decision table. a) Is correct. The conditions “66-year-old”, “unregistered” and “no experience” match rule R4, which is not covered by the existing test cases, so after adding this test case, the decision table coverage will increase b) Is not correct. The conditions “55-year-old”, “unregistered” and “2 years of experience” match rule R2, already covered by TC1. So adding this test case will not increase the coverage c) Is not correct. The conditions “19-year-old”, “registered” and “5 years of experience” match rule R6, already covered by TC4. So adding this test case will not increase the coverage d) Is not correct. The existing test cases cover only 4 out of 7 columns of the decision table. The coverage can be increased by adding test cases that cover yet uncovered columns, that is, R1, R4 and R5 Version 1.5 Page 24 of 35 May 2, 2025"
+      "explanation": "Test cases TC1, TC2, TC3 and TC4 cover, respectively, rules R2, R3, R7 and R6 in the decision table. a) Is correct. The conditions “66-year-old”, “unregistered” and “no experience” match rule R4, which is not covered by the existing test cases, so after adding this test case, the decision table coverage will increase b) Is not correct. The conditions “55-year-old”, “unregistered” and “2 years of experience” match rule R2, already covered by TC1. So adding this test case will not increase the coverage c) Is not correct. The conditions “19-year-old”, “registered” and “5 years of experience” match rule R6, already covered by TC4. So adding this test case will not increase the coverage d) Is not correct. The existing test cases cover only 4 out of 7 columns of the decision table. The coverage can be increased by adding test cases that cover yet uncovered columns, that is, R1, R4 and R5 Version 1.5 Page 24 of 35 May 2, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q22.png",
+          "alt": "Question 22 reference image"
+        }
+      ]
     },
     {
       "id": 23,
@@ -604,7 +611,14 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. This sequence of five events covers 4 different valid transitions (both “NotAvailable” events correspond to the same transition between S1 and S3). This test case covers 4 out of 7 valid transitions b) Is correct. This sequence of five events covers 5 different transitions (the first “Available” event corresponds to a transition between S1 and S2, and the second “Available” event corresponds to a transition between S3 and S2, so two different transitions are covered). This test case covers 5 out of 7 valid transitions and achieves the highest valid transitions coverage c) Is not correct. This sequence of five events covers 3 different transitions (both “Available” events correspond to the same transition from S1 to S2; both “ChangeRoom” events correspond to the same transition from S2 to S1). This test case covers 3 out of 7 valid transitions d) Is not correct. This sequence of five events does not represent a feasible test case, because after “Cancel” the system ends up in the End state and no further valid transitions can be executed Version 1.5 Page 25 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. This sequence of five events covers 4 different valid transitions (both “NotAvailable” events correspond to the same transition between S1 and S3). This test case covers 4 out of 7 valid transitions b) Is correct. This sequence of five events covers 5 different transitions (the first “Available” event corresponds to a transition between S1 and S2, and the second “Available” event corresponds to a transition between S3 and S2, so two different transitions are covered). This test case covers 5 out of 7 valid transitions and achieves the highest valid transitions coverage c) Is not correct. This sequence of five events covers 3 different transitions (both “Available” events correspond to the same transition from S1 to S2; both “ChangeRoom” events correspond to the same transition from S2 to S1). This test case covers 3 out of 7 valid transitions d) Is not correct. This sequence of five events does not represent a feasible test case, because after “Cancel” the system ends up in the End state and no further valid transitions can be executed Version 1.5 Page 25 of 35 May 2, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q23.png",
+          "alt": "Question 23 reference image"
+        }
+      ]
     },
     {
       "id": 24,
@@ -760,7 +774,14 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "a) Is correct. This test case is related to acceptance criteria 2 and 3, because we check if we can set price range (acceptance criterion 2) and if the results update dynamically after adjusting the price range filter (acceptance criterion 3) b) Is not correct. This test case is not related to any of the acceptance criteria. It checks if the filter dynamically sets the default minimum and maximum price range, and not that a customer can do it c) Is not correct. This test case is not related to any of the acceptance criteria. It checks the currency exchange feature, which is not discussed in this user story d) Is not correct. This test case is not related to any of the acceptance criteria. It checks the application’s compatibility with different browsers, which is not discussed in this user story"
+      "explanation": "a) Is correct. This test case is related to acceptance criteria 2 and 3, because we check if we can set price range (acceptance criterion 2) and if the results update dynamically after adjusting the price range filter (acceptance criterion 3) b) Is not correct. This test case is not related to any of the acceptance criteria. It checks if the filter dynamically sets the default minimum and maximum price range, and not that a customer can do it c) Is not correct. This test case is not related to any of the acceptance criteria. It checks the currency exchange feature, which is not discussed in this user story d) Is not correct. This test case is not related to any of the acceptance criteria. It checks the application’s compatibility with different browsers, which is not discussed in this user story",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q29.png",
+          "alt": "Question 29 reference image"
+        }
+      ]
     },
     {
       "id": 30,
@@ -843,7 +864,14 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "TC1 achieves the highest coverage (4/7 – Req1, Req3, Req4 and Req7), so should be executed first. Req2, Req5 and Req6 are still not covered. The next test case that achieves the highest additional coverage of the remaining requirements is TC3, covering 2 out of these 3 requirements (Req5 and Req6). So, TC3 should be executed as the second one. Now the only requirement still not covered is Req2, which is covered by TC4. Therefore, TC4 should be executed as the third test case. So, the last test case executed will be TC2. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.5 Page 30 of 35 May 2, 2025"
+      "explanation": "TC1 achieves the highest coverage (4/7 – Req1, Req3, Req4 and Req7), so should be executed first. Req2, Req5 and Req6 are still not covered. The next test case that achieves the highest additional coverage of the remaining requirements is TC3, covering 2 out of these 3 requirements (Req5 and Req6). So, TC3 should be executed as the second one. Now the only requirement still not covered is Req2, which is covered by TC4. Therefore, TC4 should be executed as the third test case. So, the last test case executed will be TC2. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.5 Page 30 of 35 May 2, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q32.png",
+          "alt": "Question 32 reference image"
+        }
+      ]
     },
     {
       "id": 33,
@@ -1004,7 +1032,14 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "a) Is correct. Adding this information allows the developer to use the same input data, so it is more likely they will be able to reproduce the failure quickly and so identify the defect faster b) Is not correct. Adding the value of Priority will not help in reproducing the defect itself c) Is not correct. Although some of this information may be of value, adding the memory dumps and database snapshots after each step will be too much, because most of these artefacts will contain useless information for the developer, and make the defect report less readable. It will also require the developer to spend a lot of time analyzing this information, which will lengthen the repair process d) Is not correct. The question was about helping the developer to reproduce the failure for a specific environment configuration Version 1.5 Page 34 of 35 May 2, 2025"
+      "explanation": "a) Is correct. Adding this information allows the developer to use the same input data, so it is more likely they will be able to reproduce the failure quickly and so identify the defect faster b) Is not correct. Adding the value of Priority will not help in reproducing the defect itself c) Is not correct. Although some of this information may be of value, adding the memory dumps and database snapshots after each step will be too much, because most of these artefacts will contain useless information for the developer, and make the defect report less readable. It will also require the developer to spend a lot of time analyzing this information, which will lengthen the repair process d) Is not correct. The question was about helping the developer to reproduce the failure for a specific environment configuration Version 1.5 Page 34 of 35 May 2, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q38.png",
+          "alt": "Question 38 reference image"
+        }
+      ]
     },
     {
       "id": 39,

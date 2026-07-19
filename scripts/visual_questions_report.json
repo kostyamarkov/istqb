@@ -1,0 +1,226 @@
+{
+  "A": [
+    {
+      "examId": "A",
+      "questionId": 4,
+      "page": 9,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 10,
+      "textSample": "Question #4 (1 Point) You work in a team that develops a mobile application for food ordering. In the current iteration the team decided to implement the payment functionality. Which of the following activities is a part"
+    },
+    {
+      "examId": "A",
+      "questionId": 14,
+      "page": 12,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 70,
+      "textSample": "Question #14 (1 Point) You are testing a user story with three acceptance criteria: AC1, AC2 and AC3. AC1 is covered by test case TC1, AC2 by TC2, and AC3 by TC3. The test execution history had three test runs on three c"
+    },
+    {
+      "examId": "A",
+      "questionId": 21,
+      "page": 15,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 90,
+      "textSample": "Question #21 (1 Point) You are testing a system that calculates the final course grade for a given student. The final grade is assigned based on the final result, according to the following rules: \u2022 0 \u2013 50 points: failed"
+    },
+    {
+      "examId": "A",
+      "questionId": 22,
+      "page": 16,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 226,
+      "textSample": "Question #22 (1 Point) Your favorite bicycle daily rental store has just introduced a new Customer Relationship Management system and asked you, one of their most loyal members, to test it. The implemented features are a"
+    },
+    {
+      "examId": "A",
+      "questionId": 23,
+      "page": 16,
+      "keywordHit": true,
+      "imageHit": true,
+      "drawingCount": 0,
+      "textSample": "Question #23 (1 Point) You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. What is the MINIMAL number of "
+    },
+    {
+      "examId": "A",
+      "questionId": 33,
+      "page": 19,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 97,
+      "textSample": "Question #33 (1 Point) You are testing a mobile application that allows users to find a nearby restaurant based on the type of food they want to eat. Consider the following list of test cases, priorities (i.e., a smaller"
+    }
+  ],
+  "B": [
+    {
+      "examId": "B",
+      "questionId": 19,
+      "page": 11,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 0,
+      "textSample": "Question #19 (1 Point) Which of the following statements BEST describes the difference between decision table testing and branch testing? a) In decision table testing, the test cases are derived from the decision stateme"
+    },
+    {
+      "examId": "B",
+      "questionId": 22,
+      "page": 13,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 127,
+      "textSample": "Question #22 (1 Point) The following decision table contains the rules for determining the risk of atherosclerosis. Rule 1 Rule 2 Rule 3 Rule 4 Rule 5 Conditions Cholesterol (mg/dl) 125 \u2013 125 \u2013 \u2264124 \u2264 124 \u2265 201 200 200 B"
+    },
+    {
+      "examId": "B",
+      "questionId": 23,
+      "page": 14,
+      "keywordHit": true,
+      "imageHit": true,
+      "drawingCount": 0,
+      "textSample": "Question #23 (1 Point) A storage system can store up to three elements and is modeled by the following state transition diagram. The variable N represents the number of currently stored elements. Which of the following t"
+    },
+    {
+      "examId": "B",
+      "questionId": 31,
+      "page": 17,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 72,
+      "textSample": "Question #31 (1 Point) You want to estimate the test effort for the new project using estimation based on ratios. You calculate the test-to-development effort ratio using averaged data for both development effort and tes"
+    },
+    {
+      "examId": "B",
+      "questionId": 32,
+      "page": 18,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 99,
+      "textSample": "Question #32 (1 Point) You are testing a web application that allows users to SEARCH for products, VIEW product details, ADD products to a shopping cart, and place an ORDER. You have prepared the following seven test cas"
+    },
+    {
+      "examId": "B",
+      "questionId": 38,
+      "page": 20,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 30,
+      "textSample": "Question #38 (1 Point) You are testing a sort function that gets a set of numbers as input and returns the same set of numbers sorted in ascending order. The log from the test execution looks as follows. Environment conf"
+    }
+  ],
+  "C": [
+    {
+      "examId": "C",
+      "questionId": 21,
+      "page": 12,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 16,
+      "textSample": "Question #21 (1 Point) A developer was asked to implement the following business rule: INPUT: value (integer number) IF (value \u2264 100 OR value \u2265 200) THEN write \u201cvalue incorrect\u201d ELSE write \u201cvalue OK\u201d You design the test "
+    },
+    {
+      "examId": "C",
+      "questionId": 22,
+      "page": 13,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 114,
+      "textSample": "Question #22 (1 Point) You are working on a project to develop a system to analyze driving test results. You have been asked to design test cases based on the following decision table. R1 R2 R3 - - F C1: First attempt at"
+    },
+    {
+      "examId": "C",
+      "questionId": 23,
+      "page": 14,
+      "keywordHit": true,
+      "imageHit": true,
+      "drawingCount": 0,
+      "textSample": "Question #23 (1 Point) You are designing test cases based on the following state transition diagram: What is the MINIMUM number of test cases required to achieve 100% valid transitions coverage? a) 3 b) 2 c) 5 d) 6 Selec"
+    },
+    {
+      "examId": "C",
+      "questionId": 24,
+      "page": 15,
+      "keywordHit": false,
+      "imageHit": true,
+      "drawingCount": 0,
+      "textSample": "Question #24 (1 Point) You want to apply branch testing to the code represented by the following control flow graph. How many coverage items do you need to test? a) 2 b) 4 c) 8 d) 7 Select ONE option. Question #25 (1 Poi"
+    },
+    {
+      "examId": "C",
+      "questionId": 29,
+      "page": 17,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 22,
+      "textSample": "Question #29 (1 Point) You are using acceptance test-driven development and designing test cases based on the following user story: As a Regular or Special user, I want to be able to use my electronic floor card, to acce"
+    },
+    {
+      "examId": "C",
+      "questionId": 32,
+      "page": 19,
+      "keywordHit": true,
+      "imageHit": true,
+      "drawingCount": 0,
+      "textSample": "Question #32 (1 Point) You are preparing a test execution schedule for executing seven test cases TC 1 to TC 7. The following figure includes the priorities of these test cases (1=highest priority, 3 = lowest priority). "
+    },
+    {
+      "examId": "C",
+      "questionId": 38,
+      "page": 21,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 28,
+      "textSample": "Question #38 (1 Point) Consider the following defect report for a web-based shopping application: Application: WebShop v0.99 Defect: Login button not working Steps to Reproduce: Launch the website Click on the login butt"
+    }
+  ],
+  "D": [
+    {
+      "examId": "D",
+      "questionId": 22,
+      "page": 13,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 158,
+      "textSample": "Question #22 (1 Point) You are designing test cases based on the following decision table. R1 R2 R3 R4 R5 R6 R7 C1: Age 0-18 19-65 19-65 >65 0-18 19-65 >65 C2: Experience - 0-4 >4 - - - - C3: Registered? NO NO NO NO YES "
+    },
+    {
+      "examId": "D",
+      "questionId": 23,
+      "page": 14,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 125,
+      "textSample": "Question #23 (1 Point) You are applying state transition testing to the hotel room reservation system modeled by the following state transition table, with 4 states and 5 different events: Events State Available NotAvail"
+    },
+    {
+      "examId": "D",
+      "questionId": 29,
+      "page": 16,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 12,
+      "textSample": "Question #29 (1 Point) You have just started designing test cases for the following user story. As a customer, I want to be able to filter search results by price range, so that I can find products within my budget more "
+    },
+    {
+      "examId": "D",
+      "questionId": 32,
+      "page": 17,
+      "keywordHit": true,
+      "imageHit": false,
+      "drawingCount": 151,
+      "textSample": "Question #32 (1 Point) The table shows the traceability matrix from test cases to requirements. \u201cX\u201d means that a given test case covers the corresponding requirement. Req1 Req2 Req3 Req4 Req5 Req6 Req7 TC1 X X X X TC2 X "
+    },
+    {
+      "examId": "D",
+      "questionId": 38,
+      "page": 19,
+      "keywordHit": false,
+      "imageHit": false,
+      "drawingCount": 36,
+      "textSample": "Question #38 (1 Point) Consider the following defect report for a Book Lending System. Defect ID: 001 | Title: Unable to Return a Book | Severity: High | Priority: | Environment: Windows 10, Google Chrome Description: Wh"
+    }
+  ]
+}
