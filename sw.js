@@ -1,4 +1,4 @@
-const CACHE_NAME = 'istqb-prep-v1';
+const CACHE_NAME = 'istqb-prep-v2';
 
 const CORE_ASSETS = [
   './',
@@ -33,6 +33,31 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') {
+    return;
+  }
+
+  const url = new URL(event.request.url);
+  const isSameOrigin = url.origin === self.location.origin;
+  const isDynamicAsset =
+    isSameOrigin &&
+    (
+      url.pathname.endsWith('/') ||
+      url.pathname.endsWith('.html') ||
+      url.pathname.endsWith('.js') ||
+      url.pathname.endsWith('.css') ||
+      url.pathname.endsWith('.json')
+    );
+
+  if (isDynamicAsset) {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          const cloned = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, cloned));
+          return networkResponse;
+        })
+        .catch(() => caches.match(event.request))
+    );
     return;
   }
 
