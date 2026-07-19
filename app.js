@@ -1,4 +1,8 @@
 const app = document.getElementById('app');
+const COMBO_EXAM_ID = 'COMBO';
+const BASE_EXAM_IDS = ['A', 'B', 'C', 'D'];
+const COMBO_COOKIE_NAME = 'istqb_combo_wrong_questions';
+const COMBO_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 const state = {
   screen: 'start',
@@ -9,13 +13,143 @@ const state = {
   explanationOpenByQuestion: {},
   revealedByQuestion: {},
   result: null,
+  pendingComboSyncExamId: null,
   loading: false,
   error: '',
   imageModalSrc: '',
   imageModalAlt: ''
 };
 
-const examIds = ['A', 'B', 'C', 'D'];
+function questionStateKey(question) {
+  return String(question.uid || question.id);
+}
+
+function questionComboKey(question) {
+  return `${question.sourceExamId || state.selectedExamId}:${question.id}`;
+}
+
+function normalizeExam(exam, sourceExamId) {
+  return {
+    ...exam,
+    sourceExamId,
+    questions: exam.questions.map((q) => ({
+      ...q,
+      sourceExamId,
+      uid: `${sourceExamId}-${q.id}`
+    }))
+  };
+}
+
+function readComboKeys() {
+  const cookies = document.cookie ? document.cookie.split('; ') : [];
+  const item = cookies.find((c) => c.startsWith(`${COMBO_COOKIE_NAME}=`));
+  if (!item) {
+    return [];
+  }
+
+  const raw = item.slice(COMBO_COOKIE_NAME.length + 1);
+  try {
+    const parsed = JSON.parse(decodeURIComponent(raw));
+    if (Array.isArray(parsed)) {
+      return parsed.filter((v) => typeof v === 'string');
+    }
+  } catch (_err) {
+  }
+  return [];
+}
+
+function writeComboKeys(keys) {
+  const encoded = encodeURIComponent(JSON.stringify([...new Set(keys)]));
+  document.cookie = `${COMBO_COOKIE_NAME}=${encoded}; path=/; max-age=${COMBO_COOKIE_MAX_AGE}; SameSite=Lax`;
+}
+
+async function buildComboExam() {
+  const comboKeys = readComboKeys();
+  if (comboKeys.length === 0) {
+    return {
+      examId: COMBO_EXAM_ID,
+      title: 'Combo-test',
+      sourceExamId: COMBO_EXAM_ID,
+      questionCount: 0,
+      questions: []
+    };
+  }
+
+  for (const baseExamId of BASE_EXAM_IDS) {
+    await ensureExamLoaded(baseExamId);
+  }
+
+  const questionByKey = new Map();
+  for (const baseExamId of BASE_EXAM_IDS) {
+    const exam = state.exams[baseExamId];
+    for (const question of exam.questions) {
+      questionByKey.set(questionComboKey(question), question);
+    }
+  }
+
+  const comboQuestions = [];
+  for (const key of comboKeys) {
+    const q = questionByKey.get(key);
+    if (q) {
+      comboQuestions.push({ ...q });
+    }
+  }
+
+  return {
+    examId: COMBO_EXAM_ID,
+    title: 'Combo-test',
+    sourceExamId: COMBO_EXAM_ID,
+    questionCount: comboQuestions.length,
+    questions: comboQuestions
+  };
+}
+
+function evaluateQuestion(question) {
+  const key = questionStateKey(question);
+  const selected = new Set(state.selectedByQuestion[key] || []);
+
+  if (selected.size === 0) {
+    return 'unanswered';
+  }
+
+  if (isQuestionMulti(question) && !state.revealedByQuestion[key]) {
+    return 'unanswered';
+  }
+
+  const expected = new Set(question.correctOptions);
+  return isSameSet(selected, expected) ? 'correct' : 'incorrect';
+}
+
+function syncComboPoolOnBackHome() {
+  if (state.pendingComboSyncExamId == null) {
+    return;
+  }
+
+  const exam = currentExam();
+  if (!exam) {
+    state.pendingComboSyncExamId = null;
+    return;
+  }
+
+  const comboSet = new Set(readComboKeys());
+  for (const question of exam.questions) {
+    const outcome = evaluateQuestion(question);
+    const key = questionComboKey(question);
+
+    if (state.pendingComboSyncExamId === COMBO_EXAM_ID) {
+      if (outcome === 'correct') {
+        comboSet.delete(key);
+      }
+    } else {
+      if (outcome === 'incorrect') {
+        comboSet.add(key);
+      }
+    }
+  }
+
+  writeComboKeys([...comboSet]);
+  state.pendingComboSyncExamId = null;
+}
 
 function loadStateForExam(examId) {
   state.selectedExamId = examId;
@@ -24,6 +158,7 @@ function loadStateForExam(examId) {
   state.explanationOpenByQuestion = {};
   state.revealedByQuestion = {};
   state.result = null;
+  state.pendingComboSyncExamId = null;
 }
 
 async function ensureExamLoaded(examId) {
@@ -36,7 +171,7 @@ async function ensureExamLoaded(examId) {
     throw new Error(`Cannot load exam ${examId}`);
   }
 
-  const json = await response.json();
+  const json = normalizeExam(await response.json(), examId);
   state.exams[examId] = json;
   return json;
 }
@@ -60,7 +195,7 @@ function selectedSet(questionId) {
 }
 
 function toggleOption(question, optionId) {
-  const key = String(question.id);
+  const key = questionStateKey(question);
   const selected = selectedSet(key);
 
   if (isQuestionMulti(question)) {
@@ -117,23 +252,13 @@ function computeResult() {
   let unanswered = 0;
 
   for (const q of exam.questions) {
-    const key = String(q.id);
-    const selected = new Set(state.selectedByQuestion[key] || []);
-    if (selected.size === 0) {
-      unanswered += 1;
-      continue;
-    }
-
-    if (isQuestionMulti(q) && !state.revealedByQuestion[key]) {
-      unanswered += 1;
-      continue;
-    }
-
-    const expected = new Set(q.correctOptions);
-    if (isSameSet(selected, expected)) {
+    const outcome = evaluateQuestion(q);
+    if (outcome === 'correct') {
       correct += 1;
-    } else {
+    } else if (outcome === 'incorrect') {
       incorrect += 1;
+    } else {
+      unanswered += 1;
     }
   }
 
@@ -151,17 +276,10 @@ function answeredCount() {
 
   let count = 0;
   for (const q of exam.questions) {
-    const key = String(q.id);
-    const sel = state.selectedByQuestion[key] || [];
-    if (sel.length === 0) {
-      continue;
-    }
-
-    if (isQuestionMulti(q) && !state.revealedByQuestion[key]) {
-      continue;
-    }
-
+    const outcome = evaluateQuestion(q);
+    if (outcome === 'correct' || outcome === 'incorrect') {
       count += 1;
+    }
   }
   return count;
 }
@@ -190,13 +308,15 @@ function renderStart() {
 }
 
 function renderSelection() {
+  const comboCount = readComboKeys().length;
   return `
     <section class="screen">
       <h2 class="section-title">Choose a test</h2>
       <div class="test-list">
-        ${examIds
+        ${BASE_EXAM_IDS
           .map((id) => `<button class="btn" data-action="start-exam" data-exam="${id}">Test ${id}</button>`)
           .join('')}
+        <button class="btn" data-action="start-exam" data-exam="${COMBO_EXAM_ID}">Combo-test (${comboCount})</button>
       </div>
       <div class="footer-nav">
         <button class="btn" data-action="back-home">Back</button>
@@ -212,7 +332,7 @@ function renderTest() {
     return `<section class="screen"><p class="error">Exam data is not available.</p></section>`;
   }
 
-  const qid = String(question.id);
+  const qid = questionStateKey(question);
   const selected = selectedSet(qid);
   const correct = new Set(question.correctOptions);
   const revealed = Boolean(state.revealedByQuestion[qid]);
@@ -367,6 +487,9 @@ app.addEventListener('click', async (event) => {
   }
 
   if (action === 'back-home' || action === 'restart') {
+    if (state.screen === 'result') {
+      syncComboPoolOnBackHome();
+    }
     state.screen = 'start';
     state.error = '';
     render();
@@ -394,7 +517,12 @@ app.addEventListener('click', async (event) => {
     render();
 
     try {
-      await ensureExamLoaded(examId);
+      if (examId === COMBO_EXAM_ID) {
+        const comboExam = await buildComboExam();
+        state.exams[COMBO_EXAM_ID] = comboExam;
+      } else {
+        await ensureExamLoaded(examId);
+      }
       loadStateForExam(examId);
       state.screen = 'test';
     } catch (err) {
@@ -421,7 +549,7 @@ app.addEventListener('click', async (event) => {
   }
 
   if (action === 'toggle-explanation') {
-    const key = String(question.id);
+    const key = questionStateKey(question);
     state.explanationOpenByQuestion[key] = !state.explanationOpenByQuestion[key];
     render();
     return;
@@ -441,6 +569,7 @@ app.addEventListener('click', async (event) => {
 
   if (action === 'finish-test') {
     state.result = computeResult();
+    state.pendingComboSyncExamId = state.selectedExamId;
     state.screen = 'result';
     render();
   }
