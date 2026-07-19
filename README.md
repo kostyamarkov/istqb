@@ -45,3 +45,9 @@ The app includes:
 
 - Existing iOS SwiftUI folder `ISTQBPrepApp` is kept in repo, but for old Mac hardware use the web app flow above.
 - More detailed deployment/setup instructions: `WEB_SETUP.md`.
+
+## Copyright and usage
+
+- ISTQB content in this repository is attributed to the International Software Testing Qualifications Board (ISTQB).
+- Review the local notice before publishing or redistributing: `COPYRIGHT_NOTICE.md`.
+- Use in permitted scenarios (especially personal and non-commercial learning) and seek ISTQB permission for unclear or broader usage.

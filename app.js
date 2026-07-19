@@ -145,6 +145,10 @@ function renderStart() {
       <h1 class="title">ISTQB Preparation</h1>
       <p class="subtitle">Simple practice tests</p>
       <button class="btn btn-primary" data-action="open-selection">Start test</button>
+      <p class="subtitle" style="max-width: 520px; font-size: 12px;">
+        Uses ISTQB sample exam content. See
+        <a href="COPYRIGHT_NOTICE.md" target="_blank" rel="noopener">copyright and usage notice</a>.
+      </p>
     </section>
   `;
 }
