@@ -1,0 +1,27 @@
+name: ISTQBPrepApp
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    PRODUCT_NAME: ISTQBPrepApp
+    PRODUCT_BUNDLE_IDENTIFIER: com.yourname.istqbprep
+    MARKETING_VERSION: 1.0
+    CURRENT_PROJECT_VERSION: 1
+    TARGETED_DEVICE_FAMILY: 1
+    SUPPORTS_MACCATALYST: NO
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+targets:
+  ISTQBPrepApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        excludes:
+          - README.md
+          - project.yml
+    scheme:
+      testTargets: []

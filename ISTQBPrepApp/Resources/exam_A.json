@@ -1,0 +1,1057 @@
+{
+  "examId": "A",
+  "title": "ISTQB CTFL Sample Exam A",
+  "questionCount": 40,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which of the following statements describe a valid test objective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prove that there are no unfixed defects in the system under test"
+        },
+        {
+          "id": "b",
+          "text": "To prove that there will be no failures after the implementation of the system into production"
+        },
+        {
+          "id": "c",
+          "text": "To reduce the risk level of the test object and to build confidence in the quality level"
+        },
+        {
+          "id": "d",
+          "text": "To verify that there are no untested combinations of inputs"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. It is impossible to prove that there are no defects anymore in the system under test. See testing principle 1 b) Is not correct. See testing principle 7 c) Is correct. Testing finds defects and failures which reduces the level of risk and at the same time gives more confidence in the quality level of the test object d) Is not correct. It is impossible to test all combinations of inputs (see testing principle 2)"
+    },
+    {
+      "id": 2,
+      "text": "Which of the following options shows an example of test activities that contribute to success?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products"
+        },
+        {
+          "id": "b",
+          "text": "Testers try not to disturb the developers while coding, so that the developers write better code"
+        },
+        {
+          "id": "c",
+          "text": "Testers collaborating with end users help to improve the quality of defect reports during component integration and system testing"
+        },
+        {
+          "id": "d",
+          "text": "Certified testers will design much better test cases than non-certified testers"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. It is important that testers are involved from the beginning of the software development lifecycle (SDLC). It will increase understanding of design decisions and will detect defects early. b) Is not correct. Both developers and testers will have more understanding of each other's work products and how to test the code c) Is not correct. End users will not help the testers in increasing the quality of defect reports; also, users usually do not participate in low-level testing levels like integration testing d) Is not correct. Being certified does not automatically mean that the tester will be better in test design"
+    },
+    {
+      "id": 3,
+      "text": "You have been assigned as a tester to a team producing a new system incrementally. You have noticed that no changes have been made to the existing regression test cases for several iterations and no new regression defects were identified. Your manager is happy, but you are not. Which testing principle explains your skepticism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tests wear out"
+        },
+        {
+          "id": "b",
+          "text": "Absence-of-defects fallacy"
+        },
+        {
+          "id": "c",
+          "text": "Defects cluster together"
+        },
+        {
+          "id": "d",
+          "text": "Exhaustive testing is impossible"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. This principle means that if the same tests are repeated over and over again, eventually these tests no longer find any new defects. This is probably why the tests all passed in this release as well b) Is not correct. This principle says about the mistaken belief that just finding and fixing a large number of defects will ensure the success of a system c) Is not correct. This principle says that a small number of components usually contain most of the defects d) Is not correct. This principle states that testing all combinations of inputs and preconditions is not feasible"
+    },
+    {
+      "id": 4,
+      "text": "You work in a team that develops a mobile application for food ordering. In the current iteration the team decided to implement the payment functionality. Which of the following activities is a part of test analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estimating that testing the integration with the payment service will take 8 person-days"
+        },
+        {
+          "id": "b",
+          "text": "Deciding that the team should test if it is possible to properly share payment between many users"
+        },
+        {
+          "id": "c",
+          "text": "Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to be paid"
+        },
+        {
+          "id": "d",
+          "text": "Analyzing the discrepancy between the actual result and expected result after executing a test case that checks the process of payment with a credit card, and reporting a defect"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "a) Is not correct. Estimating the test effort is part of test planning b) Is correct. This is an example of defining test conditions which is a part of test analysis c) Is not correct. Using test techniques to derive coverage items is a part of test design d) Is not correct. Reporting defects found during dynamic testing is a part of test execution"
+    },
+    {
+      "id": 5,
+      "text": "Which of the following factors have a SIGNIFICANT influence on the test approach? i. The SDLC ii. The number of defects detected in previous projects iii. The identified product risks iv. New regulatory requirements forcing formal white-box testing v. The test environment setup",
+      "options": [
+        {
+          "id": "a",
+          "text": "i, ii have significant influence"
+        },
+        {
+          "id": "b",
+          "text": "i, iii, iv have significant influence"
+        },
+        {
+          "id": "c",
+          "text": "ii, iv, v have significant influence"
+        },
+        {
+          "id": "d",
+          "text": "iii, v have significant influence"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "i. Is true. The SDLC has an influence on the test approach ii. Is false. The number of defects detected in previous projects may have some influence, but this is not as significant as i, iii and iv iii. Is true. The identified product risks are one of the most important factors influencing the test approach iv. Is true. Regulatory requirements are important factors influencing the test approach v. Is false. The test environment has no significant influence on the test approach Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 6,
+      "text": "Which TWO of the following tasks belong MAINLY to a testing role?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Configure test environments"
+        },
+        {
+          "id": "b",
+          "text": "Maintain the product backlog"
+        },
+        {
+          "id": "c",
+          "text": "Design solutions to new requirements"
+        },
+        {
+          "id": "d",
+          "text": "Create the test plan"
+        },
+        {
+          "id": "e",
+          "text": "Analyze the test basis"
+        }
+      ],
+      "correctOptions": [
+        "a",
+        "e"
+      ],
+      "explanation": "a) Is correct. This is done by the testers b) Is not correct. The product backlog is built and maintained by the product owner c) Is not correct. This is done by the development team d) Is not correct. This is a managerial role e) Is correct. This is done by the testers since its technical task done as part of a test analysis."
+    },
+    {
+      "id": 7,
+      "text": "Which of the following skills (i-v) are the MOST important skills of a tester? i. Having domain knowledge ii. Creating a product vision iii. Being a good team player iv. Planning and organizing the work of the team v. Critical thinking",
+      "options": [
+        {
+          "id": "a",
+          "text": "ii and iv are important"
+        },
+        {
+          "id": "b",
+          "text": "i, iii and v are important"
+        },
+        {
+          "id": "c",
+          "text": "i, ii and v are important"
+        },
+        {
+          "id": "d",
+          "text": "iii and iv are important"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "i. Is true. Having domain knowledge is an important tester skill ii. Is false. This is a task of the business analyst together with the business representative iii. Is true. Being a good team player is an important skill iv. Is false. Planning and organizing the work of the team is a task of the test manager or, mostly in an Agile software development project, the whole team and not just the tester v. Is true. Critical thinking is one of the most important skills of testers Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 8,
+      "text": "How is the whole team approach present in the interactions between testers and business representatives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Business representatives decide on test automation approaches"
+        },
+        {
+          "id": "b",
+          "text": "Testers help business representatives to define a test strategy"
+        },
+        {
+          "id": "c",
+          "text": "Business representatives are not part of the whole team approach"
+        },
+        {
+          "id": "d",
+          "text": "Testers help business representatives to create suitable acceptance tests"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. The test automation approach is defined by testers with the help of developers and business representatives b) Is not correct. The test strategy is decided in collaboration with the developers c) Is not correct. Testers, developers, and business representatives are part of the whole team approach d) Is correct. Testers will work closely with business representatives to ensure that the desired quality levels are achieved. This includes supporting and collaborating with them to help them create suitable acceptance tests"
+    },
+    {
+      "id": 9,
+      "text": "Consider the following rule: “for every SDLC activity there is a corresponding test activity”. In which SDLC models does this rule hold?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only in sequential development models"
+        },
+        {
+          "id": "b",
+          "text": "Only in iterative development models"
+        },
+        {
+          "id": "c",
+          "text": "Only in iterative and incremental development models"
+        },
+        {
+          "id": "d",
+          "text": "In sequential, incremental, and iterative development models"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct b) Is not correct c) Is not correct d) Is correct. This rule holds for all SDLC models"
+    },
+    {
+      "id": 10,
+      "text": "Which of the following statements BEST describes the acceptance test-driven development (ATDD) approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In ATDD, acceptance criteria are typically created based on the given/when/then format"
+        },
+        {
+          "id": "b",
+          "text": "In ATDD, test cases are mainly created at component testing and are code-oriented"
+        },
+        {
+          "id": "c",
+          "text": "In ATDD, tests are created , based on acceptance criteria to drive the development of the related software"
+        },
+        {
+          "id": "d",
+          "text": "in ATDD, tests are based on the desired behavior of the software, which makes it easier for team members to understand them"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. It is more often used in behavior-driven development (BDD) b) Is not correct. It is the description of test-driven development (TDD) c) Is correct. In acceptance test-driven development (ATDD) tests are written from acceptance criteria as part of the design process d) Is not correct. It is used in BDD"
+    },
+    {
+      "id": 11,
+      "text": "Which of the following is NOT an example of the shift-left approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reviewing the user requirements before they are formally accepted by the stakeholders"
+        },
+        {
+          "id": "b",
+          "text": "Writing a component test before the corresponding code is written"
+        },
+        {
+          "id": "c",
+          "text": "Executing a performance efficiency test for a component during component testing"
+        },
+        {
+          "id": "d",
+          "text": "Writing a test script before setting up the configuration management process"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Early review is an example of the shift-left approach b) Is not correct. TDD is an example of the shift-left approach c) Is not correct. Early non-functional testing is an example of the shift-left approach d) Is correct. Test scripts should be subject to configuration management, so it makes no sense to create the test scripts before this process is set up"
+    },
+    {
+      "id": 12,
+      "text": "Which of the arguments below would you use to convince your manager to organize retrospectives at the end of each release cycle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retrospectives are very popular these days and clients would appreciate it if we added them to our processes"
+        },
+        {
+          "id": "b",
+          "text": "Organizing retrospectives will save the organization money because without them end user representatives do not provide immediate feedback about the product"
+        },
+        {
+          "id": "c",
+          "text": "Process weaknesses identified during the retrospective can be analyzed and serve as a to do list for the organization’s continuous process improvement program"
+        },
+        {
+          "id": "d",
+          "text": "Retrospectives embrace five values including courage and respect, which are crucial to maintain continuous improvement in the organization"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. Retrospectives are more useful for identifying improvement opportunities and have little importance for clients b) Is not correct. Retrospectives are not aimed to collect feedback about the product, but about the process. Additionally, retrospectives are internal activity for the team and should not include end user representatives c) Is correct. Regularly conducted retrospectives, when appropriate follow up activities occur, are critical to continual improvement of development and testing d) Is not correct. Courage and respect are values of Extreme Programming and are not closely related to retrospectives"
+    },
+    {
+      "id": 13,
+      "text": "Which types of failures (1-4) fit which test levels (A-D) BEST? 1. Failures in system behavior as it deviates from the user’s business needs 2. Failures in communication between components 3. Failures in logic in the code 4. Failures in not correctly implemented business rules A. Component testing B. Component integration testing C. System testing D. Acceptance testing",
+      "options": [
+        {
+          "id": "a",
+          "text": "1D, 2B, 3A, 4C"
+        },
+        {
+          "id": "b",
+          "text": "1D, 2B, 3C, 4A"
+        },
+        {
+          "id": "c",
+          "text": "1B, 2A, 3D, 4C"
+        },
+        {
+          "id": "d",
+          "text": "1C, 2B, 3A, 4D"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "Considering: • The test basis for acceptance testing is the user’s business needs (1D) • Communication between components is tested during component integration testing (2B) • Failures in logic can be found during component testing (3A) • Business rules are the test basis for system testing (4C) Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 14,
+      "text": "You are testing a user story with three acceptance criteria: AC1, AC2 and AC3. AC1 is covered by test case TC1, AC2 by TC2, and AC3 by TC3. The test execution history had three test runs on three consecutive versions of the software as follows: Execution 1 Execution 2 Execution 3 TC1 (1) Failed (4) Passed (7) Passed TC2 (2) Passed (5) Failed (8) Passed TC3 (3) Failed (6) Failed (9) Passed Tests are repeated once you are informed that all defects found in the test run are corrected and a new version of the software is available. Which of the above tests are executed as regression tests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only 4, 7, 8, 9"
+        },
+        {
+          "id": "b",
+          "text": "Only 5, 7"
+        },
+        {
+          "id": "c",
+          "text": "Only 4, 6, 8, 9"
+        },
+        {
+          "id": "d",
+          "text": "Only 5, 6"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "Because TC1 and TC3 failed in Execution 1 (i.e., test (1) and test (3)), test (4) and test (6) are confirmation tests. Because TC2 and TC3 failed in Execution 2 (i.e., tests (5) and (6)), test (8) and test (9) are also confirmation tests. TC2 passed in Execution 1 (i.e., test (2)), so test (5) is a regression test. TC1 passed in the Execution 2 (i.e., test (4)), so test (7) is also a regression test. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 15,
+      "text": "Which of the following is NOT a benefit of static testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Having less expensive defect management due to the ease of detecting defects later in the SDLC"
+        },
+        {
+          "id": "b",
+          "text": "Fixing defects found during static testing is generally much less expensive than fixing defects found during dynamic testing"
+        },
+        {
+          "id": "c",
+          "text": "Finding coding defects that might not have been found by only performing dynamic testing"
+        },
+        {
+          "id": "d",
+          "text": "Detecting gaps and inconsistencies in requirements"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. Defect management is no less expensive. Finding and fixing defects later in the SDLC is more costly b) Is not correct. This is a benefit of static testing c) Is not correct. This is a benefit of static testing d) Is not correct. This is a benefit of static testing"
+    },
+    {
+      "id": 16,
+      "text": "Which of the following is a benefit of early and frequent feedback?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It improves the test process for future projects"
+        },
+        {
+          "id": "b",
+          "text": "It forces customers to prioritize their requirements based on agreed risks"
+        },
+        {
+          "id": "c",
+          "text": "It provides a measure for the quality of changes"
+        },
+        {
+          "id": "d",
+          "text": "It helps avoid requirements misunderstandings"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Feedback can improve the test process, but if one only wants to improve future projects, the feedback does not need to come early or frequently b) Is not correct. Feedback is not used to prioritize requirements c) Is not correct. There is no one, recommended way to measure quality of changes. Also, this is not one of the benefits of early feedback that are mentioned in section 3.2.1 d) Is correct. Early and frequent feedback can prevent misunderstandings about requirements"
+    },
+    {
+      "id": 17,
+      "text": "The reviews being used in your organization have the following attributes: • There is the role of a scribe • The main purpose is to evaluate quality • The meeting is led by the author of the work product • There is individual preparation • A review report is produced Which of the following review types is MOST likely being used?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Informal review"
+        },
+        {
+          "id": "b",
+          "text": "Walkthrough"
+        },
+        {
+          "id": "c",
+          "text": "Technical review"
+        },
+        {
+          "id": "d",
+          "text": "Inspection"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "Considering the attributes: • Specified for walkthroughs, technical reviews, and inspections; thus, the reviews being performed cannot be informal reviews • The purpose of evaluating quality is one of the most important objectives of a walkthrough • This is not allowed for inspections and is typically not done in technical reviews. A moderator is needed in walkthroughs and is allowed for informal reviews • All types of reviews can include individual preparation (even informal reviews) • All types of reviews can produce a review report, although informal reviews do not require documentation Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 18,
+      "text": "Which of these statements is NOT a factor that contributes to successful reviews?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Participants should dedicate adequate time for the review"
+        },
+        {
+          "id": "b",
+          "text": "Splitting large work products into small parts to make the required effort less intense"
+        },
+        {
+          "id": "c",
+          "text": "Participants should avoid behaviors that might indicate boredom, exasperation, or hostility to other participants"
+        },
+        {
+          "id": "d",
+          "text": "Failures found should be acknowledged, appreciated, and handled objectively"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Adequate time for individuals is a success factor b) Is not correct. Splitting work products into small adequate parts is a success factor c) Is not correct. Avoiding behaviors that might indicate boredom, exasperation, etc. is a success factor d) Is correct. During reviews one can find defects, not failures"
+    },
+    {
+      "id": 19,
+      "text": "Which of the following is a characteristic of experience-based test techniques?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test cases are created based on detailed design information"
+        },
+        {
+          "id": "b",
+          "text": "Items tested within the interface code section are used to measure coverage"
+        },
+        {
+          "id": "c",
+          "text": "The test techniques heavily rely on the tester’s knowledge of the software and the business domain"
+        },
+        {
+          "id": "d",
+          "text": "The test cases are used to identify deviations from the requirements"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. This is a common characteristic of white-box test techniques. Test conditions, test cases, and test data are derived from a test basis that may include code, software architecture, detailed design, or any other source of information regarding the structure of the software. b) Is not correct. This is a common characteristic of white-box test techniques. Coverage is measured based on the items tested within a selected structure and the test technique applied to the test basis c) Is correct. This is a common characteristic of experience-based test techniques. This knowledge and experience include expected use of the software, its environment, likely defects, and the distribution of those defects is used to define tests d) Is not correct. This is a common characteristic of black-box test techniques. Test cases may be used to detect gaps within requirements and the implementation of the requirements, as well as deviations from the requirements"
+    },
+    {
+      "id": 20,
+      "text": "You are testing a simplified apartment search form which has only two search criteria: • floor (with three possible options: ground floor; first floor; second or higher floor) • garden type (with three possible options: no garden; small garden; large garden) Each of the apartment on the ground floor has a garden, apartments on higher floors don’t. The form has a built-in validation mechanism that will not allow you to use the search criteria which violate this rule. Each test has two input values: floor and garden type. You want to apply equivalence partitioning (EP) to cover each floor and each garden type in your tests. What is the minimal number of test cases to achieve 100% EP coverage for valid partitions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "The situation presented in the question is described in the syllabus as “each choice” coverage. “Small garden” and “large garden” can go only with “ground floor”, so we need two test cases with “ground floor” which cover these two “garden type” partitions. We need two more test cases to cover the two other “floor” partitions. The remaining ”garden type” partition of “no garden” is covered by these tests. We need a total of four test cases: TC1 (ground floor, small garden) TC2 (ground floor, large garden) TC3 (first floor, no garden) TC4 (second or higher floor, no garden) Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 21,
+      "text": "You are testing a system that calculates the final course grade for a given student. The final grade is assigned based on the final result, according to the following rules: • 0 – 50 points: failed • 51 – 60 points: fair • 61 – 70 points: satisfactory • 71 – 80 points: good • 81 – 90 points: very good • 91 – 100 points: excellent You have prepared the following set of test cases: Final result Final grade TC1 91 excellent TC2 50 failed TC3 81 very good TC4 60 fair TC5 70 satisfactory TC6 80 good What is the 2-value boundary value analysis (BVA) coverage for the final result that is achieved with the existing test cases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50%"
+        },
+        {
+          "id": "b",
+          "text": "60%"
+        },
+        {
+          "id": "c",
+          "text": "33.3%"
+        },
+        {
+          "id": "d",
+          "text": "100%"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "There are 12 boundary values for the final result values: 0, 50, 51, 60, 61, 70, 71, 80, 81, 90, 91, and 100. The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). Therefore, the test cases cover 6/12 = 50%. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 22,
+      "text": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship Management system and asked you, one of their most loyal members, to test it. The implemented features are as follows: • Anyone can rent a bicycle, but members receive a 20% discount • However, if the return deadline is missed, the discount is no longer available • After 15 rentals, members get a gift: a T-Shirt Decision table describing the implemented features looks as follows: Conditions R1 R2 R3 R4 R5 R6 R7 R8 Being a member T T T T F F F F Missed deadline T F T F T F F T 15th rental F F T T F F T T Actions 20% discount X X Gift T-Shirt X X X Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R4"
+        },
+        {
+          "id": "b",
+          "text": "R2"
+        },
+        {
+          "id": "c",
+          "text": "R6"
+        },
+        {
+          "id": "d",
+          "text": "R8"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals b) Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times c) Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet d) Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct"
+    },
+    {
+      "id": 23,
+      "text": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state. What is the MINIMAL number of test cases to achieve valid transitions coverage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "“test” and “error” transitions cannot occur in one test case. Neither can both “done” transitions. This means we need at least three test cases to achieve transition coverage. For example: TC1: test, done TC2: run, error, done TC3: run, pause, resume, pause, done Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct"
+    },
+    {
+      "id": 24,
+      "text": "Your test suite achieved 100% statement coverage. What is the consequence of this fact?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each instruction in the code that contains a defect has been executed at least once"
+        },
+        {
+          "id": "b",
+          "text": "Any test suite containing more test cases than your test suite will also achieve 100% statement coverage"
+        },
+        {
+          "id": "c",
+          "text": "Each path in the code has been executed at least once"
+        },
+        {
+          "id": "d",
+          "text": "Every combination of input values has been tested at least once"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. Since 100% statement coverage is achieved, every statement, including the ones with defects, must have been executed and evaluated at least once b) Is not correct. Coverage depends on what is tested, not on the number of test cases. For example, for code “if (x==0) y=1”, one test case (x=0) achieves 100% statement coverage, but two test cases (x=1) and (x=2) together achieve only 50% statement coverage c) Is not correct. If there is a loop in the code there may be an infinite number of possible paths, so it is not possible to execute all the possible paths in the code d) Is not correct. Exhaustive testing is not possible (see the seven testing principles section in the syllabus). For example, for code “input x; print x” any single test with arbitrary x achieves 100% statement coverage, but covers one input value"
+    },
+    {
+      "id": 25,
+      "text": "Which of the following is NOT true for white-box testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "During white-box testing the entire software implementation is considered"
+        },
+        {
+          "id": "b",
+          "text": "White-box coverage metrics can help identify additional tests to increase code coverage"
+        },
+        {
+          "id": "c",
+          "text": "White-box test techniques can be used in static testing"
+        },
+        {
+          "id": "d",
+          "text": "White-box testing can help identify gaps in requirements implementation"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. The fundamental strength of white-box test techniques is that the entire software implementation is taken into account during testing b) Is not correct. White-box coverage measures provide an objective measure of coverage and provide the necessary information to allow additional tests to be generated to increase this coverage c) Is not correct. White-box test techniques can be used to perform reviews (static testing) d) Is correct. This is the weakness of the white-box test techniques. They are not able to identify the missing implementation, because they are based solely on the test object structure, not on the requirements specification"
+    },
+    {
+      "id": 26,
+      "text": "Which of the following BEST describes the concept behind error guessing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Error guessing involves using your knowledge and experience of defects found in the past and typical errors made by developers"
+        },
+        {
+          "id": "b",
+          "text": "Error guessing involves using your personal experience of development and the errors you made as a developer"
+        },
+        {
+          "id": "c",
+          "text": "Error guessing requires you to imagine that you are the user of the test object and to guess errors the user could make interacting with it"
+        },
+        {
+          "id": "d",
+          "text": "Error guessing requires you to rapidly duplicate the development task to identify the sort of errors a developer might make"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. The basic concept behind error guessing is that the tester tries to guess what errors may have been made by the developer and what defects may be in the test object based on past experience (and sometimes checklists) b) Is not correct. Although a tester who used to be a developer may use their personal experience to help them when performing error guessing, the test technique is not based on prior knowledge of development c) Is not correct. Error guessing is not a usability technique for guessing how users may fail to interact with the test object d) Is not correct. Duplicating the development task has several flaws that make it impractical, such as the tester having equivalent skills to the developer and the time involved to perform the development. It is not error guessing"
+    },
+    {
+      "id": 27,
+      "text": "In your project there has been a delay in the release of a brand-new application and test execution started late, but you have very detailed domain knowledge and good analytical skills. The full list of requirements has not yet been shared with the team, but management is asking for some test results to be presented. Which test technique fits BEST in this situation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Checklist-based testing"
+        },
+        {
+          "id": "b",
+          "text": "Error guessing"
+        },
+        {
+          "id": "c",
+          "text": "Exploratory testing"
+        },
+        {
+          "id": "d",
+          "text": "Branch testing"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. This is a new product. You probably do not have a checklist yet and test conditions might not be known due to missing requirements b) Is not correct. This is a new product. You probably do not have enough information to make correct error guesses c) Is correct. Exploratory testing is most useful when there are few known specifications and/or there is a pressing timeline for testing d) Is not correct. Branch testing is time-consuming, and your management is asking about some test results now. Also, branch testing does not involve domain knowledge"
+    },
+    {
+      "id": 28,
+      "text": "Which of the following BEST describes the way acceptance criteria can be documented?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Performing retrospectives to determine the actual needs of the stakeholders regarding a given user story"
+        },
+        {
+          "id": "b",
+          "text": "Using the given/when/then format to describe an example test condition related to a given user story"
+        },
+        {
+          "id": "c",
+          "text": "Using verbal communication to reduce the risk of misunderstanding the acceptance criteria by others"
+        },
+        {
+          "id": "d",
+          "text": "Documenting risks related to a given user story in a test plan to facilitate the risk-based testing of a given user story"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "a) Is not correct. Retrospectives are used to capture lessons learned and to improve the development and testing process, not to document the acceptance criteria b) Is correct. This is the standard way to document acceptance criteria c) Is not correct. Verbal communication does not allow to physically document the acceptance criteria as part of a user story (”card” aspect in the 3C’s model) d) Is not correct. Acceptance criteria are related to a user story, not a test plan. Also, acceptance criteria are the conditions that have to be fulfilled to decide if the user story is complete. Risks are not such conditions"
+    },
+    {
+      "id": 29,
+      "text": "Consider the following user story: As an Editor I want to review content before it is published so that I can ensure the grammar is correct and its acceptance criteria: • The user can log in to the content management system with \"Editor\" role • The editor can view existing content pages • The editor can edit the page content • The editor can add markup comments • The editor can save changes • The editor can reassign to the \"content owner\" role to make updates Which of the following is the BEST example of an ATDD test for this user story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test if the editor can save the document after edit the page content"
+        },
+        {
+          "id": "b",
+          "text": "Test if the content owner can log in and make updates to the content"
+        },
+        {
+          "id": "c",
+          "text": "Test if the editor can schedule the edited content for publication"
+        },
+        {
+          "id": "d",
+          "text": "Test if the editor can reassign to another editor to make updates"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. This test covers two acceptance criteria: one about editing the document and one about saving changes b) Is not correct. Acceptance criteria cover the editor activities, not the content owner activities c) Is not correct. Scheduling the edited content for publication may be a nice feature, but it is not covered by the acceptance criteria d) Is not correct. Acceptance criteria state about reassigning from an editor to the content owner, not to another editor"
+    },
+    {
+      "id": 30,
+      "text": "How do testers add value to iteration and release planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Testers determine the priority of the user stories to be developed"
+        },
+        {
+          "id": "b",
+          "text": "Testers focus only on the functional aspects of the system to be tested"
+        },
+        {
+          "id": "c",
+          "text": "Testers participate in the detailed risk identification and risk assessment of user stories"
+        },
+        {
+          "id": "d",
+          "text": "Testers guarantee the release of high-quality software through early test design during the release planning"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. Priorities for user stories are determined by the business representative together with the development team b) Is not correct. Testers focus on both functional and non-functional aspects of the system to be tested c) Is correct. According to the syllabus, this is one of the ways testers add value to iteration and release planning d) Is not correct. Early test design is not part of release planning. Early test design does not automatically guarantee the release of quality software"
+    },
+    {
+      "id": 31,
+      "text": "Which TWO of the following options are the exit criteria for testing a system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test environment readiness"
+        },
+        {
+          "id": "b",
+          "text": "The ability to log in to the test object by the tester"
+        },
+        {
+          "id": "c",
+          "text": "Estimated defect density is reached"
+        },
+        {
+          "id": "d",
+          "text": "Requirements are translated into given/when/then format"
+        },
+        {
+          "id": "e",
+          "text": "Regression tests are automated"
+        }
+      ],
+      "correctOptions": [
+        "c",
+        "e"
+      ],
+      "explanation": "a) Is not correct. Test environment readiness is a resource availability criterion; hence it belongs to the entry criteria b) Is not correct. This is a resource availability criterion; hence it belongs to the entry criteria c) Is correct. Estimated defect density is a measure of diligence; hence it belongs to the exit criteria. d) Is not correct. Requirements translated into a given format result in testable requirements; hence it belongs to the entry criteria e) Is correct. Automation of regression tests is a completion criterion; hence it belongs to the exit criteria"
+    },
+    {
+      "id": 32,
+      "text": "Your team uses the three-point estimation technique to estimate the test effort for a new high-risk feature. The following estimates were made: • Most optimistic estimation: 2 person-hours • Most likely estimation: 11 person-hours • Most pessimistic estimation: 14 person-hours What is the final estimate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 person-hours"
+        },
+        {
+          "id": "b",
+          "text": "14 person-hours"
+        },
+        {
+          "id": "c",
+          "text": "11 person-hours"
+        },
+        {
+          "id": "d",
+          "text": "10 person-hours"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "In the three-point estimation technique: E = (optimistic + 4*most likely + pessimistic)/6 E = (2+(4*11)+14)/6 = 10 Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct"
+    },
+    {
+      "id": 33,
+      "text": "You are testing a mobile application that allows users to find a nearby restaurant based on the type of food they want to eat. Consider the following list of test cases, priorities ( i.e., a smaller number means a higher priority), and dependencies: Test case number Test condition covered Priority Logical dependency TC 001 Select type of food 3 none TC 002 Select restaurant 2 TC 001 TC 003 Get direction 1 TC 002 TC 004 Call restaurant 2 TC 002 TC 005 Make reservation 3 TC 002 Which of the following test cases should be executed as the third one?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TC 003"
+        },
+        {
+          "id": "b",
+          "text": "TC 005"
+        },
+        {
+          "id": "c",
+          "text": "TC 002"
+        },
+        {
+          "id": "d",
+          "text": "TC 001"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "Test TC 001 must come first, followed by TC 002, to satisfy dependencies. Afterwards, TC 003 to satisfy priority and then TC 004, followed by TC 005. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 34,
+      "text": "Consider the following test categories (1-4) and agile testing quadrants (A-D): 1. Usability testing 2. Component testing 3. Functional testing 4. Reliability testing A. Agile testing quadrant Q1: technology facing, supporting the development team B. Agile testing quadrant Q2: business facing, supporting the development team C. Agile testing quadrant Q3: business facing, critique the product D. Agile testing quadrant Q4: technology facing, critique the product How do the following test categories map onto the agile testing quadrants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1C, 2A, 3B, 4D"
+        },
+        {
+          "id": "b",
+          "text": "1D, 2A, 3C, 4B"
+        },
+        {
+          "id": "c",
+          "text": "1C, 2B, 3D, 4A"
+        },
+        {
+          "id": "d",
+          "text": "1D, 2B, 3C, 4A"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "Considering: • Usability testing is in Q3 (1 – C) • Component testing is in Q1 (2 – A) • Functional testing is in Q2 (3 – B) • Reliability testing is in Q4 (4 – D) Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+    },
+    {
+      "id": 35,
+      "text": "During a risk analysis the following risk was identified and assessed: • Risk: Response time is too long to generate a report • Risk likelihood: medium; risk impact: high • Response to risk: o An independent test team performs performance efficiency testing during system testing o A selected sample of end users performs alpha testing and beta testing before the release What measure is proposed to be taken in response to this analyzed risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk acceptance"
+        },
+        {
+          "id": "b",
+          "text": "Contingency plan"
+        },
+        {
+          "id": "c",
+          "text": "Risk mitigation"
+        },
+        {
+          "id": "d",
+          "text": "Risk transfer"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. We do not accept the risk; concrete actions are proposed b) Is not correct. No contingency plans are proposed c) Is correct. The proposed actions are related to testing, which is a form of risk mitigation d) Is not correct. Risk is not transferred but mitigated"
+    },
+    {
+      "id": 36,
+      "text": "Which work product can be used by an agile team to show the amount of work that has been completed and the amount of total work remaining for a given iteration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Defect report"
+        },
+        {
+          "id": "c",
+          "text": "Test completion report"
+        },
+        {
+          "id": "d",
+          "text": "Burndown chart"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Acceptance criteria are the conditions used to decide whether the user story is ready. They cannot show work progress b) Is not correct. Defect reports inform about the defects. They do not show work progress c) Is not correct. Test completion report can be created after the iteration is finished, so it will not show the progress continuously within an iteration d) Is correct. Burndown charts are a graphical representation of work left to do versus time remaining. They are updated daily, so they can continuously show the work progress"
+    },
+    {
+      "id": 37,
+      "text": "You need to update one of the automated test scripts to be in line with a new requirement. Which process indicates that you create a new version of the test script in the test repository?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Traceability management"
+        },
+        {
+          "id": "b",
+          "text": "Maintenance testing"
+        },
+        {
+          "id": "c",
+          "text": "Configuration management"
+        },
+        {
+          "id": "d",
+          "text": "Requirements engineering"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. Traceability is the relationship between two or more work products, not between different versions of the same work product b) Is not correct. Maintenance testing is about testing changes; it is not related closely to versioning c) Is correct. To support testing, configuration management may involve the version control of all test items d) Is not correct. Requirements engineering is the elicitation, documentation, and management of requirements; it is not closely related to test script versioning"
+    },
+    {
+      "id": 38,
+      "text": "You received the following defect report from the developers stating that the anomaly described in this test report is not reproducible. Application hangs up 2022-May-03 – John Doe – Rejected The application hangs up after entering “Test input: $ä” in the Name field on the new user creation screen. Tried to log off, log in with test_admin01 account, same issue. Tried with other test admin accounts, same issue. No error message received; log (see attached) contains fatal error notification. Based on the test case TC -1305, the application should accept the provided input and create the user. Please fix with high priority, this feature is related to REQ-0012, which is a critical new business requirement. What critical information is MISSING from th is test report that would have been useful for the developers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expected result and actual result"
+        },
+        {
+          "id": "b",
+          "text": "References and defect status"
+        },
+        {
+          "id": "c",
+          "text": "Test environment and test item"
+        },
+        {
+          "id": "d",
+          "text": "Priority and severity"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. The expected result is “the application should accept the provided input and create the user”. The actual result is “The application hangs up after entering “Test input. $ä””. b) Is not correct. There is a reference to the test case and to the related requirement and it states that the defect is rejected. Also, the defect status would not be very helpful for the developers c) Is correct. We do not know in which test environment the anomaly was detected, and we also do not know which application (and its version) is affected d) Is not correct. The defect report states that the anomaly is urgent, that it is a global issue (i.e., many, if not all, test administration accounts are affected) and states the impact is high for business stakeholders"
+    },
+    {
+      "id": 39,
+      "text": "Which test activity does a data preparation tool support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test monitoring and test control"
+        },
+        {
+          "id": "b",
+          "text": "Test analysis"
+        },
+        {
+          "id": "c",
+          "text": "Test design and test implementation"
+        },
+        {
+          "id": "d",
+          "text": "Test completion"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. Test monitoring involves the ongoing checking of all activities and comparison of actual progress against the test plan. Test control involves taking the actions necessary to meet the test objectives of the test plan. No test data are prepared during these activities. b) Is not correct. Test analysis includes analysis of the test basis to identify test conditions and prioritize them. Test data are not prepared during this activity. c) Is correct. Test design and implementation can both include the identification, creation or acquisition of the testware necessary for test execution (e.g., test data). d) Is not correct. Test completion activities occur at project milestones (e.g., release, end of iteration, test level completion), so it is too late for preparing test data."
+    },
+    {
+      "id": 40,
+      "text": "Which item correctly identifies a potential risk of performing test automation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It may introduce unknown regressions in production"
+        },
+        {
+          "id": "b",
+          "text": "Sufficient efforts to maintain testware may not be properly allocated"
+        },
+        {
+          "id": "c",
+          "text": "Testing tools and associated testware may not be sufficiently relied upon"
+        },
+        {
+          "id": "d",
+          "text": "It may reduce the time allocated for manual testing"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "a) Is not correct. Test automation does not introduce unknown regressions in production b) Is correct. Wrong allocation of effort to maintain testware is a risk c) Is not correct. Test tools must be selected so that they and their testware can be relied upon d) Is not correct. The primary goal of test automation is to reduce manual testing. So, this is a benefit, not a risk Appendix: Answer Key for Additional Sample Questions Number (#) Correct Answer LO K-Level Points Question Number (#) Correct Answer LO K-Level Points A1 a FL-1.1.2 K2 1 A14 b FL-3.2.3 K1 1 A2 d FL-1.2.2 K1 1 A15 c FL-4.2.2 K3 1 A3 d FL-1.2.3 K2 1 A16 d FL-4.3.2 K2 1 A4 d FL-1.4.3 K2 1 A17 c FL-4.4.3 K2 1 A5 c FL-1.4.4 K2 1 A18 b FL-4.5.1 K2 1 A6 d FL-1.5.3 K2 1 A19 d FL-5.1.1 K2 1 A7 b, c FL-2.1.1 K2 1 A20 b FL-5.1.4 K3 1 A8 c FL-2.1.4 K2 1 A21 a FL-5.1.6 K1 1 A9 b FL-2.2.2 K2 1 A22 c FL-5.2.1 K1 1 A10 a FL-2.3.1 K2 1 A23 a FL-5.2.2 K2 1 A11 c FL-3.1.1 K1 1 A24 d FL-5.2.3 K2 1 A12 d FL-3.1.3 K2 1 A25 a, d FL-5.3.1 K1 1 A13 b FL-3.2.2 K2 1 A26 b FL-5.3.2 K2 1 Appendix: Answers to Additional Sample Questions A1 a a) Is correct. Debugging is the process of finding, analyzing, and removing the causes of failures in a component or system b) Is not correct. Testing is the process concerned with planning, preparation and evaluation of a component or system and related work products to determine that they satisfy specified requirements, to demonstrate that they are fit for purpose and to detect defects. It is not related to fixing causes of failures c) Is not correct. Requirement elicitation is the process of gathering, capturing, and consolidating requirements from available sources. It is not related to fixing causes of failures d) Is not correct. Defect management is the process of recognizing, recording, classifying, investigating, resolving, and disposing of defects. It is not related to fixing causes of failures A2 d Considering: Testing and quality assurance are not the same. Testing is the process consisting of all software development lifecycle (SDLC) activities, both static and dynamic, concerned with planning, preparation and evaluation of a component or system and related work products to determine that they satisfy specified requirements, to demonstrate that they are fit for purpose and to detect defects. Quality assurance is focused on establishing, introducing, monitoring, improving, and adhering to the quality-related processes. Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct A3 d a) Is not correct. The root cause is the distraction that the programmer experienced while programming b) Is not correct. Accepting invalid inputs is a failure c) Is not correct. The error in thinking that put the defect in the code d) Is correct. The problem in the code is a defect A4 d The testware under consideration is a test charter Test charters are the output from test design Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct A5 c a) Is not correct. Performing the impact analysis will not give information about completeness of tests. Analyzing the impact analysis of changes will help to select the right test cases for execution b) Is not correct. Traceability does not give information about the estimated level of residual risk if the test cases are not traced back to risks c) Is correct. Performing the impact analysis of the changes helps in selecting the test cases for the regression test d) Is not correct. Analyzing the traceability between the test basis, test objects and test cases does not help in selecting test data to achieve the assumed coverage of the test object. Selecting test data is more related to test analysis and test implementation, not traceability A6 d a) Is not correct. Quality should be the responsibility of everyone working on the project and not the sole responsibility of the test team b) Is not correct. First, it is not a benefit if an external test team does not meet delivery deadlines, and second, there is no reason to believe that external test teams will feel they do not have to meet strict delivery deadlines c) Is not correct. It is bad practice for the test team to work in complete isolation, and we would expect an external test team to be concerned with changing project requirements and communicating well with developers d) Is correct. Specifications are never perfect, meaning that assumptions will have to be made by the developer. An independent tester is useful in that they can challenge and verify the assumptions and subsequent interpretation made by the developer A7 b, c a) Is not correct. The executable code is usually created in the later phases, so dynamic test execution cannot be performed early in the SDLC b) Is correct. In sequential development models, in the initial phases, testers participate in requirement reviews, which is a form of static testing. c) Is correct. Test planning could be performed early in the SDLC before the test project begins together with test analysis and test design. d) Is not correct. Acceptance test execution can be performed when there is a working product. In sequential SDLC models the working product is usually delivered later in the SDLC e) Is not correct. Maintenance testing when there is a working and deployed product, which is not done in the early phases of any SDLC. A8 c Consider: i. Is true. Faster product release and faster time to market is an advantage of DevOps ii. Is false. Typically, we need less effort for manual tests because of the use of test automation iii. Is true. Constant availability of executable software is an advantage iv. Is false. More regression tests are needed v. Is false. Not everything is automated and setting up a test automation framework is expensive Thus: a) Is not correct b) Is not correct c) It is correct d) Is not correct A9 b a) Is not correct. The fact that the requirement about the system’s performance comes directly from the client and that the performance is important from the business point of view (i.e., high priority) does not make these tests functional, because they do not check “what” the system does, but “how” (i.e., how fast the orders are processed) b) Is correct. This is an example of testing for performance efficiency, a type of non-functional testing c) Is not correct. From the scenario, we do not know if interacting with the user interface is a part of the test conditions. But even if we did, the main test objective of these tests is to check the performance, not the usability d) Is not correct. We do not need to know the internal structure of the code to perform the performance efficiency testing. One can execute performance efficiency tests without structural knowledge A10 a a) Is correct. When a system is retired, this can require testing of data migration, which is a form of maintenance testing b) Is not correct. Regression testing verifies whether a fix accidentally affected the behavior of other parts of the code, but now we are talking about data migration to a new system c) Is not correct. Portability testing focuses on transferring the system to another environment d) Is not correct. Integration testing focuses on interactions between components and/or systems, not on data migration. Also, it is not a test type, but a test level. A11 c Only third-party executable code cannot be reviewed. Thus: a) Is not correct b) Is not correct c) It is correct d) Is not correct A12 d Consider: i. These behaviors are easily detectable while the software is running. Hence, dynamic testing shall be used to identify them ii. This is an example of deviations from standards, which is a typical defect that is easier found with static testing iii. If the software is executed during the test, it is dynamic testing iv. Identifying defects as early as possible is the test objective of both static testing and dynamic testing v. This is an example of gaps in the test basis traceability or coverage, which is a typical defect that is easier found with static testing Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct A13 b a) Is not correct. In all types of reviews there is more than one role, even in informal ones b) Is correct. There are several activities during the formal review process c) Is not correct. Documentation to be reviewed should be distributed as early as possible d) Is not correct. Defects found during the review should be reported A14 b a) Is not correct. This is the task of the review leader b) Is correct. This is the task of the management in a formal review c) Is not correct. This is the task of the moderator d) Is not correct. This is the task of the scribe A15 c There are three equivalence partitions: {..., 10, 11}, {12}, and {13, 14, ...}. The boundary values are 11, 12 and 13. In the three-point boundary value analysis for each boundary, we need to test the boundary and both its neighbors, so: • for 11 we test 10, 11, 12 • for 12 we test 11, 12, 13 • for 13 we test 12, 13, 14 Altogether we need to test 10, 11, 12, 13, and 14 Thus: a) Is not correct b) Is not correct c) Is correct d) Is not correct A16 d a) Is not correct. In this case one test case is still needed since there is at least one (unconditional) branch to be covered b) Is not correct. Covering only unconditional branches does not imply covering all conditional branches c) Is not correct. 100% branch coverage implies 100% statement coverage, not otherwise. For example, for an IF decision without the ELSE, one test is enough to achieve 100% statement coverage, but it only achieves 50% branch coverage d) Is correct. Each decision outcome corresponds to a conditional branch, so 100% branch coverage implies 100% coverage of the decision outcomes A17 c a) Is not correct. The book provides general guidance, and is not a formal requirements document, a specification, or a set of use cases, user stories, or business processes b) Is not correct. While you could consider the list as a set of test charters, it more closely resembles the list of test conditions to be checked c) Is correct. The list of user interface best practices is the list of test conditions to be systematically checked d) Is not correct. The tests are not focused on failures that could occur, but rather on knowledge about what is important for the user, in terms of usability A18 b a) Is not correct. Collaborative user story writing means that all stakeholders create the user stories collaboratively, to obtain the shared vision b) Is correct. Collaborative user story writing means that all stakeholders create the user stories collaboratively, to obtain the shared vision c) Is not correct. Collaborative user story writing means that all stakeholders create the user stories collaboratively, to obtain the shared vision d) Is not correct. This is the list of properties that each user story should have, not the description of the collaboration-based approach A19 d a) Is not correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach b) Is not correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach c) Is not correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach d) Is correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach A20 b a) Is not correct. This should be a team activity and not overruled by one team member b) Is correct. If test estimates are not the same, but the variation in the results is small, applying rules like “accept the number with the most votes” can be applied c) Is not correct. There is no consensus yet as some say 13, others say 8 d) Is not correct. A feature should not be removed only because the team cannot agree on the test estimates A21 a a) Is correct. The test pyramid emphasizes having a larger number of tests at the lower test levels b) Is not correct. It is not true that a test on a lower level tests a larger piece of functionality. Tests are more atomic and oriented on a specific logic, so it is the opposite c) Is not correct. Test pyramid shows how the number of tests is distributed across test levels d) Is not correct. The test pyramid model supports the team in test automation A22 c a) Is not correct. Risk impact and risk likelihood are independent b) Is not correct. Risk impact and risk likelihood are independent c) Is correct. Risk impact and risk likelihood are independent d) Is not correct. We need both factors to calculate risk level A23 a Consider: i. It is a Project risk ii. It is a Product risk iii. It is a Product risk iv. It is a Project risk v. It is a Product risk Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct A24 d a) Is not correct. This is an example of a risk monitoring activity, not risk analysis b) Is not correct. This is an example of an architectural decision, not related with testing c) Is not correct. This is an example of performing a quantitative risk analysis and is not related to thoroughness or scope of testing d) Is correct. This shows how risk analysis impacts the thoroughness of testing (i.e., the level of detail) A25 a, d a) Is correct. The number of defects found is related to the test object quality b) Is not correct. This is the measure of the test efficiency not the test object quality c) Is not correct. The number of test cases executed does not tell us anything about the quality; test results might do d) Is correct. defect density is related to the test object quality e) Is not correct. Time to repair is a process metric. It does not tell us anything about the product quality A26 b a) Is not correct. Impediments to testing can be high-level and business- related, so this is an important piece of information for business stakeholders b) Is correct. Branch testing is a technical metric used by developers and technical test analysts. This information is of no interest to business representatives c) Is not correct. Test progress is project related, so it may be useful for business representatives d) Is not correct. Risks impact product quality, so it may be useful for business representatives"
+    }
+  ]
+}
