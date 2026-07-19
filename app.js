@@ -62,20 +62,41 @@ function toggleOption(question, optionId) {
   const selected = selectedSet(key);
 
   if (isQuestionMulti(question)) {
-    if (selected.has(optionId)) {
-      selected.delete(optionId);
-    } else {
-      selected.add(optionId);
+    // Multi-select questions are evaluated only after exactly two distinct choices.
+    if (state.revealedByQuestion[key]) {
+      return;
     }
+
+    if (selected.has(optionId)) {
+      return;
+    }
+
+    if (selected.size >= 2) {
+      return;
+    }
+
+    selected.add(optionId);
+    state.selectedByQuestion[key] = [...selected];
+
+    if (selected.size === 2) {
+      state.revealedByQuestion[key] = true;
+      if (state.explanationOpenByQuestion[key] === undefined) {
+        state.explanationOpenByQuestion[key] = false;
+      }
+    }
+
+    return;
   } else {
     selected.clear();
     selected.add(optionId);
-  }
+    state.selectedByQuestion[key] = [...selected];
+    state.revealedByQuestion[key] = true;
 
-  state.selectedByQuestion[key] = [...selected];
-  state.revealedByQuestion[key] = true;
-  if (state.explanationOpenByQuestion[key] === undefined) {
-    state.explanationOpenByQuestion[key] = false;
+    if (state.explanationOpenByQuestion[key] === undefined) {
+      state.explanationOpenByQuestion[key] = false;
+    }
+
+    return;
   }
 }
 
@@ -94,8 +115,14 @@ function computeResult() {
   let unanswered = 0;
 
   for (const q of exam.questions) {
-    const selected = new Set(state.selectedByQuestion[String(q.id)] || []);
+    const key = String(q.id);
+    const selected = new Set(state.selectedByQuestion[key] || []);
     if (selected.size === 0) {
+      unanswered += 1;
+      continue;
+    }
+
+    if (isQuestionMulti(q) && !state.revealedByQuestion[key]) {
       unanswered += 1;
       continue;
     }
@@ -122,10 +149,17 @@ function answeredCount() {
 
   let count = 0;
   for (const q of exam.questions) {
-    const sel = state.selectedByQuestion[String(q.id)] || [];
-    if (sel.length > 0) {
-      count += 1;
+    const key = String(q.id);
+    const sel = state.selectedByQuestion[key] || [];
+    if (sel.length === 0) {
+      continue;
     }
+
+    if (isQuestionMulti(q) && !state.revealedByQuestion[key]) {
+      continue;
+    }
+
+      count += 1;
   }
   return count;
 }
