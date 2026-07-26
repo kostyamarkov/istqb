@@ -47,7 +47,7 @@
         },
         {
           "id": "d",
-          "text": "Write an automated test script using keyword-driven testing: “SetAge(18); VerifyDiscountIsNotAssigned().” ISTQB® – v4.1 2025/07/08"
+          "text": "Write an automated test script using keyword-driven testing: “SetAge(18); VerifyDiscountIsNotAssigned().”"
         }
       ],
       "correctOptions": [
@@ -99,7 +99,7 @@
         },
         {
           "id": "d",
-          "text": "The organizational unit which shall provide and maintain the simulator ISTQB® – v4.1 2025/07/08"
+          "text": "The organizational unit which shall provide and maintain the simulator"
         }
       ],
       "correctOptions": [
@@ -161,7 +161,7 @@
     },
     {
       "id": 7,
-      "text": "You are testing a queueing system using keyword-driven testing. The following keywords are available: • Start() – creates an empty queue • Enqueue(e) - inserts element e at the end of the queue • Dequeue() - removes an element from the beginning of the queue • CreateQueue(e1, e2, . . . , en) – a composite keyword equivalent to the sequence of keywords: Enqueue(e1), Enqueue(e2), . . . , Enqueue(en) • AssertFirstElement(e) - checks if there is an element e at the beginning of the queue; if not, the system returns an error message ISTQB® – v4.1 2025/07/08 • AssertEmpty() - checks if the queue is empty; if not, the system returns an error message You have designed the following test scripts:",
+      "text": "You are testing a queueing system using keyword-driven testing. The following keywords are available: • Start() – creates an empty queue • Enqueue(e) - inserts element e at the end of the queue • Dequeue() - removes an element from the beginning of the queue • CreateQueue(e1, e2, . . . , en) – a composite keyword equivalent to the sequence of keywords: Enqueue(e1), Enqueue(e2), . . . , Enqueue(en) • AssertFirstElement(e) - checks if there is an element e at the beginning of the queue; if not, the system returns an error message ISTQB® – v4.1 2025/07/08 • AssertEmpty() - checks if the queue is empty; if not, the system returns an error message You have designed the following test scripts. Which of these test scripts verify the following acceptance criterion using the available keywords: \"If more elements were added to the queue than removed, the queue is not empty\"?",
       "options": [
         {
           "id": "i",
@@ -169,7 +169,7 @@
         },
         {
           "id": "v",
-          "text": "Start(); CreateQueue(A, B); Dequeue(); AssertFirstElement(B) Which of these test scripts verify the following acceptance criterion using the available keywords: \"If more elements were added to the queue than removed, the queue is not empty\"?"
+          "text": "Start(); CreateQueue(A, B); Dequeue(); AssertFirstElement(B)"
         },
         {
           "id": "a",
@@ -211,7 +211,7 @@
         },
         {
           "id": "d",
-          "text": "Selecting the most suitable set of test cases for regression testing ISTQB® – v4.1 2025/07/08"
+          "text": "Selecting the most suitable set of test cases for regression testing"
         }
       ],
       "correctOptions": [
@@ -294,7 +294,7 @@
         },
         {
           "id": "d",
-          "text": "Execute the regression tests of the GUI containing the navigation bar on mobile devices with various displays, prioritized by the device distribution statistics ISTQB® – v4.1 2025/07/08"
+          "text": "Execute the regression tests of the GUI containing the navigation bar on mobile devices with various displays, prioritized by the device distribution statistics"
         },
         {
           "id": "e",
@@ -325,7 +325,7 @@
         },
         {
           "id": "d",
-          "text": "(10, 10), (12, 8), (15, 11) ISTQB® – v4.1 2025/07/08"
+          "text": "(10, 10), (12, 8), (15, 11)"
         }
       ],
       "correctOptions": [
@@ -361,7 +361,7 @@
     },
     {
       "id": 14,
-      "text": "You are testing the functional correctness of a particular application on various environments, described by the following parameters and their possible values: • operating system (possible values: Windows, Linux, iOS) • RAM (possible values: 16GB, 32GB, 64GB) • whether there is a USB-C port (possible values: yes, no) Based on market research, the most common configuration is Windows OS with 16GB of memory and a USB-C port. You have already prepared the tests for the following configurations: • Windows, 16GB, USB-C • iOS, 16GB, USB-C ISTQB® – v4.1 2025/07/08 • Windows, 32GB, USB-C • Windows, 64GB, USB-C • Linux, 16GB, no USB-C Consider the following new configurations that can be tested:",
+      "text": "You are testing the functional correctness of a particular application on various environments, described by the following parameters and their possible values: • operating system (possible values: Windows, Linux, iOS) • RAM (possible values: 16GB, 32GB, 64GB) • whether there is a USB-C port (possible values: yes, no) Based on market research, the most common configuration is Windows OS with 16GB of memory and a USB-C port. You have already prepared the tests for the following configurations: • Windows, 16GB, USB-C • iOS, 16GB, USB-C ISTQB® – v4.1 2025/07/08 • Windows, 32GB, USB-C • Windows, 64GB, USB-C • Linux, 16GB, no USB-C Consider the following new configurations that can be tested. Which of them should be added to the existing set to fully achieve the BASE CHOICE coverage criterion?",
       "options": [
         {
           "id": "i",
@@ -369,7 +369,7 @@
         },
         {
           "id": "v",
-          "text": "iOS, 64GB, USB-C Which of them should be added to the existing set to fully achieve the BASE CHOICE coverage criterion?"
+          "text": "iOS, 64GB, USB-C"
         },
         {
           "id": "a",
@@ -411,7 +411,7 @@
         },
         {
           "id": "d",
-          "text": "4 ISTQB® – v4.1 2025/07/08"
+          "text": "4"
         }
       ],
       "correctOptions": [
@@ -463,7 +463,7 @@
         },
         {
           "id": "d",
-          "text": "Checking whether a new user can use a password that another user has already used ISTQB® – v4.1 2025/07/08"
+          "text": "Checking whether a new user can use a password that another user has already used"
         }
       ],
       "correctOptions": [
@@ -567,7 +567,7 @@
         },
         {
           "id": "d",
-          "text": "4 ISTQB® – v4.1 2025/07/08"
+          "text": "4"
         }
       ],
       "correctOptions": [
@@ -645,7 +645,7 @@
         },
         {
           "id": "d",
-          "text": "If A2 is contained in A1, then L1 contains all hotels from L2 ISTQB® – v4.1 2025/07/08"
+          "text": "If A2 is contained in A1, then L1 contains all hotels from L2"
         }
       ],
       "correctOptions": [
@@ -697,7 +697,7 @@
         },
         {
           "id": "d",
-          "text": "Test charter 4: Explore the augmented reality “Fitting Room” feature With various web browsers To Discover usability problems ISTQB® – v4.1 2025/07/08"
+          "text": "Test charter 4: Explore the augmented reality “Fitting Room” feature With various web browsers To Discover usability problems"
         }
       ],
       "correctOptions": [
@@ -723,7 +723,7 @@
         },
         {
           "id": "d",
-          "text": "Explore the graphical user interface of the payment system with user experience design guidelines to discover the intuitiveness and aesthetics of the user interface ISTQB® – v4.1 2025/07/08"
+          "text": "Explore the graphical user interface of the payment system with user experience design guidelines to discover the intuitiveness and aesthetics of the user interface"
         }
       ],
       "correctOptions": [
@@ -749,7 +749,7 @@
         },
         {
           "id": "d",
-          "text": "How long does an astronomy amateur require, on average, to answer the 24 questions? ISTQB® – v4.1 2025/07/08"
+          "text": "How long does an astronomy amateur require, on average, to answer the 24 questions?"
         }
       ],
       "correctOptions": [
@@ -806,7 +806,7 @@
         },
         {
           "id": "d",
-          "text": "Reviewing the GUI design with many reviewers ISTQB® – v4.1 2025/07/08"
+          "text": "Reviewing the GUI design with many reviewers"
         }
       ],
       "correctOptions": [
@@ -836,7 +836,7 @@
         },
         {
           "id": "e",
-          "text": "Pairwise testing ISTQB® – v4.1 2025/07/08"
+          "text": "Pairwise testing"
         }
       ],
       "correctOptions": [
@@ -894,7 +894,7 @@
         },
         {
           "id": "d",
-          "text": "Faster analysis of anomalies due to automated failure recognition ISTQB® – v4.1 2025/07/08"
+          "text": "Faster analysis of anomalies due to automated failure recognition"
         }
       ],
       "correctOptions": [
