@@ -12,11 +12,52 @@ QUESTIONS_DIR = ROOT / "Questions"
 ANSWERS_DIR = ROOT / "Answers"
 OUTPUT_DIR = ROOT / "data"
 
+EXAM_SPECS = {
+    "A": {
+        "question_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-A-Questions_v1.7.pdf",
+        "answer_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-A-Answers_v1.7.pdf",
+        "title": "ISTQB CTFL Sample Exam A",
+        "question_count": 40,
+    },
+    "B": {
+        "question_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-B-Questions_v1.7.pdf",
+        "answer_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-B-Answers_v1.7.pdf",
+        "title": "ISTQB CTFL Sample Exam B",
+        "question_count": 40,
+    },
+    "C": {
+        "question_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-C-Questions_v1.6.pdf",
+        "answer_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-C-Answers_v1.6.pdf",
+        "title": "ISTQB CTFL Sample Exam C",
+        "question_count": 40,
+    },
+    "D": {
+        "question_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-D-Questions_v1.5.pdf",
+        "answer_pdf": "ISTQB_CTFL_v4.0_Sample-Exam-D-Answers_v1.5.pdf",
+        "title": "ISTQB CTFL Sample Exam D",
+        "question_count": 40,
+    },
+    "ADV1": {
+        "question_pdf": "ISTQB-CTAL-TA-Sample-Exam-Questions-v4.1.pdf",
+        "answer_pdf": "ISTQB-CTAL-TA-Sample-Exam-Answers-v4.1.pdf",
+        "title": "ISTQB CTAL-TA Sample Exam - Advanced 1",
+        "question_count": 33,
+    },
+}
+
 HEADER_PATTERNS = [
     re.compile(r"^Certified Tester, Foundation Level\s*$"),
+    re.compile(r"^Certified Tester\s*$"),
+    re.compile(r"^Advanced Level\s*$"),
+    re.compile(r"^Test Analyst \(CTAL-TA\)\s*$"),
     re.compile(r"^Sample Exams? set [A-D]\s*$"),
     re.compile(r"^Sample Exam [–-] (Questions|Answers)\s*$"),
+    re.compile(r"^Advanced Level Sample Exam [–-] (Questions|Answers) [–-] Test Analyst \(CTAL-TA\)\s*$"),
+    re.compile(r"^ISTQB® Certified Tester\s*$"),
+    re.compile(r"^ISTQB® Certified Tester\s+Advanced Level Sample Exam [–-] (Questions|Answers) [–-] Test Analyst \(CTAL-TA\)\s*$"),
     re.compile(r"^Version .* Page \d+ of \d+ Release .*"),
+    re.compile(r"^Page \d+ of \d+ v4\.\d+.*$"),
+    re.compile(r"^2025/07/08\s*$"),
     re.compile(r"^© International Software Testing Qualifications Board"),
     re.compile(r"^Question\s*$"),
     re.compile(r"^Number\s*$"),
@@ -34,14 +75,21 @@ HEADER_PATTERNS = [
 
 INLINE_GARBAGE_PATTERNS = [
     re.compile(r"Certified Tester, Foundation Level", re.I),
+    re.compile(r"Certified Tester", re.I),
+    re.compile(r"Advanced Level", re.I),
+    re.compile(r"Test Analyst \(CTAL-TA\)", re.I),
     re.compile(r"Sample Exams? set [A-D]", re.I),
     re.compile(r"Sample Exam [–-] (Questions|Answers)", re.I),
+    re.compile(r"Advanced Level Sample Exam [–-] (Questions|Answers) [–-] Test Analyst \(CTAL-TA\)", re.I),
+    re.compile(r"ISTQB® Certified Tester", re.I),
     re.compile(r"Version\s+\d+(?:\.\d+)*", re.I),
     re.compile(r"Page\s+\d+\s+of\s+\d+", re.I),
     re.compile(
         r"Release\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}",
         re.I,
     ),
+    re.compile(r"TA-\d+\.\d+\.\d+\s+K\d+\s+\d+", re.I),
+    re.compile(r"FL-\d+\.\d+\.\d+\s+K\d+\s+\d+", re.I),
     re.compile(r"© International Software Testing Qualifications Board", re.I),
 ]
 
@@ -72,6 +120,9 @@ def strip_inline_garbage(text: str) -> str:
     cleaned = text
     for pattern in INLINE_GARBAGE_PATTERNS:
         cleaned = pattern.sub(" ", cleaned)
+    marker = re.search(r"\b(?:TA|FL)-\d+\.\d+\.\d+\s+K\d+\s+\d+\b", cleaned, flags=re.I)
+    if marker:
+        cleaned = cleaned[: marker.start()]
     return normalize_space(cleaned)
 
 
@@ -123,7 +174,7 @@ def parse_question_block(block: str) -> Dict:
 
 def parse_questions(raw_text: str) -> Dict[int, Dict]:
     blocks = re.finditer(
-        r"Question #(\d+) \(1 Point\)\s*(.*?)(?=Question #\d+ \(1 Point\)|Appendix: Additional Questions|\Z)",
+        r"Question #(\d+) \(\d+ Point(?:s)?\)\s*(.*?)(?=Question #\d+ \(\d+ Point(?:s)?\)|Appendix: Additional Questions|\Z)",
         raw_text,
         flags=re.S,
     )
@@ -131,7 +182,7 @@ def parse_questions(raw_text: str) -> Dict[int, Dict]:
     questions: Dict[int, Dict] = {}
     for match in blocks:
         qnum = int(match.group(1))
-        if not (1 <= qnum <= 40):
+        if qnum < 1:
             continue
 
         parsed = parse_question_block(match.group(2))
@@ -178,6 +229,13 @@ def parse_answers(raw_text: str) -> Dict[int, Dict]:
             if lo_full_re.match(current) or lo_only_re.match(current) or klevel_re.match(current):
                 i += 1
                 continue
+            footer_marker = re.search(r"\b(?:TA|FL)-\d+\.\d+\.\d+\s+K\d+\s+\d+\b", current, flags=re.I)
+            if footer_marker:
+                prefix = current[: footer_marker.start()].strip()
+                if prefix:
+                    explanation_parts.append(prefix)
+                i += 1
+                break
             if current:
                 explanation_parts.append(current)
             i += 1
@@ -191,8 +249,9 @@ def parse_answers(raw_text: str) -> Dict[int, Dict]:
 
 
 def build_exam_json(test_letter: str) -> Dict:
-    q_pdf = QUESTIONS_DIR / f"ISTQB_CTFL_v4.0_Sample-Exam-{test_letter}-Questions_v1.{7 if test_letter in {'A', 'B'} else (6 if test_letter == 'C' else 5)}.pdf"
-    a_pdf = ANSWERS_DIR / f"ISTQB_CTFL_v4.0_Sample-Exam-{test_letter}-Answers_v1.{7 if test_letter in {'A', 'B'} else (6 if test_letter == 'C' else 5)}.pdf"
+    spec = EXAM_SPECS[test_letter]
+    q_pdf = QUESTIONS_DIR / spec["question_pdf"]
+    a_pdf = ANSWERS_DIR / spec["answer_pdf"]
 
     q_text = extract_text(q_pdf)
     a_text = extract_text(a_pdf)
@@ -201,7 +260,7 @@ def build_exam_json(test_letter: str) -> Dict:
     answers = parse_answers(a_text)
 
     merged_questions = []
-    for qnum in range(1, 41):
+    for qnum in range(1, spec["question_count"] + 1):
         if qnum not in questions:
             raise ValueError(f"Missing question #{qnum} in exam {test_letter}")
         if qnum not in answers:
@@ -214,7 +273,7 @@ def build_exam_json(test_letter: str) -> Dict:
 
     return {
         "examId": test_letter,
-        "title": f"ISTQB CTFL Sample Exam {test_letter}",
+        "title": spec["title"],
         "questionCount": len(merged_questions),
         "questions": merged_questions,
     }
@@ -223,9 +282,9 @@ def build_exam_json(test_letter: str) -> Dict:
 def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    for letter in ["A", "B", "C", "D"]:
+    for letter in ["A", "B", "C", "D", "ADV1"]:
         payload = build_exam_json(letter)
-        out_path = OUTPUT_DIR / f"exam_{letter}.json"
+        out_path = OUTPUT_DIR / ("exam_advanced_1.json" if letter == "ADV1" else f"exam_{letter}.json")
         out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"Created {out_path} with {payload['questionCount']} questions")
 

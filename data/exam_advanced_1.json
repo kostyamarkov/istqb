@@ -1,0 +1,906 @@
+{
+  "examId": "ADV1",
+  "title": "ISTQB CTAL-TA Sample Exam - Advanced 1",
+  "questionCount": 33,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Why does a test analyst carry out the same activities in every increment of an incremental development model?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because development is also done in cycles consisting of the same activities in every increment"
+        },
+        {
+          "id": "b",
+          "text": "Because the activities of the test analyst in each increment are limited to test analysis and test design"
+        },
+        {
+          "id": "c",
+          "text": "Because in each increment, the test analyst is involved as soon as the development begins"
+        },
+        {
+          "id": "d",
+          "text": "Because each increment develops a new part of the software, which needs to be tested"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. In incremental development models, development is not necessarily cyclical. b) Is not correct. The test analyst usually needs to perform test analysis, design, implement, and execute tests for each increment. c) Is not correct. The test analyst’s work may be organized differently for each increment. Therefore, the initial time of involvement of the test analyst may vary for each increment. d) Is correct. Each increment is developed and tested independently. Therefore, the test analyst performs the same test activities for each increment (i.e., test analysis, test design, test implementation, and test execution)."
+    },
+    {
+      "id": 2,
+      "text": "During test analysis, the test analyst decides to use the 2-value boundary value analysis technique for a domain “age” representing a client’s age, which is used to determine the client’s discount. Which of the following tasks should the test analyst perform during test design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Define the test condition: “The system assigns a discount for a child less than 18 and a senior older than 64.”"
+        },
+        {
+          "id": "b",
+          "text": "Determine whether or not the test cases should document the specific amount of the expected discounts"
+        },
+        {
+          "id": "c",
+          "text": "Store the identified boundary values for clients’ ages in a test data repository to support automated test execution"
+        },
+        {
+          "id": "d",
+          "text": "Write an automated test script using keyword-driven testing: “SetAge(18); VerifyDiscountIsNotAssigned().” ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "a) Is not correct. Test conditions are defined during test analysis. b) Is correct. During test design, the test analyst determines in which areas low-level test cases or high-level test cases are appropriate. Indicating specific amounts is low-level while indicating whether the discount is applied is high-level. c) Is not correct. Test data is created and prepared for test execution during test implementation. d) Is not correct. Test scripts are written during test implementation."
+    },
+    {
+      "id": 3,
+      "text": "Based on the following (simplified) test case: Input: age below 18 Expected output: The system assigns a children’s discount A test analyst creates the following (simplified) test script using keyword-driven testing: EnterAge(17) VerifyChildrenDiscountApplied(yes) EnterAge(18) VerifyChildrenDiscountApplied(no) In which test activity does this action take place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test analysis"
+        },
+        {
+          "id": "b",
+          "text": "Test design"
+        },
+        {
+          "id": "c",
+          "text": "Test implementation"
+        },
+        {
+          "id": "d",
+          "text": "Test execution"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. In test analysis, the TA defines test conditions, but no test scripts. b) Is not correct. In test design, the TA designs test cases. In this action, the test case is already given. c) Is correct. A test script implements a test case during test implementation. d) Is not correct. Test scripts are an input to test execution, not an outcome."
+    },
+    {
+      "id": 4,
+      "text": "A medical application has an interface for a health card reader. As a test analyst, you require a simulator for the health card reader to replace the hardware devices in the system test environment. You state the following requirements for the simulator: • The simulator shall implement the exact interface specification to the medical information system as the real devices. • Testers with access to the system test environment shall be able to edit and manage the virtual health cards. • The simulator shall be available during system test implementation and execution of all increments. Which of the following information is missing and should be added?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A copy of the health card reader interface specification"
+        },
+        {
+          "id": "b",
+          "text": "The specific period of time during which the simulator is needed"
+        },
+        {
+          "id": "c",
+          "text": "A specific backup and restore procedure for the virtual health cards"
+        },
+        {
+          "id": "d",
+          "text": "The organizational unit which shall provide and maintain the simulator ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. A reference to the existing interface specification is sufficient and already included in the first requirement item. b) Is not correct. The third requirement item already indicates that the simulator is needed during test implementation and execution. The specific time periods can be derived from the test schedule. c) Is not correct. Backup and restore procedures are overarching needs of the test environment. Individual components like the health card simulator do not need specific backup and restore procedures. d) Is correct. The responsibility for making the simulator available is one of the needed information items listed in the syllabus."
+    },
+    {
+      "id": 5,
+      "text": "A mobile network operator’s existing rating and billing system will be replaced by new software. As rating and billing rules are very complex, the project test strategy plans to test the functional correctness with several days of live network traffic. As a test analyst, you want to solve the test oracle problem of generating the details of expected bills for a large amount of traffic with a pseudo-oracle. Which of the following solutions can serve as a pseudo- oracle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Run the existing in-house rating and billing system in the test environment to generate the expected results"
+        },
+        {
+          "id": "b",
+          "text": "Use test scripts to generate expected results in simple test cases and accept all other actual results"
+        },
+        {
+          "id": "c",
+          "text": "Run automated scripts to verify the phone call counts, durations, and types on the bills based on the traffic data"
+        },
+        {
+          "id": "d",
+          "text": "Selectively change the call durations in the live network traffic and verify that the bills change accordingly"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. The legacy system was developed independently to fulfill the same specifications, so it can serve as a ready -made pseudo-oracle. b) Is not correct. Restricting the test oracle to simple data and letting everything else pass is not an appropriate approach to testing for functional correctness. Complex test cases often induce high risk. c) Is not correct. This is property-based testing because it only verifies the consistency of inputs and outputs, not the complete correctness of the test results. d) Is not correct. This is metamorphic testing."
+    },
+    {
+      "id": 6,
+      "text": "Which of the following statements about anonymized test data is MOST likely to be true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test data may lack the variability required for thorough testing"
+        },
+        {
+          "id": "b",
+          "text": "Test data will be restricted to input data only"
+        },
+        {
+          "id": "c",
+          "text": "Test data will be outdated as it is time-sensitive"
+        },
+        {
+          "id": "d",
+          "text": "Test data will primarily serve as keywords for keyword-driven testing"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. Anonymized data comes from production data, which may lack the variability required for thorough testing of various scenarios, including negative testing. b) Is not correct. Anonymized data comes from production data, and production data is not limited to input data. It can also contain, for example, expected results and configuration data. c) Is not correct. There is no direct connection between anonymization and time sensitivity or data aging. d) Is not correct. Anonymized production data may be used as values for keyword parameters rather than keywords themselves. Keywords are usually defined based on business processes, not on anonymized production data."
+    },
+    {
+      "id": 7,
+      "text": "You are testing a queueing system using keyword-driven testing. The following keywords are available: • Start() – creates an empty queue • Enqueue(e) - inserts element e at the end of the queue • Dequeue() - removes an element from the beginning of the queue • CreateQueue(e1, e2, . . . , en) – a composite keyword equivalent to the sequence of keywords: Enqueue(e1), Enqueue(e2), . . . , Enqueue(en) • AssertFirstElement(e) - checks if there is an element e at the beginning of the queue; if not, the system returns an error message ISTQB® – v4.1 2025/07/08 • AssertEmpty() - checks if the queue is empty; if not, the system returns an error message You have designed the following test scripts:",
+      "options": [
+        {
+          "id": "i",
+          "text": "Start(); Enqueue(A); Enqueue(B); Dequeue();AssertFirstElement(A) ii) Start(); Enqueue(A); Enqueue(B); Dequeue(); AssertNonempty() iii) Start(); Enqueue(A); Dequeue(); Enqueue(B); AssertFirstElement(B) iv) Start(); CreateQueue(A, B); Dequeue(); Dequeue(); AssertEmpty()"
+        },
+        {
+          "id": "v",
+          "text": "Start(); CreateQueue(A, B); Dequeue(); AssertFirstElement(B) Which of these test scripts verify the following acceptance criterion using the available keywords: \"If more elements were added to the queue than removed, the queue is not empty\"?"
+        },
+        {
+          "id": "a",
+          "text": "i), ii) and iii)"
+        },
+        {
+          "id": "b",
+          "text": "ii), iv), and v)"
+        },
+        {
+          "id": "c",
+          "text": "iii) and v)"
+        },
+        {
+          "id": "d",
+          "text": "ii) and iv)"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "i) Is not correct. The verification is wrong because the remaining element is B, not A. ii) Is not correct. The verification uses the keyword “AssertNonempty()” which is not available. It must be specified before using it. iii) Is correct. The test script inserts an element A, it removes it, and then inserts a second element B. So, the queue is not empty and contains element B, which is verified by the assertion iv) Is not correct. The verification is correct, but the test verifies that the queue is empty if the number of inserted elements equals the number of removed elements, which is not what the acceptance criterion says. v) Is correct. The test script inserts two elements, A and B, first. Then, it removes one, so after this removal, the queue is not empty and contains element B, which is verified by the assertion AssertFirstElement(B). This verifies the acceptance criterion."
+    },
+    {
+      "id": 8,
+      "text": "As a test analyst in an incremental-iterative development process, how can you BEST support the management of testware in the test management tool?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defining a standard severity classification for failures in test execution"
+        },
+        {
+          "id": "b",
+          "text": "Specifying the pseudonymization procedure for test data extracted from the live system"
+        },
+        {
+          "id": "c",
+          "text": "Managing the configuration of the test environments"
+        },
+        {
+          "id": "d",
+          "text": "Selecting the most suitable set of test cases for regression testing ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. A severity classification supports defect management rather than the test management tool. Setting up defect management is the responsibility of the test manager. b) Is not correct. A pseudonymization procedure supports test data management rather than the test management tool. c) Is not correct. Managing the configuration of the test environments supports configuration management rather than the test management tool. d) Is correct. Selecting the suitable set of test cases for regression testing (i.e., manual/automated test execution) is a typical task of the test analyst related to testware management in the test management tool. It involves selecting and organizing the right set of test cases for each release, which is crucial in incremental and iterative development models."
+    },
+    {
+      "id": 9,
+      "text": "Which of the following are examples of how a test analyst can contribute to product risk analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interviewing business analysts about what can go wrong with the application"
+        },
+        {
+          "id": "b",
+          "text": "Determining the scope of regression testing by performing an impact analysis"
+        },
+        {
+          "id": "c",
+          "text": "Identifying and assessing new product risks that occur during test execution"
+        },
+        {
+          "id": "d",
+          "text": "Estimating the damage that each product risk may cause when it occurs"
+        },
+        {
+          "id": "e",
+          "text": "Applying the most suitable test techniques for each product risk"
+        }
+      ],
+      "correctOptions": [
+        "a",
+        "d"
+      ],
+      "explanation": "a) Is correct. This is the contribution of the test analyst during risk identification, which is part of risk analysis. b) Is not correct. This is the contribution of the test analyst, but during risk control, not risk analysis. c) Is not correct. This task belongs to risk monitoring, not risk analysis. d) Is correct. This is the contribution of the test analyst during risk assessment, which is part of risk analysis. e) Is not correct. Applying test techniques is a risk mitigation activity that is not part of risk analysis."
+    },
+    {
+      "id": 10,
+      "text": "You are given traceability information about the implemented functions (F1-F5), identified risks (R1-R5), and regression test cases (TC1-TC6) in the form of the following traceability matrices: F\\R R1 R2 R3 R4 R5 F1 X F2 X X F3 X X X F4 X X X F5 X X R\\TC TC1 TC2 TC3 TC4 TC5 TC6 R1 X X R2 X X R3 X X R4 X X R5 X X You also have the following information about the risk levels for all of the identified risks: Risk Risk level R1 $15,000 R2 $10,000 R3 $2,000 R4 $5,000 R5 $20,000 All six test cases were executed in the last test cycle. Then, you are informed that the implementation of ISTQB® – v4.1 2025/07/08 F3 has changed. You follow risk-based testing and apply an impact analysis, which allows executing only the test cases affected by code changes since the last test execution. During the next regression test suite execution, which test case should be executed LAST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TC4"
+        },
+        {
+          "id": "b",
+          "text": "TC5"
+        },
+        {
+          "id": "c",
+          "text": "TC1"
+        },
+        {
+          "id": "d",
+          "text": "TC3"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "First, an impact analysis is performed to determine which test cases are affected by the change in F3: F3 is traced back to R2, R4, and R5. These risks are traced to the following test cases: • R2 to TC1 and TC3 • R4 to TC3 and TC5 • R5 to TC1 and TC6 Therefore, the next regression test execution should involve only TC1, TC3, TC5 and TC6. Next, risk-based testing is applied to prioritize these test cases. From the risk level information, the order of risk mitigation should be R5, R2, and then R4. Hence, the priority is: • First, execute TC1 and TC6 to cover R5. • Next, execute TC3 to cover R2 (TC1 has already been executed). • At last, execute TC5 to cover R4 (TC3 has already been executed). So, the test case to be executed last is TC5, and the correct answer is b."
+    },
+    {
+      "id": 11,
+      "text": "You are system-testing a mobile banking application. The development is divided between a backend team that designs the business logic on the servers and a frontend team that designs the graphical user interface (GUI) and the application on the mobile devices. The backend team is experienced and can debug and resolve defects quickly and reliably. The frontend team has undergone a lot of staff turnover. Recently, critical failures occurred in production and were resolved in the previous release: • Payments rejected by the destination banks due to invalid bank account numbers. The root cause was insufficient validation of bank accounts in the mobile devices. • Incorrectly displayed GUI elements on some screen sizes and resolutions that obstructed users when entering payments. The next release will contain the following changes: • A new feature was added that allows users to make payments by taking a photo of an invoice with their mobile device. • A major defect in the calculation of the account balance was fixed. • The navigation bar in the GUI was redesigned to comply with accessibility standards. You have a comprehensive regression test suite with tests categorized by the impact of potential failures. Due to limited testing resources, you cannot execute them all, so you chose the history -based regression testing strategy. Which of the following test objectives suits this scenario THE BEST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Execute all regression tests for the bank account validation using both photo-based and manually entered invoice payments"
+        },
+        {
+          "id": "b",
+          "text": "Execute all regression tests for the settlement of payments and other features related to balance calculations"
+        },
+        {
+          "id": "c",
+          "text": "Execute all regression tests with a critical or major risk impact of potential failures"
+        },
+        {
+          "id": "d",
+          "text": "Execute the regression tests of the GUI containing the navigation bar on mobile devices with various displays, prioritized by the device distribution statistics ISTQB® – v4.1 2025/07/08"
+        },
+        {
+          "id": "e",
+          "text": "Execute at least one regression test for each requirement, prioritizing the most frequently used scenarios"
+        }
+      ],
+      "correctOptions": [
+        "a",
+        "d"
+      ],
+      "explanation": "a) Is correct. Your historical data shows that bank account validation has a high likelihood of failure and a critical impact. Photographic recognition of bank accounts adds further risks. b) Is not correct. While the impact of a failure in the balance calculation is major, the backend team is reliable, so the likelihood of regression is very low. The overall risk does not justify executing all regression tests in this area. c) Is not correct. For features unrelated to the changes, the likelihood of failures is very low, so a major risk impact has a relatively low risk level. Due to the limited resources, regression testing should be limited to tests with critical risk impact not related to the changes, and tests with major risk impact can be omitted. d) Is correct. Historical data shows that the incorrect display of dialog elements on various mobile devices is highly likely to fail. The change of the navigation bar affects such dialog elements, so the risk level of regression in the graphical user interface is high. e) Is not correct. 100% coverage of the requirements would be coverage-based regression testing, not history-based regression testing."
+    },
+    {
+      "id": 12,
+      "text": "A code complexity evaluation system takes two integers as input, representing the cyclomatic complexity (CC) and the number of variables in the code (VAR). The system checks whether the code is complex based on the following model: IF (CC ≥ 10) AND (VAR ≥ 8) THEN RETURN “the code is complex” The domain determined by the intersection of the above two borders is a set of points in two -dimensional space with integer coordinates (CC, VAR). You want to test the functional correctness of the implementation of this domain using domain testing. Which set of test points could result from using the SIMPLIFIED domain coverage to test the correctness of this domain implementation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(12, 7), (12, 8), (9, 10), (10, 10)"
+        },
+        {
+          "id": "b",
+          "text": "(6, 5), (10, 8), (13, 10)"
+        },
+        {
+          "id": "c",
+          "text": "(11, 8), (11, 9), (9, 11), (10, 11)"
+        },
+        {
+          "id": "d",
+          "text": "(10, 10), (12, 8), (15, 11) ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. In simplified domain coverage for inequality borders, each boundary must be tested using ON and OFF points. (12, 8) and (12, 7) are ON and OFF for the boundary VAR ≥ 8. (10, 10) and (9, 10) are ON and OFF points for the boundary CC ≥ 10. Hence, these four points form a set of test points according to the simplified domain coverage. b) Is not correct. (10, 8) is ON for both boundaries, but each ON point for a given boundary should be an IN point for all the other boundaries. Also, OFF points for both boundaries are missing. Moreover, (6, 5) is neither ON nor OFF for any of the borders. c) Is not correct. An OFF point for the boundary VAR ≥ 8 is missing. Also, (11, 9) is neither ON nor OFF for any of the borders. d) Is not correct. (15, 11) is neither ON nor OFF for any of the borders. Also, OFF points are missing for both borders."
+    },
+    {
+      "id": 13,
+      "text": "The requirements for brewing espresso are: • The pressure shall be at least 9 bars for ideal extraction. • The temperature shall be at least 90°C and at most 96°C to prevent under-extracting or burning coffee. You test the software controller that opens the hot water valve when pressure (P) and temperature (T) are in the right range (i.e., P≥9 AND T≥90 AND T≤96) and shuts it otherwise (i.e., P<9 OR T<90 OR T>96). The barometer measures the pressure with a precision of 0.1 bar; the thermometer works with a precision of 0.5°C. Your test suite executes the controller with the following inputs (P, T) of pressure in bar and temperature in degrees Celsius: A = (9, 90) B = (9, 96) C = (8.9, 93) D = (10, 96.5) E = (10, 93) F = (8, 89) G = (10, 98) Which of the following inputs is missing for 100% reliable domain coverage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(8, 93)"
+        },
+        {
+          "id": "b",
+          "text": "(9.7, 90.5)"
+        },
+        {
+          "id": "c",
+          "text": "(10.9, 89.5)"
+        },
+        {
+          "id": "d",
+          "text": "(10, 90)"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "The equivalence partitions are defined by the expression with the two variables P (pressure) and T (temperature) for EP1: P≥9 AND T ≥90 AND T≤96 and EP2: P<9 OR T<90 OR T>96. EP1 has three closed borders, defined by the three atomic conditions. Reliable domain coverage requires one ON, one OFF, one IN, and one OUT point for each of them. EP2 has three open borders. The graph below visualizes the relation of the tested points A to G to the borders. The table below indicates which coverage items are covered by (at least) one of the points A - G and which are missing: Therefore, c) is correct. (10.9, 89.5) is an OFF point for T≥90 and, at the same time, an ON point for T<90 since the temperature 89.5 is closest to the border by the given precision of 0.5°C."
+    },
+    {
+      "id": 14,
+      "text": "You are testing the functional correctness of a particular application on various environments, described by the following parameters and their possible values: • operating system (possible values: Windows, Linux, iOS) • RAM (possible values: 16GB, 32GB, 64GB) • whether there is a USB-C port (possible values: yes, no) Based on market research, the most common configuration is Windows OS with 16GB of memory and a USB-C port. You have already prepared the tests for the following configurations: • Windows, 16GB, USB-C • iOS, 16GB, USB-C ISTQB® – v4.1 2025/07/08 • Windows, 32GB, USB-C • Windows, 64GB, USB-C • Linux, 16GB, no USB-C Consider the following new configurations that can be tested:",
+      "options": [
+        {
+          "id": "i",
+          "text": "Windows, 16GB, no USB-C ii) Linux, 16GB, USB-C iii) Linux, 64GB, no USB-C iv) iOS, 32GB, no USB-C"
+        },
+        {
+          "id": "v",
+          "text": "iOS, 64GB, USB-C Which of them should be added to the existing set to fully achieve the BASE CHOICE coverage criterion?"
+        },
+        {
+          "id": "a",
+          "text": "i) and ii)"
+        },
+        {
+          "id": "b",
+          "text": "iii) and iv)"
+        },
+        {
+          "id": "c",
+          "text": "ii), iv), and v)"
+        },
+        {
+          "id": "d",
+          "text": "i), iii), and v)"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "Justification. Base Choice requires to test the base configuration and all configurations where only one element is replaced with all possible values. Therefore, we need six following test cases to achieve Base Choice coverage: 1. Win, 16, USB-C (base configuration) 2. Linux, 16, USB-C (OS replaced with Linux) 3. iOS, 16, USB-C (OS replaced with iOS) 4. Win, 32, USB-C (memory replaced with 32GB) 5. Win, 64, USB-C (memory replaced with 64GB) 6. Win, 16, no USB-C (USB-C port replaced with no USB-C port) Configurations 1, 3, 4, and 5 are already in the existing set of configurations. Hence, we need to add 2 (Linux, 16, USB-C) and 6 (Windows, 16GB, no USB-C), so the correct answer is a."
+    },
+    {
+      "id": 15,
+      "text": "A company offering house insurance policies has several policy options. They depend on the following factors: • Building type: house, semi-detached, apartment building, cottage • Material: wood, concrete, brick, mixed • Location: city, suburb, countryside Using pairwise testing, how many test cases are required to achieve 100% pairwise coverage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "64"
+        },
+        {
+          "id": "d",
+          "text": "4 ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "You need 4x4 for the combination of all pairs for building type and material. All combinations of building type and location, as well as all combinations of material and location, can be defined within these 16 test cases, for example: Hence, a) is correct."
+    },
+    {
+      "id": 16,
+      "text": "Which difficulty of random testing can be addressed by using GUIDED random testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lack of well-defined coverage criteria"
+        },
+        {
+          "id": "b",
+          "text": "Dependence on an automated test oracle"
+        },
+        {
+          "id": "c",
+          "text": "Redundancy of selected test data"
+        },
+        {
+          "id": "d",
+          "text": "Neglecting data semantics"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. A lack of well-defined coverage criteria makes it difficult to conduct random testing regardless of the type of random testing that is used. b) Is not correct. If a tester does not have an automated test oracle, guided random testing will be as ineffective as unguided random testing. c) Is correct. Redundancy of selected test data can be avoided by modifying the probability distribution to draw an element each time from among those not yet drawn. In this way, no two drawn elements will repeat. d) Is not correct. Data semantics does not depend on whether guided or unguided testing is used."
+    },
+    {
+      "id": 17,
+      "text": "Which of the following is an example of CRUD testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verifying that a user, after creating an account and defining a password, can modify the account password"
+        },
+        {
+          "id": "b",
+          "text": "Verifying that a system accepts, as a password, any of 1,000 randomly generated strings of various lengths"
+        },
+        {
+          "id": "c",
+          "text": "Verifying that the time from requesting a password change to verifying that change is less than 10 milliseconds"
+        },
+        {
+          "id": "d",
+          "text": "Checking whether a new user can use a password that another user has already used ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. One variant of CRUD testing verifies that all possible operations occur with a given entity. In this case, CRUD testing checks if the “U” operation (update) is possible for a given entity (password). b) Is not correct. This is an example of random testing and has nothing to do with operations for entities such as create, read, update, or delete. c) Is not correct. This is an example of performance testing. d) Is not correct. This test has nothing to do with operations for entities such as create, read, update, or delete."
+    },
+    {
+      "id": 18,
+      "text": "You are testing a system that implements a circuit breaker pattern. The system is modeled with the state transition diagram shown below. All potential round trips are feasible. You have already designed the test case exercising the following sequence of states: Closed, Open, HalfOpen, Closed, Open, HalfOpen, Open, End What is the round trip coverage achieved by this test case?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100%"
+        },
+        {
+          "id": "b",
+          "text": "50%"
+        },
+        {
+          "id": "c",
+          "text": "60%"
+        },
+        {
+          "id": "d",
+          "text": "80%"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "There are 5 round trips: • RT1: Closed, Open, HalfOpen, Closed • RT2: Open, HalfOpen, Closed, Open • RT3: HalfOpen, Closed, Open, HalfOpen • RT4: Open, HalfOpen, Open • RT5: HalfOpen, Open, HalfOpen The test case exercising the sequence of states ’Closed, Open, HalfOpen, Closed, Open, HalfOpen, Open, End’ covers RT1, RT2, RT3, and RT4. Therefore, it achieves 4/5 = 80% round trip coverage. Hence, answer d) is correct."
+    },
+    {
+      "id": 19,
+      "text": "You are responsible for designing state-based tests for a system component that manages the lifecycle of claims for an insurance company. You have the following specification. ISTQB® – v4.1 2025/07/08 The variable x contains the claim resolution type with values ’acc’ for accepted and ’act’ for active. How many different 1-switches must be exercised by the resulting test suite in order to achieve 100% 1 -switch coverage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "There are 16 1-switches in general: • Applied > Accepted > Closed • Applied > Accepted > Activated • Accepted > Activated > Closed • Accepted > Activated > Accepted • Accepted > Closed > Activated • Accepted > Closed > Archived • Accepted > Closed > Accepted • Activated > Accepted > Closed • Activated > Accepted > Activated • Activated > Closed > Activated • Activated > Closed > Archived • Activated > Closed > Accepted • Closed > Activated > Accepted • Closed > Activated > Closed • Closed > Accepted > Closed • Closed > Accepted > Activated However, taking the guard conditions into account, two of them are infeasible: Accepted > Closed > Activated and Activated > Closed > Accepted. Hence, b) is correct."
+    },
+    {
+      "id": 20,
+      "text": "You test a food ordering scenario based on the following use case: 1. The customer opens the application and logs in. 2. The customer browses the menu and selects items to order. 3. The customer adds selected items to the cart. 4. The customer proceeds to the checkout. 5. The application displays the order summary, including items, quantities, and total price. 6. The customer confirms the order. 7. The application asks if the saved payment method should be used. 8. The customer confirms the saved payment method. ISTQB® – v4.1 2025/07/08 9. The application processes the payment. 10. The application sends a confirmation notification to the customer. 11. The application forwards the order to the restaurant. 12. The application updates the order status to \"Confirmed\". Alternative scenarios: 4A. The customer goes back to browsing the menu. The scenario goes back to step 2. 6A. The customer goes back to browsing the menu. The scenario goes back to step 2. 7A. No payment method is saved. The system asks for the credit card details. The customer fills in the data. The scenario goes to step 9. 7B. More than one payment method is saved. The system asks the customer to select one of the payment methods. The scenario goes to step 9. Exceptions: 9A. The payment process fails. The system informs the customer about the error. The use case ends. The adopted test strategy requires testing the main scenario and all of the alternatives and exceptions. The test strategy allows more than one alternative to be tested within a single test case. However, it is forbidden to create test cases in which both an alternative and an exception would occur (i.e., if an exception occurs in a test case, no alternative can occur in it). What is the MINIMUM number of test cases that will cover all the scenarios for this use case?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "One test case is required for the main scenario: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, one test case for exception 9A (no alternative scenarios are allowed to be combined with this one, due to the test strategy): 1, 2, 3, 4, 5, 6, 7, 8, 9A, and two test cases for the alternative scenarios: 1, 2, 3, 4A, 2, 3, 4, 5, 6, 7A, 9, 10, 11, 12 1, 2, 3, 4, 5, 6A, 2, 3, 4, 5, 6, 7B, 9, 10, 11, 12 Note that although it is generally allowed to combine alternatives, alternatives 7A and 7B cannot occur in the same test case. Hence, four test cases are required, and the correct answer is c."
+    },
+    {
+      "id": 21,
+      "text": "Consider the following activity diagram. ISTQB® – v4.1 2025/07/08 What is the MINIMUM number of test cases to exercise all scenarios defined by this diagram?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "4 ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "There are two scenarios: one with the priority order and one with the regular order. In both cases the process of sending an invoice and receiving payment is done in parallel. Therefore, two test cases are enough. Hence, a) is correct."
+    },
+    {
+      "id": 22,
+      "text": "You are testing a payment system via an ATM. The payment can be made by debit card (D) or cash (C), and its acceptability depends on several factors, including the PIN, the amount requested, and the location of the ATM. The business rules are described in a decision table shown below: ID Conditions R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 C1 Payment type D D D D D D D D C C C C C2 PIN OK Y Y Y Y N N N N n/a n/a n/a n/a C3 Requested amount OK Y Y N N Y Y N N Y Y N N C4 Location OK Y N Y N Y N Y N Y N Y N Actions A1 Process payment X X X X A2 Inform bank X X A3 Inform client X X X X X X X X X What is the MINIMUM number of columns this decision table can have after minimization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "The minimized table is presented below. The minimized table has 7 columns. Therefore, the correct answer is d."
+    },
+    {
+      "id": 23,
+      "text": "Consider the following minimized decision table. ID Conditions R1 R2 R3 R4 R5 C1 Registered customer T T T T F C2 Longterm customer T - - T - C3 Credit card expired F T F F - C4 Purchase amount <= 500€ T T T F - Actions A1 Credit card option offered X X X A2 Instant transfer option offered X X X X A3 Direct debit option offered X X Match the rules (1-4) with their characteristics (A-D). ISTQB® – v4.1 2025/07/08 1. Rule R2 2. Rule R3 3. Rule R4 4. Rule R5 A. Its checksum is 1 B. Its checksum is 2 and it is consistent with the other rules C. Its checksum is 8 D. It is inconsistent with the rule R1",
+      "options": [
+        {
+          "id": "a",
+          "text": "1D, 2A, 3C, 4B"
+        },
+        {
+          "id": "b",
+          "text": "1B, 2D, 3A, 4C"
+        },
+        {
+          "id": "c",
+          "text": "1B, 2C, 3A, 4D"
+        },
+        {
+          "id": "d",
+          "text": "1D, 2B, 3C, 4A"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "R2 has one \"-\" value, so it represents 2 possible combinations of conditions: TTTT and TFTT, so its checksum is 2. None of these combinations overlap with other rules, so it is consistent with the other rules (hence, 1B). R3 matches the combination TTFT, which is also represented by R1, but these two columns are not action-equivalent, so R3 is inconsistent with R1 (hence, 2D). R4 has no \"-\" values, so it represents only one combination of conditions, so its checksum is 1 (hence, 3A). R5 has three \"-\" values so it represents 222 = 8 possible combinations of conditions (hence, 4C). Therefore: a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
+    },
+    {
+      "id": 24,
+      "text": "You are testing a function that searches for hotels according to a given criteria. In the input, the user selects the search area (A), and the minimum (Min) and maximum (Max) allowed price per night. The function returns a list (L) of hotels meeting the criteria. Let A1, Min1, and Max1 be the input, and L1 be the expected output of the source test case. Let A2, Min2, and Max2 be the input, and L2 be the expected output of the follow-up test case. Which of the following describes a correct metamorphic relation between the source test case and the follow-up test case for the search function?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If A1 = A2 and Max1 - Min1 > Max2 - Min2, then L2 contains all hotels from L1"
+        },
+        {
+          "id": "b",
+          "text": "If Min2 < Min1 and Max2 > Max1, then L2 has at least as many elements as L1"
+        },
+        {
+          "id": "c",
+          "text": "If A1 and A2 are disjoint, then L1 and L2 are disjoint"
+        },
+        {
+          "id": "d",
+          "text": "If A2 is contained in A1, then L1 contains all hotels from L2 ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. For the same area, the price ranges can fulfill the relation Max1 - Min1 > Max2 – Min2, but they may form two disjoint intervals. For example, if Min1 = 0, Max1 = 100, Min2 = 200, and Max2 = 201, the relation holds, but the lists L1 and L2 must be disjoint because they contain hotels with disjoint intervals of prices. b) Is not correct. Making the price range Min1. . . Max1 to a subset of Min2. . . Max2 does not guarantee that L1 is a subset of L2 since the areas A1 and A2 might differ. c) Is correct. No hotel can exist in two different locations. Therefore, if A1 and A2 are disjoint, the search results for these two disjoint areas must also be disjoint. d) Is not correct. The relation between L1 and L2 depends not only on the areas A1 and A2 but also on the price ranges. For example, if Min1 = 0, Max1 = 99, Min2 = 100 and Max2 = 200, then any hotel in A2 with prices between 100 and 200 will be in L2 but not in L1."
+    },
+    {
+      "id": 25,
+      "text": "A route planning system calculates the optimal route for a car trip. You test the system, using an API function that has three input parameters: starting point coordinates X, destination point coordinates Y, and optimization criterion O. Criterion O can take one of two values: S (search for the shortest route) or T (search for the route with the fastest travel time). The function returns the length of the optimal route in kilometers. You test the correctness of the system using metamorphic testing with the following metamorphic relations: • MR1: If the criterion changes from S to T, and X and Y remain unchanged, the calculated distance cannot decrease. • MR2: For the criterion S, the sum of the lengths of routes from X to Y and from Y to Z cannot be lower than the length of the route from X to Z. Suppose Rome, Pisa, and Milan are the coordinates of three points on the map. The two source test cases are as follows: • TC1. Input: X = Rome, Y = Pisa, O = S. Output: 335 km. • TC2. Input: X = Pisa, Y = Milan, O = S. Output: 282 km. Which of the following follow-up test cases causes a failure by violating at least one of the metamorphic relations MR1 or MR2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Input: X = Rome, Y = Rome, O = S. Output: 335 km"
+        },
+        {
+          "id": "b",
+          "text": "Input: X = Pisa, Y = Milan, O = T. Output: 282 km"
+        },
+        {
+          "id": "c",
+          "text": "Input: X = Milan, Y = Pisa, O = S. Output: 283 km"
+        },
+        {
+          "id": "d",
+          "text": "Input: X = Rome, Y = Milan, O = S. Output: 630 km"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Although this test case may indicate a failure (the route from a point to itself should be 0 km), this test case, when paired with TC1, TC2, or both of them, does not fulfill the assumptions of either MR1 or MR2, so neither MR1 nor MR2 can be violated. b) Is not correct. When paired with both TC1 and TC2, this test case does not fulfill the assumptions of MR2. When paired with TC1, it does not fulfill the assumptions of MR1, so it cannot violate MR1. When paired with TC2, it fulfills the assumptions of MR1, but in this case, the relation MR2 holds since 282 km >= 282 km. c) Is not correct. When paired with TC1 or TC2, this test case does not fulfill the assumptions of MR1, so MR1 cannot be violated. When paired with TC1 and TC2, the assumptions for MR2 are not fulfilled, so MR2 also cannot be violated. d) Is correct. This test case, when paired with both TC1 and TC2, fulfills the assumptions of MR2, but MR2 is not fulfilled because, according to MR2, the actual result for X = Rome, Y = Milan, O = T should be less than or equal 335 km + 282 km = 617 km, but it equals 630 km."
+    },
+    {
+      "id": 26,
+      "text": "You are the test analyst for a company developing a new e-commerce platform. The platform aims to revolutionize online shopping by integrating augmented reality features that allow users to try on clothing and accessories virtually. The discussion between the development team and product owners revealed several important factors that should be taken into account when testing the platform in the upcoming iteration: • The user interface must be intuitive and responsive across various web browsers. Particular attention should be paid to the augmented reality features and their integration with the overall user experience. • The platform must be compatible with the most popular headsets on the market. • The core functionalities of the e-shopping platform (e.g., browsing products, shopping cart features, ISTQB® – v4.1 2025/07/08 ordering process, and payment) will be implemented using the existing mechanisms from the previous platform created by the company. You are tasked with preparing test charters for exploratory testing on this platform during the current iteration. Exploratory testers are experienced users of e-shopping platforms who now have a thorough understanding of the product being developed. Which of the following test charters for an exploratory test session BEST addresses the issues from the scenario above?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test charter 1: Explore the checkout process With various payment methods To Discover security vulnerabilities"
+        },
+        {
+          "id": "b",
+          "text": "Test charter 2: Explore the augmented reality “Product Visualization” feature With Firefox web browser To Discover user experience problems"
+        },
+        {
+          "id": "c",
+          "text": "Test charter 3: Explore the payment process With various devices and screen sizes To Discover compatibility problems regarding various headset types"
+        },
+        {
+          "id": "d",
+          "text": "Test charter 4: Explore the augmented reality “Fitting Room” feature With various web browsers To Discover usability problems ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. First, the security vulnerabilities do not have the highest priority in the scenario. Second, the payment process will be implemented by reusing the mechanisms from the previous project, so it is unlikely that there will be any serious security issues. This test charter fails to address the proper test objectives. b) Is not correct. This test charter focuses only on a particular browser, but the scenario suggests that adaptability to various browser types is key here. Therefore, the test charter should reflect that. The scope of this test charter is too narrow. c) Is not correct. First, the payment process should work fine, as it will be implemented by reusing the proven software. Second, it is unlikely that the payment process will require an augmented reality headset. This test charter fails to address the proper test objectives. d) Is correct. This test charter addresses the proper test objective, focusing on augmented reality features tested in various environments to find user experience problems related to augmented reality features."
+    },
+    {
+      "id": 27,
+      "text": "The e-commerce company is about to launch its new web application, and its success depends heavily on the flawless operation of its payment system. Your task is to verify that the payment system has the required level of functional correctness and usability. The development team recently completed the payment system’s core features and deployed them to a staging environment, which is a replica of the production environment but isolated for testing purposes. The payment system is designed to handle a variety of payment methods, including credit card payments, simplified mobile payments, and direct bank transfers. The development team has already implemented a comprehensive set of synthetic test data, including dummy credit card numbers, bank accounts, and various transactions. Which of the following is the MOST appropriate test charter for verifying the functional correctness and usability of the payment system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Explore the payment system on an external network with penetration testing by simulating attacks to discover if it has any potential system vulnerabilities"
+        },
+        {
+          "id": "b",
+          "text": "Explore the e-commerce web application on the production server with various personas and usage scenarios to discover system-wide functional and performance issues"
+        },
+        {
+          "id": "c",
+          "text": "Explore the payment system on the staging server with synthetic test data to evaluate the usability of the payment procedure, the accuracy of results, and to detect areas for improvement"
+        },
+        {
+          "id": "d",
+          "text": "Explore the graphical user interface of the payment system with user experience design guidelines to discover the intuitiveness and aesthetics of the user interface ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. It focuses on the security aspect of the payment system, which does not align with the given test objectives. b) Is not correct. The scope of exploration is set too broadly, covering the entire e -commerce web application. Also, using the production server is not appropriate for the test environment. c) Is correct. This test charter is the most suitable for the given situation. It clearly specifies the payment system as the target of exploration. It states the relevant resources (i.e., test data and the staging server) and the information to be discovered (i.e., accuracy, usability, potential defects, and areas for improvement in the payment process). d) Is not correct. It focuses solely on the user interface, excluding the core functional testing of the payment process."
+    },
+    {
+      "id": 28,
+      "text": "Your organization is developing an astronomy quiz app. The specification indicates that 24 astronomy questions are randomly selected from a pool and presented one by one to the player. Each question has four possible answers. One of them is correct; the others are not. When the player selects an answer, the quiz indicates whether the selection is correct or incorrect. Subsequently, the player can proceed to the next question. The quiz displays the score when the player has completed all 24 questions. As the test analyst, you designed a checklist to guide experience-based functional system testing. Which of the following checklist items is MOST appropriate for verifying the correct flow of user interactions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "When the application displays a question, are four different answers displayed and selectable?"
+        },
+        {
+          "id": "b",
+          "text": "For each question, does the application indicate which answer is correct and which answers are incorrect?"
+        },
+        {
+          "id": "c",
+          "text": "When the player selects an incorrect answer to a question, does the application mark the incorrect answer red and the correct answer (not selected) green?"
+        },
+        {
+          "id": "d",
+          "text": "How long does an astronomy amateur require, on average, to answer the 24 questions? ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. This checklist item fulfills all the criteria listed in the syllabus (i.e., specific, unambiguous, consistent, relevant, maintainable, actionable, measurable, and can be answered with ’yes’ or ’no’). b) Is not correct. This checklist item is ambiguous, because the application should only indicate the correct and incorrect answers when the user has selected one. c) Is not correct. This checklist item is inconsistent with the specification, which does not indicate that correctness should be indicated by colors. d) Is not correct. This checklist item cannot be answered with ’yes’ or ’no’."
+    },
+    {
+      "id": 29,
+      "text": "You are responsible for the system testing of a web-based single-player computer game. You have performed experience-based testing for previous versions of the game using a checklist. Among others, you have tested interrupting the game with the following checklist items: ID Description INTERRUPT-01 Can the player interrupt the game at any time? INTERRUPT-02 Are the user actions that interrupt the game consistent across all web pages? INTERRUPT-03 Does the application show the same warning with the two buttons to confirm the interruption or continue the game every time it is interrupted? The next increment focuses on the accessibility of the computer game for players with various disabilities, without changing the functionality. Which of the following checklist items should you add to your checklist to address the new features?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Given the interrupt warning, if the player clicks the ’Continue game’ button, does the application resume the game where it was left?"
+        },
+        {
+          "id": "b",
+          "text": "Is the game vulnerable to security attacks when players with disabilities interrupt it on purpose or unintentionally?"
+        },
+        {
+          "id": "c",
+          "text": "Is the readability of the interrupt warning text and the captions of the buttons at a maximum of 5th - grade school English?"
+        },
+        {
+          "id": "d",
+          "text": "Are the colors of the buttons on the interrupt warning clearly distinguishable for players with red -green color deficiency?"
+        },
+        {
+          "id": "e",
+          "text": "Which is the highest grade of color blindness with which players can still differentiate the colors of the buttons of the interrupt warning?"
+        }
+      ],
+      "correctOptions": [
+        "c",
+        "d"
+      ],
+      "explanation": "a) Is not correct. This is an additional checklist item verifying functional correctness rather than accessibility. Since functionality is unchanged, this checklist item does not address the changes. b) Is not correct. This is an additional checklist item verifying security rather than accessibility. There is no reason to believe that disabled players’ behavior will impact the game’s vulnerability. c) Is correct. This verifies the accessibility of the game interrupt situation for players with reading difficulties. d) Is correct. This verifies the accessibility of the game interrupt situation for players with visual disabilities. e) Is not correct. This is not a valid checklist item because the answer cannot be given as yes/no/not applicable."
+    },
+    {
+      "id": 30,
+      "text": "Which of the following BEST utilizes the advantages of crowd testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Designing test cases with a test analyst"
+        },
+        {
+          "id": "b",
+          "text": "Performing beta testing with diverse users"
+        },
+        {
+          "id": "c",
+          "text": "Executing the same test scripts repeatedly"
+        },
+        {
+          "id": "d",
+          "text": "Reviewing the GUI design with many reviewers ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "a) Is not correct. Crowd testing is a type of dynamic testing. It is not about test case design. b) Is correct. Crowd testing distributes tests among a group of internal or external testers with diverse backgrounds and locations, making it a good option for performing beta testing. c) Is not correct. Executing test scripts repeatedly does not utilize the main advantage of crowd testing which provides variability and real user perspective. d) Is not correct. Crowd testing is a type of dynamic testing, not static testing."
+    },
+    {
+      "id": 31,
+      "text": "You are a test analyst on a project for a route-finding application for drivers. The project is conducted using Scrum, which combines elements from both iterative development models and incremental development models. In the current iteration of the project, three features were developed and are currently under test: • an interactive map interface that allows users to visualize routes • a turn-by-turn navigation instruction for guiding users along their chosen route with real-time updates on upcoming turns, exits, and maneuvers • voice guidance providing hands-free instruction to drivers, enhancing safety and convenience during the journey The application is being developed for smartphones and is expected to work on both iOS and Android systems. Test analysts in each iteration are responsible for system testing on the fully integrated app. The test analysis has revealed that it may be difficult or even impossible to assess whether the route found by the algorithm is optimal. The risk analysis identified the following very high-level risk: “The application fails to work correctly on all potential configurations of mobile devices, including items such as network settings, phone type, operating system, display settings, and time and date settings.” Considering only the information described in the above scenario, which of the following test techniques will be most useful in designing test cases for the system under test?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Domain analysis"
+        },
+        {
+          "id": "b",
+          "text": "Metamorphic testing"
+        },
+        {
+          "id": "c",
+          "text": "CRUD testing"
+        },
+        {
+          "id": "d",
+          "text": "Decision table testing"
+        },
+        {
+          "id": "e",
+          "text": "Pairwise testing ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "b",
+        "e"
+      ],
+      "explanation": "a) Is not correct. Domain analysis is not suitable because the scenario does not provide any information suggesting a high defect risk in domain implementation. b) Is correct. Metamorphic testing is appropriate because the scenario clearly implies that there will be no test oracle. In such cases, metamorphic testing is a good solution that can address the test oracle problem. c) Is not correct. CRUD testing is not suitable because the scenario does not suggest any need to verify the lifecycle of entities processed by the test object. d) Is not correct. Decision table testing is not suitable because the scenario does not describe any rule-related issues. e) Is correct. Pairwise testing is appropriate because the risk that the application will not work for some configurations can be addressed by applying pairwise testing."
+    },
+    {
+      "id": 32,
+      "text": "A new AI-based system is being developed. The management claims that it improves the accuracy of predictions of thunderstorms by an order of magnitude. One challenge you identified quickly is that the number of input parameters and their values is potentially very high. In addition, the AI-based system was not sufficiently specified, i.e. the test basis is incomplete and ambiguous. However, there is a proper set of test cases created by a subject matter expert who unfortunately left the project. There is pressure from management to deliver the system soon. Which of the following test techniques should be applied in this context?",
+      "options": [
+        {
+          "id": "a",
+          "text": "State-based testing"
+        },
+        {
+          "id": "b",
+          "text": "Metamorphic testing"
+        },
+        {
+          "id": "c",
+          "text": "Scenario-based testing"
+        },
+        {
+          "id": "d",
+          "text": "Combinatorial testing"
+        },
+        {
+          "id": "e",
+          "text": "CRUD testing"
+        }
+      ],
+      "correctOptions": [
+        "b",
+        "d"
+      ],
+      "explanation": "a) Is not correct. There is no indication in the description that the test object may assume any states that could be checked. b) Is correct. A set of test cases is already available, but the former subject matter expert left the project. Determining metamorphic relations for the source test cases is applicable and a good choice because the test basis is weak and may probably not be used as a test oracle. c) Is not correct. There is no hint that scenarios are available. d) Is correct. Combinatorial testing is a viable solution because it requires little time and a large number of parameters and parameter values. e) Is not correct. There is no indication in the description that CRUD lifecycle functionality is relevant."
+    },
+    {
+      "id": 33,
+      "text": "Which of the following is a benefit of test design automation and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Improved defect prevention due to early modeling of test conditions"
+        },
+        {
+          "id": "b",
+          "text": "Effective defect detection due to repeatable, automated test scripts"
+        },
+        {
+          "id": "c",
+          "text": "Efficient maintenance of test scripts due to configuration management"
+        },
+        {
+          "id": "d",
+          "text": "Faster analysis of anomalies due to automated failure recognition ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. Early modeling of test conditions from the testing perspective is effective quality control of the test basis, which prevents defect occurrence in the work products produced in the subsequent phases of the software development lifecycle. b) Is not correct. Repeatable, automated test scripts are beneficial for test execution automation, not test design automation. c) Is not correct. Configuration management has many benefits, but configuration management is not part of test design automation. d) Is not correct. Automated failure recognition has nothing in common with test design automation."
+    }
+  ]
+}

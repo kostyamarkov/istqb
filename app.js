@@ -1,8 +1,23 @@
 const app = document.getElementById('app');
 const COMBO_EXAM_ID = 'COMBO';
 const BASE_EXAM_IDS = ['A', 'B', 'C', 'D'];
+const EXAM_SELECTION_IDS = ['A', 'B', 'C', 'D', 'ADV1'];
 const COMBO_COOKIE_NAME = 'istqb_combo_wrong_questions';
 const COMBO_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
+const EXAM_FILE_MAP = {
+  A: 'data/exam_A.json',
+  B: 'data/exam_B.json',
+  C: 'data/exam_C.json',
+  D: 'data/exam_D.json',
+  ADV1: 'data/exam_advanced_1.json'
+};
+const EXAM_LABEL_MAP = {
+  A: 'Test A',
+  B: 'Test B',
+  C: 'Test C',
+  D: 'Test D',
+  ADV1: 'Exam Advanced 1'
+};
 
 const state = {
   screen: 'start',
@@ -166,7 +181,8 @@ async function ensureExamLoaded(examId) {
     return state.exams[examId];
   }
 
-  const response = await fetch(`data/exam_${examId}.json`, { cache: 'no-cache' });
+  const filePath = EXAM_FILE_MAP[examId] || `data/exam_${examId}.json`;
+  const response = await fetch(filePath, { cache: 'no-cache' });
   if (!response.ok) {
     throw new Error(`Cannot load exam ${examId}`);
   }
@@ -313,8 +329,8 @@ function renderSelection() {
     <section class="screen">
       <h2 class="section-title">Choose a test</h2>
       <div class="test-list">
-        ${BASE_EXAM_IDS
-          .map((id) => `<button class="btn" data-action="start-exam" data-exam="${id}">Test ${id}</button>`)
+        ${EXAM_SELECTION_IDS
+          .map((id) => `<button class="btn" data-action="start-exam" data-exam="${id}">${EXAM_LABEL_MAP[id] || id}</button>`)
           .join('')}
         <button class="btn" data-action="start-exam" data-exam="${COMBO_EXAM_ID}">Combo-test (${comboCount})</button>
       </div>
