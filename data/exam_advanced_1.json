@@ -1,7 +1,7 @@
 {
   "examId": "ADV1",
   "title": "ISTQB CTAL-TA Sample Exam - Advanced 1",
-  "questionCount": 33,
+  "questionCount": 45,
   "questions": [
     {
       "id": 1,
@@ -27,7 +27,7 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. In incremental development models, development is not necessarily cyclical. b) Is not correct. The test analyst usually needs to perform test analysis, design, implement, and execute tests for each increment. c) Is not correct. The test analyst’s work may be organized differently for each increment. Therefore, the initial time of involvement of the test analyst may vary for each increment. d) Is correct. Each increment is developed and tested independently. Therefore, the test analyst performs the same test activities for each increment (i.e., test analysis, test design, test implementation, and test execution.)"
+      "explanation": "a) Is not correct. In incremental development models, development is not necessarily cyclical. b) Is not correct. The test analyst usually needs to perform test analysis, design, implement, and execute tests for each increment. c) Is not correct. The test analyst’s work may be organized differently for each increment. Therefore, the initial time of involvement of the test analyst may vary for each increment. d) Is correct. Each increment is developed and tested independently. Therefore, the test analyst performs the same test activities for each increment (i.e., test analysis, test design, test implementation, and test execution)."
     },
     {
       "id": 2,
@@ -47,7 +47,7 @@
         },
         {
           "id": "d",
-          "text": "Write an automated test script using keyword-driven testing: “SetAge(18); VerifyDiscountIsNotAssigned().”"
+          "text": "Write an automated test script using keyword-driven testing: “SetAge(18); VerifyDiscountIsNotAssigned().” ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -99,7 +99,7 @@
         },
         {
           "id": "d",
-          "text": "The organizational unit which shall provide and maintain the simulator"
+          "text": "The organizational unit which shall provide and maintain the simulator ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -161,7 +161,7 @@
     },
     {
       "id": 7,
-      "text": "You are testing a queueing system using keyword-driven testing. The following keywords are available: • Start() – creates an empty queue • Enqueue(e) - inserts element e at the end of the queue • Dequeue() - removes an element from the beginning of the queue • CreateQueue(e1, e2, . . . , en) – a composite keyword equivalent to the sequence of keywords: Enqueue(e1), Enqueue(e2), . . . , Enqueue(en) • AssertFirstElement(e) - checks if there is an element e at the beginning of the queue; if not, the system returns an error message ISTQB® – v4.1 2025/07/08 • AssertEmpty() - checks if the queue is empty; if not, the system returns an error message You have designed the following test scripts. Which of these test scripts verify the following acceptance criterion using the available keywords: \"If more elements were added to the queue than removed, the queue is not empty\"?",
+      "text": "You are testing a queueing system using keyword-driven testing. The following keywords are available: • Start() – creates an empty queue • Enqueue(e) - inserts element e at the end of the queue • Dequeue() - removes an element from the beginning of the queue • CreateQueue(e1, e2, . . . , en) – a composite keyword equivalent to the sequence of keywords: Enqueue(e1), Enqueue(e2), . . . , Enqueue(en) • AssertFirstElement(e) - checks if there is an element e at the beginning of the queue; if not, the system returns an error message ISTQB® – v4.1 2025/07/08 • AssertEmpty() - checks if the queue is empty; if not, the system returns an error message You have designed the following test scripts:",
       "options": [
         {
           "id": "i",
@@ -169,7 +169,7 @@
         },
         {
           "id": "v",
-          "text": "Start(); CreateQueue(A, B); Dequeue(); AssertFirstElement(B)"
+          "text": "Start(); CreateQueue(A, B); Dequeue(); AssertFirstElement(B) Which of these test scripts verify the following acceptance criterion using the available keywords: \"If more elements were added to the queue than removed, the queue is not empty\"?"
         },
         {
           "id": "a",
@@ -211,7 +211,7 @@
         },
         {
           "id": "d",
-          "text": "Selecting the most suitable set of test cases for regression testing"
+          "text": "Selecting the most suitable set of test cases for regression testing ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -278,18 +278,8 @@
       "media": [
         {
           "type": "image",
-          "src": "assets/questions/ADV1/q10_1.png",
-          "alt": "Question 10 reference image 1"
-        },
-        {
-          "type": "image",
-          "src": "assets/questions/ADV1/q10_2.png",
-          "alt": "Question 10 reference image 2"
-        },
-        {
-          "type": "image",
-          "src": "assets/questions/ADV1/q10_3.png",
-          "alt": "Question 10 reference image 3"
+          "src": "assets/questions/ADV1/q10.png",
+          "alt": "Question 10 reference image"
         }
       ]
     },
@@ -311,7 +301,7 @@
         },
         {
           "id": "d",
-          "text": "Execute the regression tests of the GUI containing the navigation bar on mobile devices with various displays, prioritized by the device distribution statistics"
+          "text": "Execute the regression tests of the GUI containing the navigation bar on mobile devices with various displays, prioritized by the device distribution statistics ISTQB® – v4.1 2025/07/08"
         },
         {
           "id": "e",
@@ -342,7 +332,7 @@
         },
         {
           "id": "d",
-          "text": "(10, 10), (12, 8), (15, 11)"
+          "text": "(10, 10), (12, 8), (15, 11) ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -378,7 +368,7 @@
     },
     {
       "id": 14,
-      "text": "You are testing the functional correctness of a particular application on various environments, described by the following parameters and their possible values: • operating system (possible values: Windows, Linux, iOS) • RAM (possible values: 16GB, 32GB, 64GB) • whether there is a USB-C port (possible values: yes, no) Based on market research, the most common configuration is Windows OS with 16GB of memory and a USB-C port. You have already prepared the tests for the following configurations: • Windows, 16GB, USB-C • iOS, 16GB, USB-C ISTQB® – v4.1 2025/07/08 • Windows, 32GB, USB-C • Windows, 64GB, USB-C • Linux, 16GB, no USB-C Consider the following new configurations that can be tested. Which of them should be added to the existing set to fully achieve the BASE CHOICE coverage criterion?",
+      "text": "You are testing the functional correctness of a particular application on various environments, described by the following parameters and their possible values: • operating system (possible values: Windows, Linux, iOS) • RAM (possible values: 16GB, 32GB, 64GB) • whether there is a USB-C port (possible values: yes, no) Based on market research, the most common configuration is Windows OS with 16GB of memory and a USB-C port. You have already prepared the tests for the following configurations: • Windows, 16GB, USB-C • iOS, 16GB, USB-C ISTQB® – v4.1 2025/07/08 • Windows, 32GB, USB-C • Windows, 64GB, USB-C • Linux, 16GB, no USB-C Consider the following new configurations that can be tested:",
       "options": [
         {
           "id": "i",
@@ -386,7 +376,7 @@
         },
         {
           "id": "v",
-          "text": "iOS, 64GB, USB-C"
+          "text": "iOS, 64GB, USB-C Which of them should be added to the existing set to fully achieve the BASE CHOICE coverage criterion?"
         },
         {
           "id": "a",
@@ -428,7 +418,7 @@
         },
         {
           "id": "d",
-          "text": "4"
+          "text": "4 ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -480,7 +470,7 @@
         },
         {
           "id": "d",
-          "text": "Checking whether a new user can use a password that another user has already used"
+          "text": "Checking whether a new user can use a password that another user has already used ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -598,7 +588,7 @@
         },
         {
           "id": "d",
-          "text": "4"
+          "text": "4 ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -697,7 +687,7 @@
         },
         {
           "id": "d",
-          "text": "If A2 is contained in A1, then L1 contains all hotels from L2"
+          "text": "If A2 is contained in A1, then L1 contains all hotels from L2 ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -749,7 +739,7 @@
         },
         {
           "id": "d",
-          "text": "Test charter 4: Explore the augmented reality “Fitting Room” feature With various web browsers To Discover usability problems"
+          "text": "Test charter 4: Explore the augmented reality “Fitting Room” feature With various web browsers To Discover usability problems ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -775,7 +765,7 @@
         },
         {
           "id": "d",
-          "text": "Explore the graphical user interface of the payment system with user experience design guidelines to discover the intuitiveness and aesthetics of the user interface"
+          "text": "Explore the graphical user interface of the payment system with user experience design guidelines to discover the intuitiveness and aesthetics of the user interface ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -801,7 +791,7 @@
         },
         {
           "id": "d",
-          "text": "How long does an astronomy amateur require, on average, to answer the 24 questions?"
+          "text": "How long does an astronomy amateur require, on average, to answer the 24 questions? ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -865,7 +855,7 @@
         },
         {
           "id": "d",
-          "text": "Reviewing the GUI design with many reviewers"
+          "text": "Reviewing the GUI design with many reviewers ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -895,7 +885,7 @@
         },
         {
           "id": "e",
-          "text": "Pairwise testing"
+          "text": "Pairwise testing ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
@@ -953,13 +943,433 @@
         },
         {
           "id": "d",
-          "text": "Faster analysis of anomalies due to automated failure recognition"
+          "text": "Faster analysis of anomalies due to automated failure recognition ISTQB® – v4.1 2025/07/08"
         }
       ],
       "correctOptions": [
         "a"
       ],
       "explanation": "a) Is correct. Early modeling of test conditions from the testing perspective is effective quality control of the test basis, which prevents defect occurrence in the work products produced in the subsequent phases of the software development lifecycle. b) Is not correct. Repeatable, automated test scripts are beneficial for test execution automation, not test design automation. c) Is not correct. Configuration management has many benefits, but configuration management is not part of test design automation. d) Is not correct. Automated failure recognition has nothing in common with test design automation."
+    },
+    {
+      "id": 34,
+      "text": "You are testing the following user story for an e-shop app: As a registered customer I want to filter for a specific category of items So that I don’t have to browse through the entire assortment of the store Which of the following is an example of functional correctness testing for this user story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verifying that the filtering mechanism lists those categories for which the shop offers items"
+        },
+        {
+          "id": "b",
+          "text": "Verifying that filtering by a particular category shows items belonging to this and only this category"
+        },
+        {
+          "id": "c",
+          "text": "Verifying that the category tree is loaded correctly from a customer relations management system"
+        },
+        {
+          "id": "d",
+          "text": "Verifying that the filtering function is easy to learn and its GUI is simple and aesthetically pleasing"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "a) Is not correct. This is an example of functional appropriateness testing because it tests whether the categories listed are helpful for the users. b) Is correct. This is an example of functional correctness testing because it verifies the functional correctness of a feature, namely, the correctness of the filtering mechanism. c) Is not correct. This is an example of interoperability testing because it focuses on the interaction between two systems. d) Is not correct. This is an example of usability testing, as it verifies the ease of learning and aesthetics of the interface rather than functional correctness."
+    },
+    {
+      "id": 35,
+      "text": "An organization is developing a new in-house application designed to support all staff. The product owner engaged external user experience consultants to perform usability test sessions. Which of the following is the BEST contribution the organization’s test analyst can make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Selecting the participants from the user group with the most experience with the business process"
+        },
+        {
+          "id": "b",
+          "text": "Participating in the usability test sessions to evaluate the efficiency of working with the application"
+        },
+        {
+          "id": "c",
+          "text": "Helping the participants during the test sessions to enter the right data and find the right buttons"
+        },
+        {
+          "id": "d",
+          "text": "Describing the most likely patterns of use of the application by various personas within the organization"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Selecting the most experienced users does not take into account the characteristics of the target user groups that should be involved. b) Is not correct. The participants at usability test sessions must be users in the organization rather than test analysts. c) Is not correct. The participants should not be corrected or guided in using the application but observed. Helping them will not provide a correct evaluation of the effectiveness and efficiency of the system’s use in real life. d) Is correct. Test analysts can use their knowledge of operational profiles, i.e., patterns of use, and personas to create scenarios that reflect real-life uses of the system."
+    },
+    {
+      "id": 36,
+      "text": "Which of the following activities can a test analyst use to best contribute to the adaptability testing of a cloud-based web application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evaluating the extent to which users with disabilities can adapt to the application’s usage scenarios"
+        },
+        {
+          "id": "b",
+          "text": "Designing tests covering the data exchange between the web client and the cloud server components"
+        },
+        {
+          "id": "c",
+          "text": "Analyzing operational profiles and describing the expected number of concurrent users of the application"
+        },
+        {
+          "id": "d",
+          "text": "Designing tests that evaluate whether the server components can be transferred to various cloud service platforms ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. This activity supports accessibility testing rather than adaptability testing. Adaptability is about adapting the system to its environments, not about users adapting to the system. b) Is not correct. This supports interoperability testing rather than adaptability testing. c) Is not correct. This supports load testing and scalability testing rather than adaptability testing. d) Is correct. Adaptability testing includes adaptation to various cloud service platforms. As stated in Section 4.3.1, the test analyst supports adaptability testing by identifying the intended target environments and designing tests that cover combinations of these environments."
+    },
+    {
+      "id": 37,
+      "text": "Which of the following is the best example of a test analyst’s contribution to interoperability testing of an online store?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To verify that the user can access and use the online store seamlessly on various devices and web browsers"
+        },
+        {
+          "id": "b",
+          "text": "To verify that the online store can integrate with third-party payment gateways and exchange payment data correctly"
+        },
+        {
+          "id": "c",
+          "text": "To validate that users with diverse cultural backgrounds can use the online store effectively and efficiently"
+        },
+        {
+          "id": "d",
+          "text": "To verify that the discount system strictly follows the specified rules and returns accurate results"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "a) Is not correct. This is an example of adaptability testing. See Section 4.3.1 in the Syllabus and the Glossary definition of adaptability testing. b) Is correct. Interoperability is the degree to which two or more components or systems can exchange information and use the information that has been exchanged. c) Is not correct. This is an example of usability testing. See Section 4.2.1 in the Syllabus. d) Is not correct. This is an example of functional correctness testing with a focus on accuracy. See Section 4.1.1 in the Syllabus."
+    },
+    {
+      "id": 38,
+      "text": "Which of the following activities is LEAST effective in defect prevention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dynamic testing"
+        },
+        {
+          "id": "b",
+          "text": "Risk analysis"
+        },
+        {
+          "id": "c",
+          "text": "Reviewing an architectural design"
+        },
+        {
+          "id": "d",
+          "text": "Root cause analysis ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. Dynamic testing is the least effective approach for defect prevention because it is primarily used to detect defects that already exist in the test object rather than prevent them from occurring. b) Is not correct. Risk analysis is effective in defect prevention as it helps testers identify potential issues early and select appropriate approaches to mitigate risks throughout the software development lifecycle. c) Is not correct. Reviewing an architecture design is an effective defect-prevention activity. It allows testers to identify and address potential issues early in the development process, preventing defects from propagating to later phases of the software development lifecycle. d) Is not correct. Root cause analysis is an effective defect prevention technique. It identifies the underlying causes of defects, allowing teams to address these causes and prevent similar defects from occurring in the future."
+    },
+    {
+      "id": 39,
+      "text": "For a system that allocates discounts on purchases, the following two business rules apply: • Customers with a loyalty card or whose last purchase was at least $1,000 will receive a 10% discount. Otherwise, they will receive a 5% discount if they subscribe to the newsletter. • If a customer has not signed up for the newsletter, they will receive no discount. The requirements are modeled using the following decision table: Conditions Rule 1 Rule 2 Rule 3 Rule 4 Has a loyalty card? YES - NO - Last purchase >= $1000? - YES NO - Subscribed to the newsletter? - - YES NO Action Discount 10% 10% 5% 0% What problem (if any) with the requirements can you discover by analyzing this decision table?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inconsistency – there is at least one feasible combination of conditions for which the specification describes two contradicting actions"
+        },
+        {
+          "id": "b",
+          "text": "Incompleteness – there is at least one feasible combination of conditions for which the specification predicts no behavior at all"
+        },
+        {
+          "id": "c",
+          "text": "Overlapping rules – there are at least two action-equivalent columns that match the same combination of conditions"
+        },
+        {
+          "id": "d",
+          "text": "There is no problem – the decision table models the requirements correctly, and there are no anomalies in the requirements"
+        }
+      ],
+      "correctOptions": [
+        "a"
+      ],
+      "explanation": "a) Is correct. The combination (YES, YES, NO) of the three conditions (i.e., has a loyalty card, last purchase >= $1000, and not subscribed to the newsletter) fits Rule 1 and Rule 4, but these rules have different discounts. This is a contradiction. b) Is not correct. The rules of the decision table cover each combination of conditions. c) Is not correct. There is no redundancy. Rule 1 and Rule 2 have the same discount, but these two rules model one business rule. d) Is not correct. There is a contradiction – see the correct answer.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q39.png",
+          "alt": "Question 39 reference image"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "text": "You are reviewing the requirements specification of a beverage vending machine. You are focusing on the coin controller that collects, validates, and counts the inserted coins. You notice the following requirements related to the behavior of the coin controller: • Req201: For each ordering transaction, the coin controller distinguishes the situations among modes empty, partially inserted, and sufficient to identify whether the user has paid enough to start the beverage delivery • Req215: If the user has paid enough, the controller shall immediately return any further inserted coins. • Req235: The coin controller shall validate the inserted coins and immediately return invalid coins with an appropriate error message. ISTQB® – v4.1 2025/07/08 • Req236: The coin controller changes its mode to sufficient as soon as the user inserts enough coins. • Req237: The user shall be able to cancel the transaction before beverage delivery and get the inserted coins returned. The coin controller will be empty after cancel is selected. • Req243: The coin controller shall display an appropriate message when the user has inserted enough coins for payment and sum up any further coins inserted. • Req253: When the user inserts a coin with which the required amount is not reached, the coin controller shall remain in the partially inserted mode and add the value of the inserted coin to the intermediate value paid. • Req267: If the coin controller is in sufficient mode and the user triggers the delivery, it shall deliver the beverage to the user. You decided to model the behavior of the coin controller with a state machine diagram. Which of the following anomalies will be MOST LIKELY detected by the modeling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is not clear which event will trigger the coin controller to switch from the partially inserted mode to the sufficient mode"
+        },
+        {
+          "id": "b",
+          "text": "The specification is ambiguous when the coin controller is in the partially inserted mode. The same event triggers returning the coins and delivering the beverage"
+        },
+        {
+          "id": "c",
+          "text": "The specification is incomplete because there is no event defined for returning an invalid coin"
+        },
+        {
+          "id": "d",
+          "text": "The specification is ambiguous in the sufficient mode. The same event is supposed to trigger two competing outcomes, i.e., summing up the coins and immediately returning the coins"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Requirement 236 specifies the event (i.e., the user inserts enough coins). Although the expression ’enough coins’ is ambiguous, this ambiguity is not noticeable in a state transition model. b) Is not correct. See requirement 267 for delivering the beverage and requirement 237 for returning the coins. These requirements will result in different events. c) Is not correct. See requirement 235. Returning an invalid coin is not an event in itself but an expected result that can be used in testing. d) Is correct. See requirement 215 and requirement 243. Both requirements describe the same event (i.e., insertion of a coin) for the same precondition or point in the lifecycle (i.e., being in sufficient mode). This combination reflects an ambiguity that would lead to nondeterministic behavior. When modeling such a behavior by means of a state machine, this anomaly can be easily detected."
+    },
+    {
+      "id": 41,
+      "text": "A company has developed an online shopping website. This year, to better serve new customers, the company decided to develop a new feature to guide new customers using the website. The requirements engineering team developed the following requirements for this new feature: Use case: Familiarize the customer with the online shopping website and purchasing ISTQB® – v4.1 2025/07/08 Customer System 1. The user visits the website. 2. The system shows a promotion banner prompting customers to access the new customer guide. 3. The user clicks on the prompt. 4. The system opens the guide. 5. The user navigates through the guide’s introductory section, learning about the website’s features and layout. 6. The user follows the guide’s instructions to make a successful purchase. 7. The system shows the successful completion of the purchase. 8. The user closes the prompt. 9. The system closes the guide. You are the test analyst for this product, and you review the above use case using a scenario -based reviewing technique. Which of the following defects submitted during your review is a false-positive result?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The system should offer experienced users an option to dismiss the guide permanently"
+        },
+        {
+          "id": "b",
+          "text": "In step 4: Once the user has responded to the promotion, the system should hide the promotion banner"
+        },
+        {
+          "id": "c",
+          "text": "The system should provide an option for the user to reopen the guide whenever they are interested"
+        },
+        {
+          "id": "d",
+          "text": "After step 5, the system should automatically close the guide, assuming that it is no longer needed ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "d"
+      ],
+      "explanation": "a) Is not correct. Experienced users already know about the website’s features and layout. Therefore, repeatedly seeing the guide can be annoying and intrusive. b) Is not correct. By automatically hiding the promotion banner after the user has responded, the system avoids being intrusive and allows the user to focus on the guide. c) Is not correct. Providing an option to re-access the guide allows users flexibility and ensures that the information is always available if they need it. d) Is correct. Closing the guide without the users’ consent takes away their control and can be seen as intrusive or disrespectful of their learning preferences. Even if users don’t need the guide immediately after step 5, they may find it helpful in the future as they explore the website and its features.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q41.png",
+          "alt": "Question 41 reference image"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "text": "Match the review technique descriptions (1-4) with the correct technique names (A-D). Descriptions: 1. Reviewers simulate processes using use cases or activity diagrams and may explore beyond documented scenarios. 2. Reviewers use fictional personas (e.g., administrators or end users) to focus on specific user roles. 3. Unstructured reviewing with no guidance, risking duplicate defect reports. 4. Uses predefined checklists to guide reviewers but encourages exploration beyond listed items. Techniques: A. Ad hoc reviewing B. Checklist-based reviewing C. Scenario-based reviewing D. Role-based reviewing",
+      "options": [
+        {
+          "id": "a",
+          "text": "1-C, 2-D, 3-B, 4-A"
+        },
+        {
+          "id": "b",
+          "text": "1-D, 2-C, 3-A, 4-B"
+        },
+        {
+          "id": "c",
+          "text": "1-C, 2-D, 3-A, 4-B"
+        },
+        {
+          "id": "d",
+          "text": "1-A, 2-B, 3-C, 4-D"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "1-C: Scenario-based reviewing involves \"dry runs\" of processes (e.g., use cases). 2-D: Role-based reviewing uses personas to represent user roles (e.g., administrators). 3-A: Ad hoc reviewing is unstructured and risks duplicate reports. 4-B: Checklist-based reviewing uses predefined prompts but allows reviewers to explore beyond the checklist. So answer c is correct. For the other answers: a: Incorrectly pairs 3-B (Ad hoc ̸= Checklist). b: Swaps Scenario (C) and Role-based (D) for 1 and 2. d: Entirely mismatched (e.g., 1-A mislabels Scenario as Ad hoc)."
+    },
+    {
+      "id": 43,
+      "text": "You work as a test analyst in a project that follows an incremental development model. Each increment consists of four sequential phases: requirements, design, implementation, and testing. Each phase ends with an appropriate test activity, and each increment ends with a release to the customer. After the last increment, the client did not raise any defects during the operation. You collect data on the number of defects introduced and detected in different phases of the last increment. The results are presented in the table below. For example, the requirements phase introduced 80 defects, and implementation detected 40 of them; static analysis and component testing detected 140 defects in total. ISTQB® – v4.1 2025/07/08 Your management wants to improve defect detection, but due to limited resources, they asked you to select only one phase for which you should carry out the improvement actions. You base your choice on calculating defect detection percentage as the test effectiveness measure for each phase. Which phase and test activity should you select for the improvement actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Requirements – modeling and review"
+        },
+        {
+          "id": "b",
+          "text": "Design – modeling and review"
+        },
+        {
+          "id": "c",
+          "text": "Implementation – static analysis and component testing"
+        },
+        {
+          "id": "d",
+          "text": "Testing – system testing and acceptance testing ISTQB® – v4.1 2025/07/08"
+        }
+      ],
+      "correctOptions": [
+        "b"
+      ],
+      "explanation": "Defect detection percentage (DDP) for a given phase is measured as D / (D + E), where D is the number of defects detected in this phase, and E is the number of defects that escaped from this phase (and were detected later). The calculation below shows the DDP for the given four phases: DDP (Requirements – modeling and review) = 10 / (10 + 10 + 40 + 20) = 12.5% DDP (Design – modeling and review) = (10 + 10) / (10 + 10 + 40 + 90 + 20 + 30) = 10% DDP (Implementation - static analysis and component testing) = (40 + 90 + 10) / (40 + 90 + 10 + 20 + 30 + 90) = 50% DDP (Testing – system testing and acceptance testing) = (20 + 30 + 90 + 0) / (20 + 30 + 90 + 0) = 100% The lowest DDP occurs in the design phase. It detects only 10% of the defects that could be detected in this phase. Therefore, the correct answer is b.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q43.png",
+          "alt": "Question 43 reference image"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "text": "A home security system architecture comprises four components: a control panel, a user interface, a cloud-based backend system, and an event processing engine. In similar projects within your organization, a strong correlation was observed between the size of the components and the number of defects found in component testing. On average, one defect was found per 50 lines of code. You use this model to predict the number of defects in each component. The test results for the individual system components, containing the actual number of defects, are as follows: Component Lines of code Defects found Control panel 600 14 User interface 2000 45 Backend system 400 17 Event processing engine 500 8 You use defect cluster analysis to identify defect-prone areas. Which component, when tested more rigorously, will probably reveal more defects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Control panel"
+        },
+        {
+          "id": "b",
+          "text": "User interface"
+        },
+        {
+          "id": "c",
+          "text": "Backend system"
+        },
+        {
+          "id": "d",
+          "text": "Event processing engine"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "According to the model, the predicted number of defects is lines of code (LOC) / 50. The table below shows the predicted versus actual number of defects for each component: The actual number of defects is similar to the predicted values for the control panel, user interface, and event processing engine. However, for the backend system, the actual number of defects is more than twice as high as the predicted value. The defect clustering principle suggests this is a defect-prone component, which probably contains more defects. Therefore, focus on this component. Hence, c) is correct.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q44.png",
+          "alt": "Question 44 reference image"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "text": "How does defect classification support root cause analysis (RCA)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It allows RCA to be carried out early, before static testing and dynamic testing, because RCA may be based on abstract categories of defects rather than on specific individual defects"
+        },
+        {
+          "id": "b",
+          "text": "It allows RCA to be combined with test techniques because defect classification uses the same software development lifecycle models as test techniques"
+        },
+        {
+          "id": "c",
+          "text": "It makes RCA more efficient because the analysis focuses not on individual defects but on groups of defects with similar characteristics"
+        },
+        {
+          "id": "d",
+          "text": "It makes RCA more effective because defect classification allows for a deeper analysis of defects and the discovery of more root causes ISTQB® – v4.1 2025/07/08 Appendix A – Additional Questions Question #A1 (1 Point) The tasks of the TA in test analysis include: A) Define test conditions for each test item B) Involve stakeholders in reviewing the test conditions C) Review the test basis for testability D) Check that test objectives and test approach are clear Order the tasks A to D in correct chronological sequence: Activity 1 Activity 2 Activity 3 Activity 4 Question #A2 (1 Point) Which of the following is typically the responsibility of the test analyst during the execution of an automated regression test suite?"
+        },
+        {
+          "id": "a",
+          "text": "Manually rerun the test cases that have failed during automated test execution"
+        },
+        {
+          "id": "b",
+          "text": "Fix the automated test scripts that caused anomalies in the test execution"
+        },
+        {
+          "id": "c",
+          "text": "Report a defect for each anomaly that occurs during test execution"
+        },
+        {
+          "id": "d",
+          "text": "Compare actual results with expected results to determine the test result ISTQB® – v4.1 2025/07/08 Question #A3 (1 Point) Consider the following test case: Test case: TC 02.001 - correct calculation of order price with discount Preconditions: the user is logged in Inputs: the shopping cart contains products for the amount entitled to the discount Actions: the user proceeds to payment Expected results: the total price displayed is reduced by the discount amount entitled How can this test case be classified in terms of level of abstraction?"
+        },
+        {
+          "id": "a",
+          "text": "This is a high-level test case because it covers a business requirement rather than a technical specification."
+        },
+        {
+          "id": "b",
+          "text": "This is a high-level test case because it does not contain specific test data."
+        },
+        {
+          "id": "c",
+          "text": "This is a low-level test case because the action is an individual step of a business process."
+        },
+        {
+          "id": "d",
+          "text": "This is a low-level test case because it can be the basis for creating test scripts that implement this test case with various inputs. Question #A4 (1 Point) Which of the following describes a valid test case quality criterion and has valid justification?"
+        },
+        {
+          "id": "a",
+          "text": "Test cases covering important features in the product backlog but not yet included in the current version of the test object should be defined to support future maintenance."
+        },
+        {
+          "id": "b",
+          "text": "The test cases should contain the concrete values of the test data required for preconditions, inputs, and outputs to enable test execution."
+        },
+        {
+          "id": "c",
+          "text": "If the test basis uses a glossary of functional terms, the test cases should also use that terminology to make them consistent and understandable."
+        },
+        {
+          "id": "d",
+          "text": "Test cases based on end-to-end scenarios should be limited to a few steps of the scenarios to ease their combination into test procedures and an analysis of the cause of failures. Question #A5 (2 Points) In the item management system IMS1, each item can have multiple versions. The latest version is active, all older versions are historical and frozen. You are specifying domain-layer keywords for the following high-level test case: • Preconditions: An item has multiple versions; the latest version is active; the others are old and frozen. ISTQB® – v4.1 2025/07/08 Step Action/Input Expected result 1 The user selects the item with multiple versions IMS1 shows the details of the latest version in edit mode 2 The user selects an older version of the item IMS1 shows the details of that version in view- only mode You have specified the following keywords: 1. Search the database for an item with multiple versions (Item-ID) 2. Select item (Item-ID) 3. Select item version (Number) 4. Assert details displayed are correct (Screen, Item-ID, Number) 5. Assert details are editable (Screen) 6. Assert details are non-editable (Screen) You want to use keywords in one of the following groups of elements of the high-level test cases: A) Precondition only B) Step 1 only C) Step 2 only D) Both step 1 and step 2 Assign each specified keyword (1-6) to ONE group of test case elements (A-D) while not leaving any group empty. ISTQB® – v4.1 2025/07/08 Question #A6 (2 Points) Standard letters carried by a postage service have a maximum length of 235mm and a maximum weight of 20g. You are testing an automatic letter scanning system that can measure with a precision of 1 mm and 1g respectively. You perform domain testing for valid standard letter sizes with the following inputs: No. Length in mm Weight in g X1 160 15 X2 200 25 X3 230 21 X4 235 20 X5 250 16 X6 236 18 Inputs can have of one of the coverage item types: 1. ON point for both length and weight 2. IN point for both length and weight 3. OFF point for length only 4. OFF point for weight only 5. OUT point for length only 6. OUT point for weight only Assign each input (X1-X6) to EXACTLY ONE coverage item type (1-6). ISTQB® – v4.1 2025/07/08 Question #A7 (2 Points) The specification of a safety-critical component states about the integer values of an input parameter the following: • Values less than 10 shall be rejected; • Values between 10 and 21 shall be accepted; • Values greater than or equal to 22 shall be rejected. Which of the following input data sets provides 100% reliable domain coverage while using a MINIMAL number of values?"
+        },
+        {
+          "id": "a",
+          "text": "9, 10, 21, 22"
+        },
+        {
+          "id": "b",
+          "text": "0, 9, 10, 21, 22, 50"
+        },
+        {
+          "id": "c",
+          "text": "9, 10, 11, 20, 21, 22"
+        },
+        {
+          "id": "d",
+          "text": "8, 9, 10, 11, 20, 21, 22, 23 Question #A8 (2 Points) An airline has specific restrictions regarding checked baggage: • The total dimensions (length + width + height) D of a piece of baggage must be at least 80 cm and cannot exceed 158 cm. • The weight W must not exceed 23 kg. • Measurements in centimeters and kilograms are always rounded up to the nearest whole number. What is the MINIMUM set of pairs (D,W) of dimension and weight to achieve 100% simplified domain coverage?"
+        },
+        {
+          "id": "a",
+          "text": "(80,10), (79,10), (125,23), (125,24), (158,20), (159,20)"
+        },
+        {
+          "id": "b",
+          "text": "(80,23), (79,24), (158,23), (159,24)"
+        },
+        {
+          "id": "c",
+          "text": "(80,23), (79,23), (80,24), (158,23), (158,24), (159,23)"
+        },
+        {
+          "id": "d",
+          "text": "(80,23), (79,23), (80,24), (158,20), (159,20)"
+        }
+      ],
+      "correctOptions": [
+        "c"
+      ],
+      "explanation": "a) Is not correct. RCA can only be applied if specific defects or failures are present and need to be analyzed. Therefore, some testing must be done prior to RCA. b) Is not correct. RCA has nothing in common with test techniques. c) Is correct. Usually, the number of defects to be analyzed is very large. Therefore, it is inefficient and time-consuming to plan preventive action for each one. One way to approach this problem is to classify defects into patterns and then do the RCA on those patterns. d) Is not correct. Defect classification takes the problem to a higher, more general level. Therefore, it is unlikely that such an approach would allow a test analyst to perform a more detailed analysis and discover more root causes."
     }
   ]
 }

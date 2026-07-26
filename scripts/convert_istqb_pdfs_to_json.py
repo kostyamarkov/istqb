@@ -41,7 +41,7 @@ EXAM_SPECS = {
         "question_pdf": "ISTQB-CTAL-TA-Sample-Exam-Questions-v4.1.pdf",
         "answer_pdf": "ISTQB-CTAL-TA-Sample-Exam-Answers-v4.1.pdf",
         "title": "ISTQB CTAL-TA Sample Exam - Advanced 1",
-        "question_count": 33,
+        "question_count": 45,
     },
 }
 
@@ -216,7 +216,7 @@ def parse_answers(raw_text: str) -> Dict[int, Dict]:
             continue
 
         qnum = int(m.group(1))
-        if not (1 <= qnum <= 40):
+        if not (1 <= qnum <= 45):
             i += 1
             continue
 
