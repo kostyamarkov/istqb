@@ -18,9 +18,18 @@ QUESTION_PDFS = {
     "B": "ISTQB_CTFL_v4.0_Sample-Exam-B-Questions_v1.7.pdf",
     "C": "ISTQB_CTFL_v4.0_Sample-Exam-C-Questions_v1.6.pdf",
     "D": "ISTQB_CTFL_v4.0_Sample-Exam-D-Questions_v1.5.pdf",
+    "ADV1": "ISTQB-CTAL-TA-Sample-Exam-Questions-v4.1.pdf",
 }
 
-HEADER_RE = re.compile(r"Question #(\d+) \(1 Point\)")
+HEADER_RE = re.compile(r"Question #(\d+) \(\d+ Point\)")
+
+ADV1_PAGE_HINTS = {
+    10: 12,
+    18: 18,
+    21: 21,
+    22: 22,
+    23: 23,
+}
 
 
 def get_question_span(page: fitz.Page, question_id: int) -> fitz.Rect | None:
@@ -165,6 +174,25 @@ def ensure_media_for_exam(exam_id: str, question_ids: list[int]) -> dict[int, st
     report_items = {item["questionId"]: item for item in report.get(exam_id, [])}
     page_map = {qid: item["page"] - 1 for qid, item in report_items.items()}
 
+    if exam_id == "ADV1":
+        for qid, page_index in ADV1_PAGE_HINTS.items():
+            if qid not in question_ids:
+                continue
+            if not (0 <= page_index < len(doc)):
+                continue
+
+            page = doc[page_index]
+            visual_rect = get_visual_rect_in_span(page, page.rect)
+            if visual_rect is None:
+                continue
+
+            pix = page.get_pixmap(matrix=fitz.Matrix(2.0, 2.0), clip=visual_rect, alpha=False)
+            file_path = out_dir / f"q{qid}.png"
+            pix.save(file_path)
+            q_to_src[qid] = f"assets/questions/{exam_id}/q{qid}.png"
+
+        return q_to_src
+
     for qid in question_ids:
         item_meta = report_items.get(qid)
         if item_meta is None:
@@ -204,7 +232,10 @@ def ensure_media_for_exam(exam_id: str, question_ids: list[int]) -> dict[int, st
 
 
 def merge_media_into_exam_json(exam_id: str, q_to_src: dict[int, str]):
-    path = DATA_DIR / f"exam_{exam_id}.json"
+    if exam_id == "ADV1":
+        path = DATA_DIR / "exam_advanced_1.json"
+    else:
+        path = DATA_DIR / f"exam_{exam_id}.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
 
     for question in payload["questions"]:
@@ -274,13 +305,10 @@ def trim_image_tail(file_path: Path) -> None:
 
 
 def main():
-    report = json.loads(REPORT_PATH.read_text(encoding="utf-8"))
-
-    for exam_id in ["A", "B", "C", "D"]:
-        qids = sorted({int(item["questionId"]) for item in report.get(exam_id, [])})
-        mapping = ensure_media_for_exam(exam_id, qids)
-        merge_media_into_exam_json(exam_id, mapping)
-        print(exam_id, "media questions:", sorted(mapping.keys()))
+    qids = sorted(ADV1_PAGE_HINTS)
+    mapping = ensure_media_for_exam("ADV1", qids)
+    merge_media_into_exam_json("ADV1", mapping)
+    print("ADV1", "media questions:", sorted(mapping.keys()))
 
 
 if __name__ == "__main__":

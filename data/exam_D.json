@@ -53,7 +53,7 @@
       "correctOptions": [
         "c"
       ],
-      "explanation": "a) Is not correct. The miscalculation of bonuses is a failure by the system, not a defect b) Is not correct. The system not suitably supporting disabled users is a failure which eventually results in a fine, but the fine itself is not a failure (it appears to be the correct functioning of the regulatory system) c) Is correct. The error is made by the programmer and this mistake is caused by them working under severe time pressure, which is the root cause of the subsequent defect d) Is not correct. The poor design of the user interface, which does not suitably address disabled users, is a design defect caused by the designer error. Thus the design of the user interface includes a design defect not a designer error Version 1.5 Page 8 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. The miscalculation of bonuses is a failure by the system, not a defect b) Is not correct. The system not suitably supporting disabled users is a failure which eventually results in a fine, but the fine itself is not a failure (it appears to be the correct functioning of the regulatory system) c) Is correct. The error is made by the programmer and this mistake is caused by them working under severe time pressure, which is the root cause of the subsequent defect d) Is not correct. The poor design of the user interface, which does not suitably address disabled users, is a design defect caused by the designer error. Thus the design of the user interface includes a design defect not a designer error"
     },
     {
       "id": 3,
@@ -73,13 +73,13 @@
         },
         {
           "id": "d",
-          "text": "Defects cluster together May 2, 2025"
+          "text": "Defects cluster together"
         }
       ],
       "correctOptions": [
         "a"
       ],
-      "explanation": "a) Is correct. The ‘tests wear out’ principle is concerned with the idea that repeating identical tests on unaltered code is unlikely to uncover novel defects and therefore, modifying tests may be essential. By using test conditions to generate new tests each time, the tests will not be identical and the risk of the tests wearing out is reduced b) Is not correct. The ‘absence-of-defects fallacy’ principle is concerned with ensuring that users’ needs are fulfilled even if lots of testing is done and no defects are found (i.e., validation is also necessary). The use of test conditions to generate test cases and execute tests does not directly address this concern c) Is not correct. The ‘early testing saves time and money’ principle is concerned with fixing defects early on to prevent the occurrence of subsequent defects in derived work products, thereby reducing costs and the likelihood of failures. This is typically addressed by starting testing (both static and dynamic) as early as possible, but this is not addressed by using test conditions to generate test cases and execute tests d) Is not correct. The ‘Defects cluster together’ principle is concerned with the distribution of defects in a system, which typically follows a Pareto distribution. The use of test conditions to generate test cases and execute tests does not address this concern, which is typically addressed by risk-based testing Version 1.5 Page 9 of 35 May 2, 2025"
+      "explanation": "a) Is correct. The ‘tests wear out’ principle is concerned with the idea that repeating identical tests on unaltered code is unlikely to uncover novel defects and therefore, modifying tests may be essential. By using test conditions to generate new tests each time, the tests will not be identical and the risk of the tests wearing out is reduced b) Is not correct. The ‘absence-of-defects fallacy’ principle is concerned with ensuring that users’ needs are fulfilled even if lots of testing is done and no defects are found (i.e., validation is also necessary). The use of test conditions to generate test cases and execute tests does not directly address this concern c) Is not correct. The ‘early testing saves time and money’ principle is concerned with fixing defects early on to prevent the occurrence of subsequent defects in derived work products, thereby reducing costs and the likelihood of failures. This is typically addressed by starting testing (both static and dynamic) as early as possible, but this is not addressed by using test conditions to generate test cases and execute tests d) Is not correct. The ‘Defects cluster together’ principle is concerned with the distribution of defects in a system, which typically follows a Pareto distribution. The use of test conditions to generate test cases and execute tests does not address this concern, which is typically addressed by risk-based testing"
     },
     {
       "id": 4,
@@ -105,7 +105,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "Considering each of the listed test activities and their tasks: A. Test analysis - To identify the features that require testing, the test basis is analyzed and defined as test conditions, which are then prioritized along with related risks. During this test analysis, defects in the test basis are typically uncovered, and the test object's testability may also be assessed. (Task 4) B. Test design - Involves using test conditions to create test cases and other necessary testware, such as test data requirements and test charters for exploratory testing. (Task 1) C. Test implementation - Test procedures, such as manual and automated test scripts, are created from test cases and may be assembled into test suites. Test procedures are prioritized and arranged in a test execution schedule. (Task 3) D. Test completion - Occurs at project milestones, such as release, end of iteration or end of test level. Testware is identified and archived or handed to the appropriate teams for reuse, the test environment is shut down, and the test activities are analyzed for lessons learned and future improvements. (Task 2) Thus: a) Is not correct b) Is correct. The CORRECT match is: 1B, 2D, 3C, 4A c) Is not correct d) Is not correct Version 1.5 Page 10 of 35 May 2, 2025"
+      "explanation": "Considering each of the listed test activities and their tasks: A. Test analysis - To identify the features that require testing, the test basis is analyzed and defined as test conditions, which are then prioritized along with related risks. During this test analysis, defects in the test basis are typically uncovered, and the test object's testability may also be assessed. (Task 4) B. Test design - Involves using test conditions to create test cases and other necessary testware, such as test data requirements and test charters for exploratory testing. (Task 1) C. Test implementation - Test procedures, such as manual and automated test scripts, are created from test cases and may be assembled into test suites. Test procedures are prioritized and arranged in a test execution schedule. (Task 3) D. Test completion - Occurs at project milestones, such as release, end of iteration or end of test level. Testware is identified and archived or handed to the appropriate teams for reuse, the test environment is shut down, and the test activities are analyzed for lessons learned and future improvements. (Task 2) Thus: a) Is not correct b) Is correct. The CORRECT match is: 1B, 2D, 3C, 4A c) Is not correct d) Is not correct"
     },
     {
       "id": 5,
@@ -131,7 +131,7 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "Considering each of the listed testware, and the test activity that produces it: i. The test completion report is an output of test completion ii. Data held in a database used for inputs and expected results is the test data - output of test implementation iii. The list of elements needed to build the test environment is the test environment requirements - output of test design iv. Documented sequences of test cases in execution order are the test procedures - output of test implementation v. Test cases - output of test design Test implementation produces the following outputs: test procedures (iv), automated test scripts, test suites, test data (ii), test execution schedule, and test environment elements such as stubs, drivers, simulators, and service virtualizations. Thus: a) Is correct. Items ii and iv in the list are produced as a result of test implementation b) Is not correct c) Is not correct d) Is not correct Version 1.5 Page 11 of 35 May 2, 2025"
+      "explanation": "Considering each of the listed testware, and the test activity that produces it: i. The test completion report is an output of test completion ii. Data held in a database used for inputs and expected results is the test data - output of test implementation iii. The list of elements needed to build the test environment is the test environment requirements - output of test design iv. Documented sequences of test cases in execution order are the test procedures - output of test implementation v. Test cases - output of test design Test implementation produces the following outputs: test procedures (iv), automated test scripts, test suites, test data (ii), test execution schedule, and test environment elements such as stubs, drivers, simulators, and service virtualizations. Thus: a) Is correct. Items ii and iv in the list are produced as a result of test implementation b) Is not correct c) Is not correct d) Is not correct"
     },
     {
       "id": 6,
@@ -151,13 +151,13 @@
         },
         {
           "id": "d",
-          "text": "Create the test completion report May 2, 2025"
+          "text": "Create the test completion report"
         }
       ],
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Evaluating the test basis for defects and the test object for testability are tasks performed as part of test analysis, so it is likely they are tasks performed by the testing role b) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Defining the test environment requirements is a task performed as part of test design, so it is likely to be a task performed by the testing role c) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Assessing the testability of a test object is a task performed as part of test analysis, so it is likely to be a task performed by the testing role d) Is correct. The test management role primarily involves activities related to test planning, test monitoring and test control, and test completion. Thus, creating the test completion report, which is the prime output from the test completion, is likely to be a task performed by the test management role Version 1.5 Page 12 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Evaluating the test basis for defects and the test object for testability are tasks performed as part of test analysis, so it is likely they are tasks performed by the testing role b) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Defining the test environment requirements is a task performed as part of test design, so it is likely to be a task performed by the testing role c) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Assessing the testability of a test object is a task performed as part of test analysis, so it is likely to be a task performed by the testing role d) Is correct. The test management role primarily involves activities related to test planning, test monitoring and test control, and test completion. Thus, creating the test completion report, which is the prime output from the test completion, is likely to be a task performed by the test management role"
     },
     {
       "id": 7,
@@ -183,7 +183,7 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "a) Is correct. The whole team approach promotes robust communication and collaboration between the team members b) Is not correct. While the whole team approach prioritizes collective accountability for quality, each individual team member is still equally accountable for quality c) Is not correct. The whole team approach is about how the team works together, with the aim of higher quality deliverables, but it does not necessarily result in faster deployment to end users d) Is not correct. When using the whole team approach, testers work with business representatives to create acceptance tests. There is no suggestion that the approach will reduce collaboration with external business users Version 1.5 Page 13 of 35 May 2, 2025"
+      "explanation": "a) Is correct. The whole team approach promotes robust communication and collaboration between the team members b) Is not correct. While the whole team approach prioritizes collective accountability for quality, each individual team member is still equally accountable for quality c) Is not correct. The whole team approach is about how the team works together, with the aim of higher quality deliverables, but it does not necessarily result in faster deployment to end users d) Is not correct. When using the whole team approach, testers work with business representatives to create acceptance tests. There is no suggestion that the approach will reduce collaboration with external business users"
     },
     {
       "id": 8,
@@ -209,7 +209,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "Considering each of the listed benefits and drawbacks of the independence of testing: i. Ideally, we want close collaboration between testers and developers, which is not increased by isolation. Thus, this is a disadvantage ii. Testers and developers have varied backgrounds, technical viewpoints, and potential biases, allowing testers to usefully challenge assumptions made by stakeholders during system specification and implementation. Thus, this is an advantage iii. The main disadvantage of independence of testing is that testers may become isolated from the development team, leading to communication problems, a lack of collaboration, and potentially an adversarial relationship, with testers being blamed for delays and bottlenecks in the release process. Thus, this is a disadvantage iv. One of the disadvantages of independence of testing is that testers may become isolated from the development team, leading to developers feeling less accountable for quality. Thus, this is a disadvantage v. The primary benefit of independence of testing is that testers are more likely to identify different types of failures and defects compared to developers, due to their varied backgrounds, technical viewpoints, and potential biases, including cognitive bias Thus: a) Is not correct b) Is correct. The list entries showing benefits are ii and v c) Is not correct d) Is not correct Version 1.5 Page 14 of 35 May 2, 2025"
+      "explanation": "Considering each of the listed benefits and drawbacks of the independence of testing: i. Ideally, we want close collaboration between testers and developers, which is not increased by isolation. Thus, this is a disadvantage ii. Testers and developers have varied backgrounds, technical viewpoints, and potential biases, allowing testers to usefully challenge assumptions made by stakeholders during system specification and implementation. Thus, this is an advantage iii. The main disadvantage of independence of testing is that testers may become isolated from the development team, leading to communication problems, a lack of collaboration, and potentially an adversarial relationship, with testers being blamed for delays and bottlenecks in the release process. Thus, this is a disadvantage iv. One of the disadvantages of independence of testing is that testers may become isolated from the development team, leading to developers feeling less accountable for quality. Thus, this is a disadvantage v. The primary benefit of independence of testing is that testers are more likely to identify different types of failures and defects compared to developers, due to their varied backgrounds, technical viewpoints, and potential biases, including cognitive bias Thus: a) Is not correct b) Is correct. The list entries showing benefits are ii and v c) Is not correct d) Is not correct"
     },
     {
       "id": 9,
@@ -255,13 +255,13 @@
         },
         {
           "id": "d",
-          "text": "Performance-Driven Development May 2, 2025"
+          "text": "Performance-Driven Development"
         }
       ],
       "correctOptions": [
         "a"
       ],
-      "explanation": "a) Is correct. Behavior-Driven Development (BDD) is a well-known example of a test-first approach to development b) Is not correct. Test Level Driven Development is not a correct example of a test-first approach to development c) Is not correct. Function-Driven Development is not a correct example of a test-first approach to development d) Is not correct. Performance-Driven Development is not a correct example of a test-first approach to development Version 1.5 Page 15 of 35 May 2, 2025"
+      "explanation": "a) Is correct. Behavior-Driven Development (BDD) is a well-known example of a test-first approach to development b) Is not correct. Test Level Driven Development is not a correct example of a test-first approach to development c) Is not correct. Function-Driven Development is not a correct example of a test-first approach to development d) Is not correct. Performance-Driven Development is not a correct example of a test-first approach to development"
     },
     {
       "id": 11,
@@ -287,7 +287,7 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. DevOps generally increases the visibility of non-functional quality characteristics, such as performance and reliability b) Is not correct. Automated processes like continuous integration/continuous delivery (CI/CD) used in DevOps facilitate stable test environments c) Is not correct. Automated processes like CI/CD used in DevOps generally reduce the need for manual testing d) Is correct. DevOps implementation can pose several risks and challenges, including the need to define and set up the delivery pipeline, introduce and maintain CI/CD tools, and establish and maintain test automation Version 1.5 Page 16 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. DevOps generally increases the visibility of non-functional quality characteristics, such as performance and reliability b) Is not correct. Automated processes like continuous integration/continuous delivery (CI/CD) used in DevOps facilitate stable test environments c) Is not correct. Automated processes like CI/CD used in DevOps generally reduce the need for manual testing d) Is correct. DevOps implementation can pose several risks and challenges, including the need to define and set up the delivery pipeline, introduce and maintain CI/CD tools, and establish and maintain test automation"
     },
     {
       "id": 12,
@@ -313,7 +313,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. The benefits of retrospectives include team bonding and learning from sharing issues, and better collaboration between developers and testers through reviewing and improving working practices. Calling out individuals who a team member may feel did not fully contribute to achieving quality as required by the whole team approach will not contribute to this team bonding and collaboration b) Is correct. During the retrospective, the group discusses what aspects of the project were successful and should be retained, as well as areas that could be improved, and how to do so c) Is not correct. The benefits of retrospectives are based on increased effectiveness and efficiency through process improvements; they are not an opportunity to let off steam and criticize management and customers. Also, the test results are recorded, usually in the test completion report, so anything said in the meeting could be read by other stakeholders d) Is not correct. Retrospectives are meetings that are typically held at the end of an iteration where team members will focus on discussing quality-related issues that have occurred in the current iteration. They are not used for making plans or technical decisions for the next iteration; this would be done in the iteration planning meeting at the start of the next iteration Version 1.5 Page 17 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. The benefits of retrospectives include team bonding and learning from sharing issues, and better collaboration between developers and testers through reviewing and improving working practices. Calling out individuals who a team member may feel did not fully contribute to achieving quality as required by the whole team approach will not contribute to this team bonding and collaboration b) Is correct. During the retrospective, the group discusses what aspects of the project were successful and should be retained, as well as areas that could be improved, and how to do so c) Is not correct. The benefits of retrospectives are based on increased effectiveness and efficiency through process improvements; they are not an opportunity to let off steam and criticize management and customers. Also, the test results are recorded, usually in the test completion report, so anything said in the meeting could be read by other stakeholders d) Is not correct. Retrospectives are meetings that are typically held at the end of an iteration where team members will focus on discussing quality-related issues that have occurred in the current iteration. They are not used for making plans or technical decisions for the next iteration; this would be done in the iteration planning meeting at the start of the next iteration"
     },
     {
       "id": 13,
@@ -339,7 +339,7 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "a) Is correct. Checking that the sort function puts the elements of the list or array in ascending order is evaluating the functional correctness of the sort function, which is part of functional testing b) Is not correct. Assessing whether the sort function meets its non- functional requirement to complete within one second is part of testing its performance efficiency, which is part of non-functional testing c) Is not correct. Evaluating the ease with which the sort function can be modified from sorting ascending to sorting descending is testing its modifiability, a form of non-functional maintainability testing, which is part of non-functional testing d) Is not correct. Assessing that the sort function still functions correctly when moved from a 32-bit to a 64-bit architecture is testing its adaptability, a form of portability testing, which is part of non-functional testing Version 1.5 Page 18 of 35 May 2, 2025"
+      "explanation": "a) Is correct. Checking that the sort function puts the elements of the list or array in ascending order is evaluating the functional correctness of the sort function, which is part of functional testing b) Is not correct. Assessing whether the sort function meets its non- functional requirement to complete within one second is part of testing its performance efficiency, which is part of non-functional testing c) Is not correct. Evaluating the ease with which the sort function can be modified from sorting ascending to sorting descending is testing its modifiability, a form of non-functional maintainability testing, which is part of non-functional testing d) Is not correct. Assessing that the sort function still functions correctly when moved from a 32-bit to a 64-bit architecture is testing its adaptability, a form of portability testing, which is part of non-functional testing"
     },
     {
       "id": 14,
@@ -359,13 +359,13 @@
         },
         {
           "id": "d",
-          "text": "The language support option of the currency exchange system was used to enable both English and local language currency transactions May 2, 2025"
+          "text": "The language support option of the currency exchange system was used to enable both English and local language currency transactions"
         }
       ],
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. Assuming that testers could check the ease of changing the currency exchange system then it would be done by maintainability testing rather than maintenance testing, so this is not a trigger for maintenance testing b) Is correct. A system modification (such as a fix or enhancement) is an example of a trigger for maintenance testing. The removal of the refund option of the currency exchange system was a fix that would lead to maintenance testing c) Is not correct. If the agile team has started developing a user story that adds a new customer loyalty feature to the currency exchange system, then this will result in them testing the new feature, and then they would perform regression testing. No maintenance testing is required in this situation d) Is not correct. Reconfiguration of the currency exchange system to support both the local language and English currency transactions is not a system modification, a change to the operational environment, or a system retirement, which are the three triggers for maintenance testing Version 1.5 Page 19 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. Assuming that testers could check the ease of changing the currency exchange system then it would be done by maintainability testing rather than maintenance testing, so this is not a trigger for maintenance testing b) Is correct. A system modification (such as a fix or enhancement) is an example of a trigger for maintenance testing. The removal of the refund option of the currency exchange system was a fix that would lead to maintenance testing c) Is not correct. If the agile team has started developing a user story that adds a new customer loyalty feature to the currency exchange system, then this will result in them testing the new feature, and then they would perform regression testing. No maintenance testing is required in this situation d) Is not correct. Reconfiguration of the currency exchange system to support both the local language and English currency transactions is not a system modification, a change to the operational environment, or a system retirement, which are the three triggers for maintenance testing"
     },
     {
       "id": 15,
@@ -417,7 +417,7 @@
       "correctOptions": [
         "c"
       ],
-      "explanation": "Some defect types that can only be detected by static testing, such as unreachable code, design patterns not implemented as desired and defects in non-executable work products. Some defect types that can be found by both static testing and dynamic testing, such as a programming defect that can be observed by a reviewer in a code review and which causes an observable failure during dynamic testing. And some defect types that can only be detected by dynamic testing, such as performance issues or memory issues that can only be observed when executing the code or system. Thus: a) Is not correct b) Is not correct c) Is correct d) Is not correct Version 1.5 Page 20 of 35 May 2, 2025"
+      "explanation": "Some defect types that can only be detected by static testing, such as unreachable code, design patterns not implemented as desired and defects in non-executable work products. Some defect types that can be found by both static testing and dynamic testing, such as a programming defect that can be observed by a reviewer in a code review and which causes an observable failure during dynamic testing. And some defect types that can only be detected by dynamic testing, such as performance issues or memory issues that can only be observed when executing the code or system. Thus: a) Is not correct b) Is not correct c) Is correct d) Is not correct"
     },
     {
       "id": 17,
@@ -437,13 +437,13 @@
         },
         {
           "id": "d",
-          "text": "5 – 4 – 3 – 2 – 1 May 2, 2025"
+          "text": "5 – 4 – 3 – 2 – 1"
         }
       ],
       "correctOptions": [
         "b"
       ],
-      "explanation": "The five listed descriptions and the corresponding review process activities are: 1. This describes part of the ‘communication and analysis’ activity 2. This describes part of the ‘fixing and reporting’ activity 3. This describes part of the ‘individual review’ activity 4. This describes part of the ‘planning’ activity 5. This describes part of the ‘review initiation’ activity The generic review process from ISO/IEC 20246, which is outlined in the syllabus, comprises the following activities in this logical order: • Planning (4) • Review initiation (5) • Individual review (3) • Communication and analysis (1) • Fixing and reporting (2) Thus: a) Is not correct b) Is correct. The correct sequence of activities is: 4 – 5 – 3 – 1 – 2 c) Is not correct d) Is not correct Version 1.5 Page 21 of 35 May 2, 2025"
+      "explanation": "The five listed descriptions and the corresponding review process activities are: 1. This describes part of the ‘communication and analysis’ activity 2. This describes part of the ‘fixing and reporting’ activity 3. This describes part of the ‘individual review’ activity 4. This describes part of the ‘planning’ activity 5. This describes part of the ‘review initiation’ activity The generic review process from ISO/IEC 20246, which is outlined in the syllabus, comprises the following activities in this logical order: • Planning (4) • Review initiation (5) • Individual review (3) • Communication and analysis (1) • Fixing and reporting (2) Thus: a) Is not correct b) Is correct. The correct sequence of activities is: 4 – 5 – 3 – 1 – 2 c) Is not correct d) Is not correct"
     },
     {
       "id": 18,
@@ -489,13 +489,13 @@
         },
         {
           "id": "d",
-          "text": "Risk-based test techniques May 2, 2025"
+          "text": "Risk-based test techniques"
         }
       ],
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. The document does not refer to the test object’s internal structure but specifies the desired behavior of the test object. Therefore, white-box test techniques will not be helpful in designing test cases b) Is correct. The document is a requirement that specifies the desired behavior of the test object. Therefore, the most suitable test techniques in this case are the black-box test techniques (e.g., Boundary Value Analysis or Decision Table Testing) c) Is not correct. Although experience-based test techniques can be used to design test cases based on this document, black-box test techniques will be more suitable. The document describes a precise business rule and, in addition, wording like \"exceeds $100\" suggests the existence of important equivalence partition boundaries that should be tested using black-box test techniques like Boundary Value Analysis d) Is not correct. Risk-based test techniques are not a recognized type of test technique Version 1.5 Page 22 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. The document does not refer to the test object’s internal structure but specifies the desired behavior of the test object. Therefore, white-box test techniques will not be helpful in designing test cases b) Is correct. The document is a requirement that specifies the desired behavior of the test object. Therefore, the most suitable test techniques in this case are the black-box test techniques (e.g., Boundary Value Analysis or Decision Table Testing) c) Is not correct. Although experience-based test techniques can be used to design test cases based on this document, black-box test techniques will be more suitable. The document describes a precise business rule and, in addition, wording like \"exceeds $100\" suggests the existence of important equivalence partition boundaries that should be tested using black-box test techniques like Boundary Value Analysis d) Is not correct. Risk-based test techniques are not a recognized type of test technique"
     },
     {
       "id": 20,
@@ -546,13 +546,13 @@
         },
         {
           "id": "d",
-          "text": "–2, 0, 2, 4 May 2, 2025"
+          "text": "–2, 0, 2, 4"
         }
       ],
       "correctOptions": [
         "c"
       ],
-      "explanation": "There are three equivalence partitions: {…, –2, –1}, {0, 1, 2}, {3, 4, …}. For 2-value BVA all the boundary values for all the equivalence partitions must be covered. The boundary values are –1 (for the “temperature too low” partition), 0, 2 (for the “temperature OK” partition) and 3 (for the “temperature too high” partition). Thus: a) Is not correct b) Is not correct c) Is correct. The correct option is: –1, 0, 2, 3 d) Is not correct Version 1.5 Page 23 of 35 May 2, 2025"
+      "explanation": "There are three equivalence partitions: {…, –2, –1}, {0, 1, 2}, {3, 4, …}. For 2-value BVA all the boundary values for all the equivalence partitions must be covered. The boundary values are –1 (for the “temperature too low” partition), 0, 2 (for the “temperature OK” partition) and 3 (for the “temperature too high” partition). Thus: a) Is not correct b) Is not correct c) Is correct. The correct option is: –1, 0, 2, 3 d) Is not correct"
     },
     {
       "id": 22,
@@ -572,13 +572,20 @@
         },
         {
           "id": "d",
-          "text": "No additional test case can increase the already achieved decision table coverage May 2, 2025"
+          "text": "No additional test case can increase the already achieved decision table coverage"
         }
       ],
       "correctOptions": [
         "a"
       ],
-      "explanation": "Test cases TC1, TC2, TC3 and TC4 cover, respectively, rules R2, R3, R7 and R6 in the decision table. a) Is correct. The conditions “66-year-old”, “unregistered” and “no experience” match rule R4, which is not covered by the existing test cases, so after adding this test case, the decision table coverage will increase b) Is not correct. The conditions “55-year-old”, “unregistered” and “2 years of experience” match rule R2, already covered by TC1. So adding this test case will not increase the coverage c) Is not correct. The conditions “19-year-old”, “registered” and “5 years of experience” match rule R6, already covered by TC4. So adding this test case will not increase the coverage d) Is not correct. The existing test cases cover only 4 out of 7 columns of the decision table. The coverage can be increased by adding test cases that cover yet uncovered columns, that is, R1, R4 and R5 Version 1.5 Page 24 of 35 May 2, 2025"
+      "explanation": "Test cases TC1, TC2, TC3 and TC4 cover, respectively, rules R2, R3, R7 and R6 in the decision table. a) Is correct. The conditions “66-year-old”, “unregistered” and “no experience” match rule R4, which is not covered by the existing test cases, so after adding this test case, the decision table coverage will increase b) Is not correct. The conditions “55-year-old”, “unregistered” and “2 years of experience” match rule R2, already covered by TC1. So adding this test case will not increase the coverage c) Is not correct. The conditions “19-year-old”, “registered” and “5 years of experience” match rule R6, already covered by TC4. So adding this test case will not increase the coverage d) Is not correct. The existing test cases cover only 4 out of 7 columns of the decision table. The coverage can be increased by adding test cases that cover yet uncovered columns, that is, R1, R4 and R5",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q22.png",
+          "alt": "Question 22 reference image"
+        }
+      ]
     },
     {
       "id": 23,
@@ -604,7 +611,14 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. This sequence of five events covers 4 different valid transitions (both “NotAvailable” events correspond to the same transition between S1 and S3). This test case covers 4 out of 7 valid transitions b) Is correct. This sequence of five events covers 5 different transitions (the first “Available” event corresponds to a transition between S1 and S2, and the second “Available” event corresponds to a transition between S3 and S2, so two different transitions are covered). This test case covers 5 out of 7 valid transitions and achieves the highest valid transitions coverage c) Is not correct. This sequence of five events covers 3 different transitions (both “Available” events correspond to the same transition from S1 to S2; both “ChangeRoom” events correspond to the same transition from S2 to S1). This test case covers 3 out of 7 valid transitions d) Is not correct. This sequence of five events does not represent a feasible test case, because after “Cancel” the system ends up in the End state and no further valid transitions can be executed Version 1.5 Page 25 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. This sequence of five events covers 4 different valid transitions (both “NotAvailable” events correspond to the same transition between S1 and S3). This test case covers 4 out of 7 valid transitions b) Is correct. This sequence of five events covers 5 different transitions (the first “Available” event corresponds to a transition between S1 and S2, and the second “Available” event corresponds to a transition between S3 and S2, so two different transitions are covered). This test case covers 5 out of 7 valid transitions and achieves the highest valid transitions coverage c) Is not correct. This sequence of five events covers 3 different transitions (both “Available” events correspond to the same transition from S1 to S2; both “ChangeRoom” events correspond to the same transition from S2 to S1). This test case covers 3 out of 7 valid transitions d) Is not correct. This sequence of five events does not represent a feasible test case, because after “Cancel” the system ends up in the End state and no further valid transitions can be executed Version 1.5 Page 25 of 35 May 2, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q23.png",
+          "alt": "Question 23 reference image"
+        }
+      ]
     },
     {
       "id": 24,
@@ -630,7 +644,7 @@
       "correctOptions": [
         "c"
       ],
-      "explanation": "a) Is not correct. A statement with a defect, when executed, does not have to cause a failure. For example, a statement x := y / z will cause a failure only when z equals 0 b) Is not correct. 100% statement coverage does not guarantee 100% branch coverage. For example, a test case with x=0 for the code 1. IF (x=0) THEN 2. A; 3. ENDIF achieves 100% statement coverage but does not cover the branch from 1 to 3 c) Is correct. 100% statement coverage means that each executable statement was executed at least once d) Is not correct. The removed test case may provide coverage of some statements that are not covered by either of the other two test cases, in which case the remaining two test cases together will not achieve 100% statement coverage Version 1.5 Page 26 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. A statement with a defect, when executed, does not have to cause a failure. For example, a statement x := y / z will cause a failure only when z equals 0 b) Is not correct. 100% statement coverage does not guarantee 100% branch coverage. For example, a test case with x=0 for the code 1. IF (x=0) THEN 2. A; 3. ENDIF achieves 100% statement coverage but does not cover the branch from 1 to 3 c) Is correct. 100% statement coverage means that each executable statement was executed at least once d) Is not correct. The removed test case may provide coverage of some statements that are not covered by either of the other two test cases, in which case the remaining two test cases together will not achieve 100% statement coverage"
     },
     {
       "id": 25,
@@ -650,7 +664,7 @@
         },
         {
           "id": "d",
-          "text": "White-box test techniques can be used in both static testing and dynamic testing May 2, 2025"
+          "text": "White-box test techniques can be used in both static testing and dynamic testing"
         }
       ],
       "correctOptions": [
@@ -682,7 +696,7 @@
       "correctOptions": [
         "c"
       ],
-      "explanation": "Error guessing is about anticipating the errors, defects and failures based on the tester’s knowledge. a) Is not correct. This is an example of anticipating the developer’s error b) Is not correct. This is an example of anticipating the defect c) Is correct. This is an example of a potential root cause of a defect, which is neither an error, defect nor failure, and difficult for the tester to anticipate d) Is not correct. This is an example of anticipating a failure, perhaps based on experience of previous systems in this application domain Version 1.5 Page 27 of 35 May 2, 2025"
+      "explanation": "Error guessing is about anticipating the errors, defects and failures based on the tester’s knowledge. a) Is not correct. This is an example of anticipating the developer’s error b) Is not correct. This is an example of anticipating the defect c) Is correct. This is an example of a potential root cause of a defect, which is neither an error, defect nor failure, and difficult for the tester to anticipate d) Is not correct. This is an example of anticipating a failure, perhaps based on experience of previous systems in this application domain"
     },
     {
       "id": 27,
@@ -728,13 +742,13 @@
         },
         {
           "id": "d",
-          "text": "Conversation, so that team members can understand how the software will be used May 2, 2025"
+          "text": "Conversation, so that team members can understand how the software will be used"
         }
       ],
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. Planning poker can estimate effort for a user story that is already written. It does not help in understanding what should be delivered b) Is not correct. Reviews are not a collaborative user story writing practice c) Is not correct. Iteration planning is a project-related practice, used to plan the work, not to understand what needs to be delivered d) Is correct. Conversation explains how the software will be used and often allows the team to define meaningful acceptance criteria, thus obtaining a shared vision of what should be delivered Version 1.5 Page 28 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. Planning poker can estimate effort for a user story that is already written. It does not help in understanding what should be delivered b) Is not correct. Reviews are not a collaborative user story writing practice c) Is not correct. Iteration planning is a project-related practice, used to plan the work, not to understand what needs to be delivered d) Is correct. Conversation explains how the software will be used and often allows the team to define meaningful acceptance criteria, thus obtaining a shared vision of what should be delivered"
     },
     {
       "id": 29,
@@ -784,14 +798,14 @@
         },
         {
           "id": "e",
-          "text": "All test analysts are ISTQB certified at the Foundation Level May 2, 2025"
+          "text": "All test analysts are ISTQB certified at the Foundation Level"
         }
       ],
       "correctOptions": [
         "b",
         "d"
       ],
-      "explanation": "a) Is not correct. The approval of the budget is an example of an entry criterion. It would make no sense to approve the budget for some activity that has already been done b) Is correct. Running out of budget can be viewed as a valid exit criterion c) Is not correct. Availability of resources is an example of an entry criterion for testing d) Correct. Coverage is a measure of thoroughness, so it is a typical exit criterion e) Is not correct. This is an example of an entry criterion, checked before the project starts Version 1.5 Page 29 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. The approval of the budget is an example of an entry criterion. It would make no sense to approve the budget for some activity that has already been done b) Is correct. Running out of budget can be viewed as a valid exit criterion c) Is not correct. Availability of resources is an example of an entry criterion for testing d) Correct. Coverage is a measure of thoroughness, so it is a typical exit criterion e) Is not correct. This is an example of an entry criterion, checked before the project starts"
     },
     {
       "id": 31,
@@ -837,13 +851,20 @@
         },
         {
           "id": "d",
-          "text": "TC4 May 2, 2025"
+          "text": "TC4"
         }
       ],
       "correctOptions": [
         "b"
       ],
-      "explanation": "TC1 achieves the highest coverage (4/7 – Req1, Req3, Req4 and Req7), so should be executed first. Req2, Req5 and Req6 are still not covered. The next test case that achieves the highest additional coverage of the remaining requirements is TC3, covering 2 out of these 3 requirements (Req5 and Req6). So, TC3 should be executed as the second one. Now the only requirement still not covered is Req2, which is covered by TC4. Therefore, TC4 should be executed as the third test case. So, the last test case executed will be TC2. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.5 Page 30 of 35 May 2, 2025"
+      "explanation": "TC1 achieves the highest coverage (4/7 – Req1, Req3, Req4 and Req7), so should be executed first. Req2, Req5 and Req6 are still not covered. The next test case that achieves the highest additional coverage of the remaining requirements is TC3, covering 2 out of these 3 requirements (Req5 and Req6). So, TC3 should be executed as the second one. Now the only requirement still not covered is Req2, which is covered by TC4. Therefore, TC4 should be executed as the third test case. So, the last test case executed will be TC2. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q32.png",
+          "alt": "Question 32 reference image"
+        }
+      ]
     },
     {
       "id": 33,
@@ -895,7 +916,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "Risk assessment can use a quantitative or qualitative approach, or a mix of them. In the quantitative approach the risk level is calculated as the multiplication of risk likelihood and risk impact. So, Risk level = Risk likelihood * Risk impact Then, Risk impact = Risk level / Risk likelihood. In our case, Risk impact = $1,000 / 50% = $1,000 / 0.5 = $2,000. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.5 Page 31 of 35 May 2, 2025"
+      "explanation": "Risk assessment can use a quantitative or qualitative approach, or a mix of them. In the quantitative approach the risk level is calculated as the multiplication of risk likelihood and risk impact. So, Risk level = Risk likelihood * Risk impact Then, Risk impact = Risk level / Risk likelihood. In our case, Risk impact = $1,000 / 50% = $1,000 / 0.5 = $2,000. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
     },
     {
       "id": 35,
@@ -946,13 +967,13 @@
         },
         {
           "id": "d",
-          "text": "Providing information on testing planned for the next period May 2, 2025"
+          "text": "Providing information on testing planned for the next period"
         }
       ],
       "correctOptions": [
         "c"
       ],
-      "explanation": "a) Is not correct. Tracking test progress and identifying areas that require further attention is an example of supporting the ongoing control of testing. This is one of the purposes of test reports b) Is not correct. Providing information on the tests executed, their test results, and any defects found is an example of summarizing the test activities performed at a given test level. This is one of the purposes of test reports c) Is correct. Providing information about defects is the purpose of a defect report, not a test report d) Is not correct. Providing information on testing planned for the next period is one of the purposes of test reports Version 1.5 Page 32 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. Tracking test progress and identifying areas that require further attention is an example of supporting the ongoing control of testing. This is one of the purposes of test reports b) Is not correct. Providing information on the tests executed, their test results, and any defects found is an example of summarizing the test activities performed at a given test level. This is one of the purposes of test reports c) Is correct. Providing information about defects is the purpose of a defect report, not a test report d) Is not correct. Providing information on testing planned for the next period is one of the purposes of test reports"
     },
     {
       "id": 37,
@@ -978,7 +999,7 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. Risk management consists of risk analysis and risk control. Neither of these activities supports the reassembly of the files that made up the release, because these activities deal with risks, not with configuration items b) Is not correct. Test monitoring is concerned with gathering information about testing. This information is used to assess test progress and to measure whether the exit criteria or the test tasks associated with the exit criteria are satisfied, such as meeting the targets for coverage of product risks, requirements, or other acceptance criteria. Test control uses the information from test monitoring to provide, in the form of control directives, guidance and the necessary corrective actions to achieve the most effective and efficient testing. None of these activities deal with the management of configuration items c) Is not correct. The whole team approach builds on the tester’s skill to work effectively in a team context and to contribute positively to the team goals. So, it focuses on team-related issues, not on configuration items d) Is correct. Configuration management provides a discipline for identifying, controlling, and tracking work products. Configuration management keeps a record of changed configuration items when a new baseline is created. Using configuration management, it is possible to revert to a previous baseline in order to reproduce previous test results Version 1.5 Page 33 of 35 May 2, 2025"
+      "explanation": "a) Is not correct. Risk management consists of risk analysis and risk control. Neither of these activities supports the reassembly of the files that made up the release, because these activities deal with risks, not with configuration items b) Is not correct. Test monitoring is concerned with gathering information about testing. This information is used to assess test progress and to measure whether the exit criteria or the test tasks associated with the exit criteria are satisfied, such as meeting the targets for coverage of product risks, requirements, or other acceptance criteria. Test control uses the information from test monitoring to provide, in the form of control directives, guidance and the necessary corrective actions to achieve the most effective and efficient testing. None of these activities deal with the management of configuration items c) Is not correct. The whole team approach builds on the tester’s skill to work effectively in a team context and to contribute positively to the team goals. So, it focuses on team-related issues, not on configuration items d) Is correct. Configuration management provides a discipline for identifying, controlling, and tracking work products. Configuration management keeps a record of changed configuration items when a new baseline is created. Using configuration management, it is possible to revert to a previous baseline in order to reproduce previous test results"
     },
     {
       "id": 38,
@@ -998,13 +1019,20 @@
         },
         {
           "id": "d",
-          "text": "Repeating the same test case for different environments and writing defect reports for each of them separately May 2, 2025"
+          "text": "Repeating the same test case for different environments and writing defect reports for each of them separately"
         }
       ],
       "correctOptions": [
         "a"
       ],
-      "explanation": "a) Is correct. Adding this information allows the developer to use the same input data, so it is more likely they will be able to reproduce the failure quickly and so identify the defect faster b) Is not correct. Adding the value of Priority will not help in reproducing the defect itself c) Is not correct. Although some of this information may be of value, adding the memory dumps and database snapshots after each step will be too much, because most of these artefacts will contain useless information for the developer, and make the defect report less readable. It will also require the developer to spend a lot of time analyzing this information, which will lengthen the repair process d) Is not correct. The question was about helping the developer to reproduce the failure for a specific environment configuration Version 1.5 Page 34 of 35 May 2, 2025"
+      "explanation": "a) Is correct. Adding this information allows the developer to use the same input data, so it is more likely they will be able to reproduce the failure quickly and so identify the defect faster b) Is not correct. Adding the value of Priority will not help in reproducing the defect itself c) Is not correct. Although some of this information may be of value, adding the memory dumps and database snapshots after each step will be too much, because most of these artefacts will contain useless information for the developer, and make the defect report less readable. It will also require the developer to spend a lot of time analyzing this information, which will lengthen the repair process d) Is not correct. The question was about helping the developer to reproduce the failure for a specific environment configuration",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/D/q38.png",
+          "alt": "Question 38 reference image"
+        }
+      ]
     },
     {
       "id": 39,
@@ -1030,7 +1058,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "Considering each of the listed tool categories: i. Collaboration tools – facilitate communication. Communication does not include the facilitation of test execution ii. DevOps tools - support the DevOps delivery pipeline, workflow tracking, automated build process(es) and CI/CD. The delivery pipeline and CI/CD both include the facilitation of test execution, such as component testing for CI iii. Management tools – increase the test process efficiency by facilitating management of the SDLC, requirements, tests, defects and configuration. The management of these items does not include the facilitation of test execution iv. Non-functional testing tools – allow the tester to perform non- functional testing that is difficult or impossible to perform manually. Non-functional testing can include both static testing and dynamic testing, including test execution v. Test design and implementation tools – facilitate generation of test cases, test data and test procedures. The generation of this testware does not include the facilitation of test execution Thus: a) Is not correct b) Is correct. Both DevOps tools (ii) and Non-functional testing tools (iv) facilitate test execution c) Is not correct d) Is not correct Version 1.5 Page 35 of 35 May 2, 2025"
+      "explanation": "Considering each of the listed tool categories: i. Collaboration tools – facilitate communication. Communication does not include the facilitation of test execution ii. DevOps tools - support the DevOps delivery pipeline, workflow tracking, automated build process(es) and CI/CD. The delivery pipeline and CI/CD both include the facilitation of test execution, such as component testing for CI iii. Management tools – increase the test process efficiency by facilitating management of the SDLC, requirements, tests, defects and configuration. The management of these items does not include the facilitation of test execution iv. Non-functional testing tools – allow the tester to perform non- functional testing that is difficult or impossible to perform manually. Non-functional testing can include both static testing and dynamic testing, including test execution v. Test design and implementation tools – facilitate generation of test cases, test data and test procedures. The generation of this testware does not include the facilitation of test execution Thus: a) Is not correct b) Is correct. Both DevOps tools (ii) and Non-functional testing tools (iv) facilitate test execution c) Is not correct d) Is not correct"
     },
     {
       "id": 40,

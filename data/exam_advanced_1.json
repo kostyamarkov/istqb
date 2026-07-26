@@ -27,7 +27,7 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. In incremental development models, development is not necessarily cyclical. b) Is not correct. The test analyst usually needs to perform test analysis, design, implement, and execute tests for each increment. c) Is not correct. The test analyst’s work may be organized differently for each increment. Therefore, the initial time of involvement of the test analyst may vary for each increment. d) Is correct. Each increment is developed and tested independently. Therefore, the test analyst performs the same test activities for each increment (i.e., test analysis, test design, test implementation, and test execution)."
+      "explanation": "a) Is not correct. In incremental development models, development is not necessarily cyclical. b) Is not correct. The test analyst usually needs to perform test analysis, design, implement, and execute tests for each increment. c) Is not correct. The test analyst’s work may be organized differently for each increment. Therefore, the initial time of involvement of the test analyst may vary for each increment. d) Is correct. Each increment is developed and tested independently. Therefore, the test analyst performs the same test activities for each increment (i.e., test analysis, test design, test implementation, and test execution.)"
     },
     {
       "id": 2,
@@ -274,7 +274,24 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "First, an impact analysis is performed to determine which test cases are affected by the change in F3: F3 is traced back to R2, R4, and R5. These risks are traced to the following test cases: • R2 to TC1 and TC3 • R4 to TC3 and TC5 • R5 to TC1 and TC6 Therefore, the next regression test execution should involve only TC1, TC3, TC5 and TC6. Next, risk-based testing is applied to prioritize these test cases. From the risk level information, the order of risk mitigation should be R5, R2, and then R4. Hence, the priority is: • First, execute TC1 and TC6 to cover R5. • Next, execute TC3 to cover R2 (TC1 has already been executed). • At last, execute TC5 to cover R4 (TC3 has already been executed). So, the test case to be executed last is TC5, and the correct answer is b."
+      "explanation": "First, an impact analysis is performed to determine which test cases are affected by the change in F3: F3 is traced back to R2, R4, and R5. These risks are traced to the following test cases: • R2 to TC1 and TC3 • R4 to TC3 and TC5 • R5 to TC1 and TC6 Therefore, the next regression test execution should involve only TC1, TC3, TC5 and TC6. Next, risk-based testing is applied to prioritize these test cases. From the risk level information, the order of risk mitigation should be R5, R2, and then R4. Hence, the priority is: • First, execute TC1 and TC6 to cover R5. • Next, execute TC3 to cover R2 (TC1 has already been executed). • At last, execute TC5 to cover R4 (TC3 has already been executed). So, the test case to be executed last is TC5, and the correct answer is b.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q10_1.png",
+          "alt": "Question 10 reference image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q10_2.png",
+          "alt": "Question 10 reference image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q10_3.png",
+          "alt": "Question 10 reference image 3"
+        }
+      ]
     },
     {
       "id": 11,
@@ -495,7 +512,14 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "There are 5 round trips: • RT1: Closed, Open, HalfOpen, Closed • RT2: Open, HalfOpen, Closed, Open • RT3: HalfOpen, Closed, Open, HalfOpen • RT4: Open, HalfOpen, Open • RT5: HalfOpen, Open, HalfOpen The test case exercising the sequence of states ’Closed, Open, HalfOpen, Closed, Open, HalfOpen, Open, End’ covers RT1, RT2, RT3, and RT4. Therefore, it achieves 4/5 = 80% round trip coverage. Hence, answer d) is correct."
+      "explanation": "There are 5 round trips: • RT1: Closed, Open, HalfOpen, Closed • RT2: Open, HalfOpen, Closed, Open • RT3: HalfOpen, Closed, Open, HalfOpen • RT4: Open, HalfOpen, Open • RT5: HalfOpen, Open, HalfOpen The test case exercising the sequence of states ’Closed, Open, HalfOpen, Closed, Open, HalfOpen, Open, End’ covers RT1, RT2, RT3, and RT4. Therefore, it achieves 4/5 = 80% round trip coverage. Hence, answer d) is correct.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q18.png",
+          "alt": "Question 18 reference image"
+        }
+      ]
     },
     {
       "id": 19,
@@ -521,7 +545,14 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "There are 16 1-switches in general: • Applied > Accepted > Closed • Applied > Accepted > Activated • Accepted > Activated > Closed • Accepted > Activated > Accepted • Accepted > Closed > Activated • Accepted > Closed > Archived • Accepted > Closed > Accepted • Activated > Accepted > Closed • Activated > Accepted > Activated • Activated > Closed > Activated • Activated > Closed > Archived • Activated > Closed > Accepted • Closed > Activated > Accepted • Closed > Activated > Closed • Closed > Accepted > Closed • Closed > Accepted > Activated However, taking the guard conditions into account, two of them are infeasible: Accepted > Closed > Activated and Activated > Closed > Accepted. Hence, b) is correct."
+      "explanation": "There are 16 1-switches in general: • Applied > Accepted > Closed • Applied > Accepted > Activated • Accepted > Activated > Closed • Accepted > Activated > Accepted • Accepted > Closed > Activated • Accepted > Closed > Archived • Accepted > Closed > Accepted • Activated > Accepted > Closed • Activated > Accepted > Activated • Activated > Closed > Activated • Activated > Closed > Archived • Activated > Closed > Accepted • Closed > Activated > Accepted • Closed > Activated > Closed • Closed > Accepted > Closed • Closed > Accepted > Activated However, taking the guard conditions into account, two of them are infeasible: Accepted > Closed > Activated and Activated > Closed > Accepted. Hence, b) is correct.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q19.png",
+          "alt": "Question 19 reference image"
+        }
+      ]
     },
     {
       "id": 20,
@@ -573,7 +604,14 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "There are two scenarios: one with the priority order and one with the regular order. In both cases the process of sending an invoice and receiving payment is done in parallel. Therefore, two test cases are enough. Hence, a) is correct."
+      "explanation": "There are two scenarios: one with the priority order and one with the regular order. In both cases the process of sending an invoice and receiving payment is done in parallel. Therefore, two test cases are enough. Hence, a) is correct.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q21.png",
+          "alt": "Question 21 reference image"
+        }
+      ]
     },
     {
       "id": 22,
@@ -599,7 +637,14 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "The minimized table is presented below. The minimized table has 7 columns. Therefore, the correct answer is d."
+      "explanation": "The minimized table is presented below. The minimized table has 7 columns. Therefore, the correct answer is d.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q22.png",
+          "alt": "Question 22 reference image"
+        }
+      ]
     },
     {
       "id": 23,
@@ -625,7 +670,14 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "R2 has one \"-\" value, so it represents 2 possible combinations of conditions: TTTT and TFTT, so its checksum is 2. None of these combinations overlap with other rules, so it is consistent with the other rules (hence, 1B). R3 matches the combination TTFT, which is also represented by R1, but these two columns are not action-equivalent, so R3 is inconsistent with R1 (hence, 2D). R4 has no \"-\" values, so it represents only one combination of conditions, so its checksum is 1 (hence, 3A). R5 has three \"-\" values so it represents 222 = 8 possible combinations of conditions (hence, 4C). Therefore: a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
+      "explanation": "R2 has one \"-\" value, so it represents 2 possible combinations of conditions: TTTT and TFTT, so its checksum is 2. None of these combinations overlap with other rules, so it is consistent with the other rules (hence, 1B). R3 matches the combination TTFT, which is also represented by R1, but these two columns are not action-equivalent, so R3 is inconsistent with R1 (hence, 2D). R4 has no \"-\" values, so it represents only one combination of conditions, so its checksum is 1 (hence, 3A). R5 has three \"-\" values so it represents 222 = 8 possible combinations of conditions (hence, 4C). Therefore: a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q23.png",
+          "alt": "Question 23 reference image"
+        }
+      ]
     },
     {
       "id": 24,
@@ -786,7 +838,14 @@
         "c",
         "d"
       ],
-      "explanation": "a) Is not correct. This is an additional checklist item verifying functional correctness rather than accessibility. Since functionality is unchanged, this checklist item does not address the changes. b) Is not correct. This is an additional checklist item verifying security rather than accessibility. There is no reason to believe that disabled players’ behavior will impact the game’s vulnerability. c) Is correct. This verifies the accessibility of the game interrupt situation for players with reading difficulties. d) Is correct. This verifies the accessibility of the game interrupt situation for players with visual disabilities. e) Is not correct. This is not a valid checklist item because the answer cannot be given as yes/no/not applicable."
+      "explanation": "a) Is not correct. This is an additional checklist item verifying functional correctness rather than accessibility. Since functionality is unchanged, this checklist item does not address the changes. b) Is not correct. This is an additional checklist item verifying security rather than accessibility. There is no reason to believe that disabled players’ behavior will impact the game’s vulnerability. c) Is correct. This verifies the accessibility of the game interrupt situation for players with reading difficulties. d) Is correct. This verifies the accessibility of the game interrupt situation for players with visual disabilities. e) Is not correct. This is not a valid checklist item because the answer cannot be given as yes/no/not applicable.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/ADV1/q29.png",
+          "alt": "Question 29 reference image"
+        }
+      ]
     },
     {
       "id": 30,

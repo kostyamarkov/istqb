@@ -14,9 +14,10 @@ QUESTION_PDFS = {
     "B": "ISTQB_CTFL_v4.0_Sample-Exam-B-Questions_v1.7.pdf",
     "C": "ISTQB_CTFL_v4.0_Sample-Exam-C-Questions_v1.6.pdf",
     "D": "ISTQB_CTFL_v4.0_Sample-Exam-D-Questions_v1.5.pdf",
+    "ADV1": "ISTQB-CTAL-TA-Sample-Exam-Questions-v4.1.pdf",
 }
 
-HEADER_RE = re.compile(r"Question #(\d+) \(1 Point\)")
+HEADER_RE = re.compile(r"Question #(\d+) \(\d+ Point\)")
 KEYWORDS_RE = re.compile(r"\b(table|figure|diagram|shown below|following table|decision table|state transition)\b", re.I)
 
 
