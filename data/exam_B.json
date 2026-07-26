@@ -573,14 +573,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "There are five columns in the decision table. Each test case covers one of them. TC1 and TC2 both cover Rule 4 TC3 and TC4 both cover Rule 2 TC5 covers Rule 5 So, these five test cases cover three out of five columns, achieving a coverage of (3/5)*100% = 60%. Therefore, option b) is the CORRECT option. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.7 Page 27 of 37 April 1, 2025",
-      "media": [
-        {
-          "type": "image",
-          "src": "assets/questions/B/q22.png",
-          "alt": "Question 22 reference image"
-        }
-      ]
+      "explanation": "There are five columns in the decision table. Each test case covers one of them. TC1 and TC2 both cover Rule 4 TC3 and TC4 both cover Rule 2 TC5 covers Rule 5 So, these five test cases cover three out of five columns, achieving a coverage of (3/5)*100% = 60%. Therefore, option b) is the CORRECT option. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.7 Page 27 of 37 April 1, 2025"
     },
     {
       "id": 23,
@@ -606,14 +599,7 @@
       "correctOptions": [
         "c"
       ],
-      "explanation": "Let us refer to the transitions with E1, …, E5 as in the picture. The variable N denotes the number of elements currently stored. Each “Add” event increases it by 1, and each “Remove” event decreases it by 1. Notice, that when the “Add” event occurs while being in the NOT FULL state, the state changes to FULL only if N=2. If N<2, the system stays in the NOT FULL state. If N=0, no “Remove” action is possible. Similarly, if N=3, no “Add” action is possible. Test a) can be written as E1, E3, E3, E2, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). Test b) is infeasible, because after the first three “Add” actions the system is in the FULL state and there is no valid transition going from FULL triggered by the “Add” event. After the first three transitions only 60% of valid transitions coverage is achieved. Test c) can be written as E1, E2, E4, E5, E3 (so covers 5 out of 5 valid transitions, achieving 100% valid transitions coverage). Test d) can be written as E1, E2, E4, E5, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). Thus: a) Is not correct b) Is not correct c) Is correct d) Is not correct Version 1.7 Page 28 of 37 April 1, 2025",
-      "media": [
-        {
-          "type": "image",
-          "src": "assets/questions/B/q23.png",
-          "alt": "Question 23 reference image"
-        }
-      ]
+      "explanation": "Let us refer to the transitions with E1, …, E5 as in the picture. The variable N denotes the number of elements currently stored. Each “Add” event increases it by 1, and each “Remove” event decreases it by 1. Notice, that when the “Add” event occurs while being in the NOT FULL state, the state changes to FULL only if N=2. If N<2, the system stays in the NOT FULL state. If N=0, no “Remove” action is possible. Similarly, if N=3, no “Add” action is possible. Test a) can be written as E1, E3, E3, E2, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). Test b) is infeasible, because after the first three “Add” actions the system is in the FULL state and there is no valid transition going from FULL triggered by the “Add” event. After the first three transitions only 60% of valid transitions coverage is achieved. Test c) can be written as E1, E2, E4, E5, E3 (so covers 5 out of 5 valid transitions, achieving 100% valid transitions coverage). Test d) can be written as E1, E2, E4, E5, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). Thus: a) Is not correct b) Is not correct c) Is correct d) Is not correct Version 1.7 Page 28 of 37 April 1, 2025"
     },
     {
       "id": 24,
@@ -826,14 +812,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "The average development effort is $900,000 and the average test effort is $90,000 (calculated from the four projects). The average test-to-development effort ratio is 1:10 ($90,000 : $900,000), which means that historically, on average, the test effort is 10% of the development effort. So if the development effort is estimated to be $800,000, the estimated test effort is estimated as: 10% * $800,000 = 0.1 * $800,000 = $80,000. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.7 Page 33 of 37 April 1, 2025",
-      "media": [
-        {
-          "type": "image",
-          "src": "assets/questions/B/q31.png",
-          "alt": "Question 31 reference image"
-        }
-      ]
+      "explanation": "The average development effort is $900,000 and the average test effort is $90,000 (calculated from the four projects). The average test-to-development effort ratio is 1:10 ($90,000 : $900,000), which means that historically, on average, the test effort is 10% of the development effort. So if the development effort is estimated to be $800,000, the estimated test effort is estimated as: 10% * $800,000 = 0.1 * $800,000 = $80,000. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct Version 1.7 Page 33 of 37 April 1, 2025"
     },
     {
       "id": 32,
@@ -859,14 +838,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "The logical dependencies mean that for each product you have to run SEARCH → VIEW → ADD before running ORDER. You can add more products (using the same flow), before you run ORDER. Based on this, TC1 or TC2 must be executed first, otherwise no progress can be made. The first priority should be given to VIEW and ADD product B, as its test cases (TC6, TC4) are assigned with higher priority. So, the first 3 tests to execute are TC2 -> TC4 -> TC6 Now we need to consider whether to run TC7 and then the entire flow for product A or run the TCs for product A first. If TC7 has lower priority than the other tests, they should be tested first. Therefore, the entire flow should be: TC2 -> TC4 -> TC6 -> TC1 -> TC3 -> TC5 -> TC7 a) Is not correct. TC1 must be executed before TC3 b) Is correct c) Is not correct. As shown above, TC7 is the last to be executed. d) Is not correct. Product B must be executed before product A",
-      "media": [
-        {
-          "type": "image",
-          "src": "assets/questions/B/q32.png",
-          "alt": "Question 32 reference image"
-        }
-      ]
+      "explanation": "The logical dependencies mean that for each product you have to run SEARCH → VIEW → ADD before running ORDER. You can add more products (using the same flow), before you run ORDER. Based on this, TC1 or TC2 must be executed first, otherwise no progress can be made. The first priority should be given to VIEW and ADD product B, as its test cases (TC6, TC4) are assigned with higher priority. So, the first 3 tests to execute are TC2 -> TC4 -> TC6 Now we need to consider whether to run TC7 and then the entire flow for product A or run the TCs for product A first. If TC7 has lower priority than the other tests, they should be tested first. Therefore, the entire flow should be: TC2 -> TC4 -> TC6 -> TC1 -> TC3 -> TC5 -> TC7 a) Is not correct. TC1 must be executed before TC3 b) Is correct c) Is not correct. As shown above, TC7 is the last to be executed. d) Is not correct. Product B must be executed before product A"
     },
     {
       "id": 33,
@@ -1022,14 +994,7 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. While the sentence is true, it does not provide much value for the developer b) Is correct. From the test results it seems that the system ignores duplicates and sorts the list disregarding the repetitions. This is probably the cause of failures in TC3, TC4, TC5. Such information may help the developer to find the defect and fix it more efficiently c) Is not correct. The system does not fail in sorting negative numbers. The problem is rather in disregarding duplicates d) Is not correct. The test cases TC3, TC4 and TC5 fail, but we aren’t aware that the test cases have any defects",
-      "media": [
-        {
-          "type": "image",
-          "src": "assets/questions/B/q38.png",
-          "alt": "Question 38 reference image"
-        }
-      ]
+      "explanation": "a) Is not correct. While the sentence is true, it does not provide much value for the developer b) Is correct. From the test results it seems that the system ignores duplicates and sorts the list disregarding the repetitions. This is probably the cause of failures in TC3, TC4, TC5. Such information may help the developer to find the defect and fix it more efficiently c) Is not correct. The system does not fail in sorting negative numbers. The problem is rather in disregarding duplicates d) Is not correct. The test cases TC3, TC4 and TC5 fail, but we aren’t aware that the test cases have any defects"
     },
     {
       "id": 39,
