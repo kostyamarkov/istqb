@@ -578,7 +578,14 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. The combination (T, T, F) does not match any rule. This is an example of omission, not a contradiction b) Is not correct. The combination (T, F, T) matches only one column, R2, so there is no contradiction c) Is not correct. Both combinations (T, T, T) and (F, T, T) match only one column, R1, so there is no contradiction d) Is correct. The combination (F, F, F) matches both R2 and R3, but R2 and R3 have different actions, so this shows a contradiction between R2 and R3. Certified Tester, Foundation Level Sample Exam set C Version 1.6 Page 27 of 37 March 25, 2025"
+      "explanation": "a) Is not correct. The combination (T, T, F) does not match any rule. This is an example of omission, not a contradiction b) Is not correct. The combination (T, F, T) matches only one column, R2, so there is no contradiction c) Is not correct. Both combinations (T, T, T) and (F, T, T) match only one column, R1, so there is no contradiction d) Is correct. The combination (F, F, F) matches both R2 and R3, but R2 and R3 have different actions, so this shows a contradiction between R2 and R3. Certified Tester, Foundation Level Sample Exam set C Version 1.6 Page 27 of 37 March 25, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/C/q22.png",
+          "alt": "Question 22 reference image"
+        }
+      ]
     },
     {
       "id": 23,
@@ -604,7 +611,14 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "The following three transitions: “REQUESTING -> CONFIRMED” “WAITING LIST -> CONFIRMED” “WAITING LIST -> END” cannot appear in the same test case, which suggests that at least three test cases are required. All the other transitions can appear in combination with one or more of these three transitions, so we need a minimum of three test cases. In fact, only three sequences are possible: TC1: START (Room request) → REQUESTING (Available) → CONFIRMED (Pay) → END TC2: START (Room request) → REQUESTING (Not available) → WAITING LIST (Available) → CONFIRMED (Pay) → END TC3: START (Room request) → REQUESTING (Not available) → WAITING LIST (Cancel) → END Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+      "explanation": "The following three transitions: “REQUESTING -> CONFIRMED” “WAITING LIST -> CONFIRMED” “WAITING LIST -> END” cannot appear in the same test case, which suggests that at least three test cases are required. All the other transitions can appear in combination with one or more of these three transitions, so we need a minimum of three test cases. In fact, only three sequences are possible: TC1: START (Room request) → REQUESTING (Available) → CONFIRMED (Pay) → END TC2: START (Room request) → REQUESTING (Not available) → WAITING LIST (Available) → CONFIRMED (Pay) → END TC3: START (Room request) → REQUESTING (Not available) → WAITING LIST (Cancel) → END Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/C/q23.png",
+          "alt": "Question 23 reference image"
+        }
+      ]
     },
     {
       "id": 24,
@@ -630,7 +644,14 @@
       "correctOptions": [
         "c"
       ],
-      "explanation": "In branch testing the coverage items are branches, which are represented by the edges of a control flow graph. There are 8 edges in the control flow graph. Thus: a) Is not correct b) Is not correct c) Is correct d) Is not correct Certified Tester, Foundation Level Sample Exam set C Version 1.6 Page 28 of 37 March 25, 2025"
+      "explanation": "In branch testing the coverage items are branches, which are represented by the edges of a control flow graph. There are 8 edges in the control flow graph. Thus: a) Is not correct b) Is not correct c) Is correct d) Is not correct Certified Tester, Foundation Level Sample Exam set C Version 1.6 Page 28 of 37 March 25, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/C/q24.png",
+          "alt": "Question 24 reference image"
+        }
+      ]
     },
     {
       "id": 25,
@@ -760,7 +781,14 @@
       "correctOptions": [
         "d"
       ],
-      "explanation": "a) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user b) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user c) Is not correct. There is no floor 5 described in the acceptance criteria. The test cases should not extend the scope of the user story. But even if we would like to perform negative testing, this test is not directly related to AC3 d) Is correct. This is the way we can check if a Special user can access floors which are accessible to a Regular user Certified Tester, Foundation Level Sample Exam set C Version 1.6 Page 32 of 37 March 25, 2025"
+      "explanation": "a) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user b) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user c) Is not correct. There is no floor 5 described in the acceptance criteria. The test cases should not extend the scope of the user story. But even if we would like to perform negative testing, this test is not directly related to AC3 d) Is correct. This is the way we can check if a Special user can access floors which are accessible to a Regular user Certified Tester, Foundation Level Sample Exam set C Version 1.6 Page 32 of 37 March 25, 2025",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/C/q29.png",
+          "alt": "Question 29 reference image"
+        }
+      ]
     },
     {
       "id": 30,
@@ -838,7 +866,14 @@
       "correctOptions": [
         "a"
       ],
-      "explanation": "We want to run test cases according to their priorities, but we also need to consider the dependencies. If we only consider priorities, we want to first run TC 5 and TC 7 (highest priority), then TC 1, TC 3, and TC 4, and finally TC 2 and TC 6 (lowest priority). However, in order to run TC 7, we need to first run TC 4. In order to run TC 5, we need to run TC 4 and TC 2, but TC 2 is blocked by TC 1, which should be run prior to TC 2. So, in order to run priority 1 test cases as early as possible, the first five test cases should be: TC 4 - TC 7 - TC 1 - TC 2 - TC 5. Next, we need to run TC 3, because it has higher priority than TC 6. Thus the full schedule will be TC 4 – TC 7 – TC 1 – TC 2 – TC 5 – TC 3 – TC 6. So, the sixth test case will be TC 3. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+      "explanation": "We want to run test cases according to their priorities, but we also need to consider the dependencies. If we only consider priorities, we want to first run TC 5 and TC 7 (highest priority), then TC 1, TC 3, and TC 4, and finally TC 2 and TC 6 (lowest priority). However, in order to run TC 7, we need to first run TC 4. In order to run TC 5, we need to run TC 4 and TC 2, but TC 2 is blocked by TC 1, which should be run prior to TC 2. So, in order to run priority 1 test cases as early as possible, the first five test cases should be: TC 4 - TC 7 - TC 1 - TC 2 - TC 5. Next, we need to run TC 3, because it has higher priority than TC 6. Thus the full schedule will be TC 4 – TC 7 – TC 1 – TC 2 – TC 5 – TC 3 – TC 6. So, the sixth test case will be TC 3. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/C/q32.png",
+          "alt": "Question 32 reference image"
+        }
+      ]
     },
     {
       "id": 33,
@@ -994,7 +1029,14 @@
       "correctOptions": [
         "b"
       ],
-      "explanation": "a) Is not correct. This is important, but not as important as test environment elements b) Is correct. The important thing that is missing is the identification of the browser and device used for the testing. The browser and device information are important because such a defect can be browser- or device-specific. For example, a login button may work fine on one browser (or one version of a specific browser) but not on another. Therefore, the browser and device information can help the developers to reproduce the issue and find the root cause of the problem more quickly c) Is not correct. The test object is identified (WebShop v0.99) d) Is not correct. The impact is included – this is severity (high)"
+      "explanation": "a) Is not correct. This is important, but not as important as test environment elements b) Is correct. The important thing that is missing is the identification of the browser and device used for the testing. The browser and device information are important because such a defect can be browser- or device-specific. For example, a login button may work fine on one browser (or one version of a specific browser) but not on another. Therefore, the browser and device information can help the developers to reproduce the issue and find the root cause of the problem more quickly c) Is not correct. The test object is identified (WebShop v0.99) d) Is not correct. The impact is included – this is severity (high)",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/questions/C/q38.png",
+          "alt": "Question 38 reference image"
+        }
+      ]
     },
     {
       "id": 39,
